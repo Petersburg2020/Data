@@ -16,6 +16,8 @@ Add the dependency:
 
 ![add dependency](https://user-images.githubusercontent.com/61753269/209490937-8177808f-c521-4633-ba92-7295cd560cc0.png)
 
+Change Tag to the latest version of this Project (Jitpack)
+
 # How to Use Data
 Initiate Data using the various Data options listed below:
 
