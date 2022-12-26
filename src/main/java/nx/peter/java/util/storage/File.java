@@ -1,4 +1,6 @@
-package nx.peter.java.util;
+package nx.peter.java.util.storage;
+
+import nx.peter.java.util.Util;
 
 import java.net.URI;
 import java.nio.file.Path;

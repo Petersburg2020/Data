@@ -1,6 +1,6 @@
 package nx.peter.java.dictionary;
 
-import nx.peter.java.util.FileManager;
+import nx.peter.java.util.storage.FileManager;
 import nx.peter.java.util.Random;
 import nx.peter.java.util.Util;
 import nx.peter.java.util.data.*;
