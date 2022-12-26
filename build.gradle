@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+
+group 'nx.peter.java'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.java
+
+                groupId = 'com.github.Petersburg2020'
+                artifactId = 'Data'
+                version = '1.0.0'
+            }
+        }
+    }
+}
+
+/*
+task sourcesJar(type: Jar) {
+    fr
+}
+ */
