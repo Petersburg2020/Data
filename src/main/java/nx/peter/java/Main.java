@@ -2,6 +2,7 @@ package nx.peter.java;
 
 import nx.peter.java.util.data.Data;
 import nx.peter.java.util.data.Word;
+import nx.peter.java.util.data.comparator.ComparedLetters;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,6 +10,10 @@ public class Main {
         Data<?> data = new Word(word);
 
         data.append("See ", 0);
+
+        ComparedLetters compared = word.getAlmostEquals(new Word(data));
+
+
         println(data.append(", Esther, Blessing"));
         println();
 
