@@ -161,7 +161,7 @@ public class Index extends Data<Index> {
 				ind.append('.');
 			else
 				ind.append(getIndex(c));
-		return ind.isEmpty() ? 0 : (index > 0 ? -1 : 1) * Double.parseDouble(ind.toString());
+		return ind.toString().isEmpty() ? 0 : (index > 0 ? -1 : 1) * Double.parseDouble(ind.toString());
 	}
 
 	public Fraction toFraction() {

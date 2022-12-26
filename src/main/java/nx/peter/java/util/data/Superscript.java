@@ -253,7 +253,7 @@ public class Superscript extends Data<Superscript> {
 
 	protected static String toSuperscript(CharSequence data) {
 		StringBuilder sub = new StringBuilder();
-		if (data != null && !data.isEmpty())
+		if (data != null && !data.toString().isEmpty())
 			for (char c : data.toString().toCharArray())
 				if (!isSuperscript(c)) {
 					sub.append(toSuperscript(c));

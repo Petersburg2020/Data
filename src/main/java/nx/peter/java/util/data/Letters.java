@@ -7,6 +7,7 @@ import nx.peter.java.util.data.comparator.ComparedLetters;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
@@ -975,9 +976,9 @@ public abstract class Letters<L extends Letters> extends Data<L> {
             // System.out.println(substring(start, end));
             Word sub = new Word(substring(start, end));
             if (containsAll(sub.get(), mustContain))
-                if (!ifContain.isEmpty() && sub.contains(ifContain)) {
+                if (!ifContain.toString().isEmpty() && sub.contains(ifContain)) {
                     String ender = getEndDelimiter(sub.get(), delimiter);
-                    if (mustEnd.isEmpty() || (ender != null ? sub.subLetters(0, sub.lastIndexOf(ender)) : sub.trim()).endsWith(mustEnd.toString()))
+                    if (mustEnd.toString().isEmpty() || (ender != null ? sub.subLetters(0, sub.lastIndexOf(ender)) : sub.trim()).endsWith(mustEnd.toString()))
                         return end;
                 } else return end;
         }
@@ -1196,7 +1197,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         }
 
         public List<D> toList() {
-            return stream().toList();
+            return new ArrayList<>(items);
         }
 
         public List<String> toStringList() {

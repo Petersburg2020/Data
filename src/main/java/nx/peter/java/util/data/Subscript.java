@@ -195,7 +195,7 @@ public class Subscript extends Data<Subscript> {
 
 	protected static String toSubscript(CharSequence data) {
 		StringBuilder sub = new StringBuilder();
-		if (data != null && !data.isEmpty())
+		if (data != null && !data.toString().isEmpty())
 			for (char c : data.toString().toCharArray())
 				if (!isSubscript(c)) {
 					sub.append(toSubscript(c));

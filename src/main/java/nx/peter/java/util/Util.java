@@ -147,7 +147,7 @@ public class Util {
             else if (isArray(value))
                 value = format ? toPrettyJson((List<Object>) value, indent + 1) : toJson((List<Object>) value, indent + 1);
             return (format ? "\n" + tab(indent + 1) : "") + value;
-        }).toList().toString();
+        }).collect(Collectors.toList()).toString();
     }
 
     public static String toJson(Map<String, Object> json, int indent, boolean format) {
@@ -160,7 +160,7 @@ public class Util {
             else if (isArray(value))
                 value = format ? toPrettyJson((List<Object>) value, indent + 1) : toJson((List<Object>) value, indent + 1);
             return (format ? "\n" + tab(indent + 1) : "") + "\"" + e.getKey() + "\": " + value;
-        }).toList().toString();
+        }).collect(Collectors.toList()).toString();
     }
 
 
@@ -1104,8 +1104,10 @@ public class Util {
         }
     }
 
-    public record MinMax<N extends Number>(N min, N max) {
-        public MinMax {
+    public static class MinMax<N extends Number> {
+        protected N max, min;
+
+        public MinMax(N min, N max) {
             N a = min, b = max;
             if (a != null && b != null) {
                 if (a instanceof Integer) {
@@ -1218,6 +1220,8 @@ public class Util {
                     }
                 }
             }
+            this.max = max;
+            this.min = min;
         }
 
         public N diff() {
@@ -1292,6 +1296,14 @@ public class Util {
 
         public boolean isLong() {
             return max instanceof Long;
+        }
+
+        public N min() {
+            return min;
+        }
+
+        public N max() {
+            return max;
         }
 
         @Override
@@ -1493,7 +1505,22 @@ public class Util {
 
         }
 
-        public record DataCount<D extends Number>(D data, int count) implements Comparable<DataCount<D>> {
+        public static class DataCount<D extends Number> implements Comparable<DataCount<D>> {
+            protected int count;
+            protected D data;
+
+            public DataCount(D data, int count) {
+                this.data = data;
+                this.count = count;
+            }
+
+            public D data() {
+                return data;
+            }
+
+            public int count() {
+                return count;
+            }
 
             public boolean equals(DataCount<?> other) {
                 return other != null && equals(other.data()) && count == other.count;
@@ -1644,7 +1671,22 @@ public class Util {
     }
 
 
-    public record TrimmedLine(String line, String trimmed) {
+    public static class TrimmedLine {
+        protected String line, trimmed;
+
+        public TrimmedLine(String line, String trimmed) {
+            this.line = line;
+            this.trimmed = trimmed;
+        }
+
+        public String line() {
+            return line;
+        }
+
+        public String trimmed() {
+            return trimmed;
+        }
+
     }
 
     public enum Position {
