@@ -216,17 +216,17 @@ public class Advanced {
     }
 
     public static String getType(ObjectDetail.Type type) {
-        return switch (type) {
-            case Boolean -> "BOOLEAN";
-            case Double -> "DECIMAL(11, 4)";
-            case Enum -> "ENUM";
-            case Float -> "FLOAT(8)";
-            case Integer -> "INTEGER";
-            case List, None, Map -> "";
-            case Long -> "BIGINT";
-            case Object -> "OBJECT";
-            case String -> "VARCHAR(200)";
-        };
+        switch (type) {
+            case Boolean: return "BOOLEAN";
+            case Double: return "DECIMAL(11, 4)";
+            case Enum: return "ENUM";
+            case Float: return "FLOAT(8)";
+            case Integer: return "INTEGER";
+            case Long: return "BIGINT";
+            case Object: return "OBJECT";
+            case String: return "VARCHAR(200)";
+            case List: case None: case Map: default: return "";
+        }
     }
 
     public static int toInt(Object obj, int def) {

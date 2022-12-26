@@ -388,10 +388,11 @@ public class Util {
     }
 
     public static int indexOf(String source, String text, int index, Position position) {
-        return switch (position) {
-            case After -> source.substring(0, index).lastIndexOf(text);
-            case Before -> source.substring(index + 1).indexOf(text);
-        };
+        switch (position) {
+            case After: return source.substring(0, index).lastIndexOf(text);
+            case Before: return source.substring(index + 1).indexOf(text);
+            default: return -1;
+        }
     }
 
     public static final String NUMBERS = "0123456789";

@@ -92,27 +92,27 @@ public class FractionData extends Data<FractionData> {
 	}
 	
 	public Fraction getFraction() {
-		return switch (data) {
-			case "⅙" -> new Fraction(1, 6);
-			case "⅐" -> new Fraction(1, 7);
-			case "⅛" -> new Fraction(1, 8);
-			case "⅑" -> new Fraction(1, 9);
-			case "⅒" -> new Fraction(1, 10);
-			case "½" -> new Fraction(1, 2);
-			case "⅓" -> new Fraction(1, 3);
-			case "¼" -> new Fraction(1, 4);
-			case "⅕" -> new Fraction(1, 5);
-			case "⅔" -> new Fraction(2, 3);
-			case "⅖" -> new Fraction(2, 5);
-			case "¾" -> new Fraction(3, 4);
-			case "⅗" -> new Fraction(3, 5);
-			case "⅜" -> new Fraction(3, 8);
-			case "⅘" -> new Fraction(4, 5);
-			case "⅚" -> new Fraction(5, 6);
-			case "⅝" -> new Fraction(5, 8);
-			case "⅞" -> new Fraction(7, 8);
-			default -> new Fraction(0);
-		};
+		switch (data) {
+			case "⅙": return new Fraction(1, 6);
+			case "⅐": return new Fraction(1, 7);
+			case "⅛": return new Fraction(1, 8);
+			case "⅑": return new Fraction(1, 9);
+			case "⅒": return new Fraction(1, 10);
+			case "½": return new Fraction(1, 2);
+			case "⅓": return new Fraction(1, 3);
+			case "¼": return new Fraction(1, 4);
+			case "⅕": return new Fraction(1, 5);
+			case "⅔": return new Fraction(2, 3);
+			case "⅖": return new Fraction(2, 5);
+			case "¾": return new Fraction(3, 4);
+			case "⅗": return new Fraction(3, 5);
+			case "⅜": return new Fraction(3, 8);
+			case "⅘": return new Fraction(4, 5);
+			case "⅚": return new Fraction(5, 6);
+			case "⅝": return new Fraction(5, 8);
+			case "⅞": return new Fraction(7, 8);
+			default: return new Fraction(0);
+		}
 	}
 
 	public boolean isInteger() {

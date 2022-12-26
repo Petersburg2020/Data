@@ -147,8 +147,8 @@ public class Password {
                 while(password.length() < length){
                     int type = Random.nextInt(2);
                     switch (type) {
-                        case 0 -> all = DataManager.ALPHABETS;
-                        case 1 -> all = DataManager.NUMBERS;
+                        case 0: all = DataManager.ALPHABETS; break;
+                        case 1: all = DataManager.NUMBERS;
                     }
                     password.append(all.charAt(Random.nextInt(all.length() - 1)));
                     if(password.length() == length && !followsRestriction(password.toString(), Restriction.AlphaNumeric))
@@ -167,11 +167,8 @@ public class Password {
                 while(password.length() < length){
                     int type = Random.nextInt(2);
                     switch (type) {
-                        case 0:
-                            all = DataManager.SPECIAL_CHARACTERS;
-                            break;
-                        case 1:
-                            all = DataManager.ALPHABETS;
+                        case 0: all = DataManager.SPECIAL_CHARACTERS; break;
+                        case 1: all = DataManager.ALPHABETS;
                     }
                     password.append(all.charAt(Random.nextInt(all.length() - 1)));
                     if(password.length() == length && !followsRestriction(password.toString(), Restriction.AlphaCharacter))
@@ -182,11 +179,10 @@ public class Password {
             case CharNumeric:
                 while(password.length() < length){
                     int type = Random.nextInt(2);
-                    all = switch (type) {
-                        case 0 -> DataManager.SPECIAL_CHARACTERS;
-                        case 1 -> DataManager.NUMBERS;
-                        default -> all;
-                    };
+                    switch (type) {
+                        case 0: all = DataManager.SPECIAL_CHARACTERS; break;
+                        case 1: all = DataManager.NUMBERS;
+                    }
                     password.append(all.charAt(Random.nextInt(all.length() - 1)));
                     if(password.length() == length && !followsRestriction(password.toString(), Restriction.CharNumeric))
                         password = new StringBuilder();
@@ -205,12 +201,11 @@ public class Password {
             case All:
                 while(password.length() < length){
                     int type = Random.nextInt(3);
-                    all = switch (type) {
-                        case 0 -> DataManager.ALPHABETS;
-                        case 1 -> DataManager.SPECIAL_CHARACTERS;
-                        case 2 -> DataManager.NUMBERS;
-                        default -> all;
-                    };
+                    switch (type) {
+                        case 0: all = DataManager.ALPHABETS; break;
+                        case 1: all = DataManager.SPECIAL_CHARACTERS; break;
+                        case 2: all = DataManager.NUMBERS;
+                    }
                     password.append(all.charAt(Random.nextInt(all.length() - 1)));
                     if(password.length() == length && !followsRestriction(password.toString(), Restriction.All))
                         password = new StringBuilder();
@@ -340,11 +335,11 @@ public class Password {
     }
 
     private String getMessage(LengthVariant variant){
-        return switch (variant) {
-            case Greater -> "not greater than/equal to";
-            case Less -> "not less than/equal to";
-            default -> "not equal to";
-        };
+        switch (variant) {
+            case Greater: return "not greater than/equal to";
+            case Less: return "not less than/equal to";
+            default: return "not equal to";
+        }
     }
 
     private static boolean hasCharacter(CharSequence letters){

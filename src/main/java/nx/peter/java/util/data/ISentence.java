@@ -106,7 +106,7 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
         AtomicBoolean exists = new AtomicBoolean(false);
         Thread checker = new Thread(() -> {
             switch (error) {
-                case SyntaxError -> {
+                case SyntaxError: {
                     if (data.contains("  "))
                         exists.set(true);
                     else
@@ -116,7 +116,8 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
                                 break;
                             }
                 }
-                case GrammaticalError -> {
+                break;
+                case GrammaticalError: {
                     String OTHERS = "the he she a her him they them we to though thorough our ours you yours their theirs there over above";
                     for (Word w : getWords())
                         if (!w.isEmpty() && !new WordDictionary().containsWord(w) && !OTHERS.contains(new Word(w.get()).toLowerCase().get())) {
@@ -245,7 +246,7 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
 
         Thread scanner = new Thread(() -> {
             switch (error) {
-                case SyntaxError -> {
+                case SyntaxError: {
                     if (data.contains("  ")) {
                         int start, end = 0;
                         while (true) {
@@ -310,8 +311,8 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
                             }
                         }
                     }
-                }
-                case GrammaticalError -> {
+                } break;
+                case GrammaticalError: {
                     String OTHERS = "the he she a her him they them we to though thorough our ours you yours their theirs there over above";
                     for (Word w : getWords())
                         if (!w.isEmpty() && !w.contains('-') && !new WordDictionary().containsWord(w) && !OTHERS.contains(new Word(w.get()).toLowerCase().get())) {

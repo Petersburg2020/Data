@@ -697,7 +697,7 @@ public class DataManager {
         StringBuilder index = new StringBuilder();
         for (IntString property : getProperties(letters)) {
             if (isIndex(property.letter) || (property.letter.contentEquals("°") && !index.toString().contains("°"))) {
-                if (property.letter.contentEquals("°") && index.isEmpty())
+                if (property.letter.contentEquals("°") && index.toString().isEmpty())
                     index.append("⁰");
                 index.append(property.letter);
             } else {
@@ -746,10 +746,11 @@ public class DataManager {
             String type = getType(value);
             if (type.contentEquals(NULL)) break;
 
-            Object val = switch (type) {
-                case OBJECT -> extractObject(value);
-                case ARRAY -> extractArray(value);
-                default -> toObject(value);
+            Object val;
+            switch (type) {
+                case OBJECT: val = extractObject(value); break;
+                case ARRAY: val = extractArray(value); break;
+                default: val = toObject(value);
             };
 
             array.add(val);
@@ -807,11 +808,12 @@ public class DataManager {
             String type = getType(value);
             if (type.contentEquals(NULL)) break;
 
-            Object val = switch (type) {
-                case OBJECT -> extractObject(value);
-                case ARRAY -> extractArray(value);
-                default -> toObject(value);
-            };
+            Object val;
+            switch (type) {
+                case OBJECT: val = extractObject(value); break;
+                case ARRAY: val = extractArray(value); break;
+                default: val = toObject(value);
+            }
             object.put(key, val);
 
             if (type.contentEquals(OBJECT) || type.contentEquals(ARRAY) || type.contentEquals(STRING))
@@ -893,16 +895,15 @@ public class DataManager {
 
 
     public static Object toObject(String value) {
-        return switch (getType(value)) {
-            case BOOLEAN -> value.contentEquals("true");
-            case INTEGER -> extractIntegers(value).get(0);
-            case LONG -> !extractLongs(value).isEmpty() ? extractLongs(value).get(0) : Long.MIN_VALUE;
-            case FLOAT -> !extractFloats(value).isEmpty() ? extractFloats(value).get(0) : Float.MIN_VALUE;
-            case DOUBLE -> !extractDecimals(value).isEmpty() ? extractDecimals(value).get(0) : Double.MIN_VALUE;
-            case STRING ->
-                    value.length() > 1 ? new Word(value).remove("\"", value.length() - 2).remove("\"").replaceAll("@10", "\n").replaceAll("@09", "\t").get() : value;
-            default -> null;
-        };
+        switch (getType(value)) {
+            case BOOLEAN: return value.contentEquals("true");
+            case INTEGER: return extractIntegers(value).get(0);
+            case LONG: return !extractLongs(value).isEmpty() ? extractLongs(value).get(0) : Long.MIN_VALUE;
+            case FLOAT: return !extractFloats(value).isEmpty() ? extractFloats(value).get(0) : Float.MIN_VALUE;
+            case DOUBLE: return !extractDecimals(value).isEmpty() ? extractDecimals(value).get(0) : Double.MIN_VALUE;
+            case STRING: return value.length() > 1 ? new Word(value).remove("\"", value.length() - 2).remove("\"").replaceAll("@10", "\n").replaceAll("@09", "\t").get() : value;
+            default: return null;
+        }
     }
 
 
