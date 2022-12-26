@@ -1,4 +1,4 @@
-package nx.peter.java.util;
+package nx.peter.java.util.storage;
 
 import java.io.*;
 import java.util.ArrayList;
