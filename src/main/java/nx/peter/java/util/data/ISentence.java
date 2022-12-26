@@ -1,6 +1,6 @@
 package nx.peter.java.util.data;
 
-import nx.peter.java.util.WordDictionary;
+import nx.peter.java.dictionary.WordDictionary;
 
 import java.util.ArrayList;
 import java.util.Arrays;

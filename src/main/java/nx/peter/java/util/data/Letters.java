@@ -1,5 +1,6 @@
 package nx.peter.java.util.data;
 
+import nx.peter.java.dictionary.WordDictionary;
 import nx.peter.java.util.Random;
 import nx.peter.java.util.*;
 import nx.peter.java.util.data.comparator.ComparedLetters;

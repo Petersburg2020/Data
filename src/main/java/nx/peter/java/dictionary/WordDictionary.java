@@ -1,4 +1,4 @@
-package nx.peter.java.util;
+package nx.peter.java.dictionary;
 
 public class WordDictionary extends Dictionary.Builder {
     public WordDictionary() {

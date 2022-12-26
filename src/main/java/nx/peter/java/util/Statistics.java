@@ -587,25 +587,25 @@ public class Statistics {
             // Update table
             for (int column = 1; column <= headings.length; column++) {
                 switch (column) {
-                    case 1 -> {
+                    case 1: {
                         List<Integer> numbers = new ArrayList<>();
                         for (int i = 1; i <= statistics.getOrderedDataSize(); i++)
                             numbers.add(i);
                         serialNumber = new ISerialNumber(headings[column - 1], numbers).setTable(this);
                     }
-                    case 2 -> {
+                    case 2: {
                         List<Number> data = new ArrayList<>();
                         for (int i = 1; i <= statistics.getOrderedDataSize(); i++)
                             data.add(statistics.getOrderedData().get(i));
                         columns.add(new IColumn(column, headings[column - 1], data).setTable(this));
                     }
-                    case 3 -> {
+                    case 3: {
                         List<Number> frequency = new ArrayList<>();
                         for (int i = 1; i <= statistics.getOrderedDataSize(); i++)
                             frequency.add(statistics.getRawData().getDataCount().getCount(statistics.getOrderedData().get(i)));
                         columns.add(new IColumn(column, headings[2], frequency).setTable(this));
                     }
-                    case 4 -> {
+                    case 4: {
                         List<Number> fX = new ArrayList<>();
                         for (int i = 1; i <= statistics.getOrderedDataSize(); i++) {
                             Number val = statistics.getOrderedData().get(i);
@@ -613,19 +613,19 @@ public class Statistics {
                         }
                         columns.add(new IColumn(column, headings[column - 1], fX).setTable(this));
                     }
-                    case 5 -> {
+                    case 5: {
                         List<Number> mean = new ArrayList<>();
                         for (int i = 1; i <= statistics.getOrderedDataSize(); i++)
                             mean.add(statistics.getMean());
                         columns.add(new IColumn(column, headings[column - 1], mean).setTable(this));
                     }
-                    case 6 -> {
+                    case 6: {
                         List<Number> fXMean = new ArrayList<>();
                         for (int i = 1; i <= statistics.getOrderedDataSize(); i++)
                             fXMean.add(Util.toNDecimalPlace(Util.diff(statistics.getOrderedData().get(i), statistics.getMean()).doubleValue(), 2));
                         columns.add(new IColumn(2, headings[1], fXMean).setTable(this));
                     }
-                    case 7 -> {
+                    case 7: {
                         List<Number> fXMeanSquare = new ArrayList<>();
                         for (int i = 1; i <= statistics.getOrderedDataSize(); i++)
                             fXMeanSquare.add(Util.toNDecimalPlace(Util.pow(Util.diff(statistics.getOrderedData().get(i), statistics.getMean()), 2), 2));

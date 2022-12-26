@@ -1,5 +1,8 @@
-package nx.peter.java.util;
+package nx.peter.java.dictionary;
 
+import nx.peter.java.util.FileManager;
+import nx.peter.java.util.Random;
+import nx.peter.java.util.Util;
 import nx.peter.java.util.data.*;
 
 import java.util.ArrayList;
@@ -73,14 +76,14 @@ public interface Dictionary {
         }
 
         private Word.PartOfSpeech getPartOfSpeech(char letter) {
-            return switch (letter) {
-                case 'n' -> Word.PartOfSpeech.Noun;
-                case 'v' -> Word.PartOfSpeech.Verb;
-                case 'j' -> Word.PartOfSpeech.Adjective;
-                case 'a' -> Word.PartOfSpeech.Adverb;
-                case 'p' -> Word.PartOfSpeech.Pronoun;
-                default -> Word.PartOfSpeech.Unknown;
-            };
+            switch (letter) {
+                case 'n': return Word.PartOfSpeech.Noun;
+                case 'v': return Word.PartOfSpeech.Verb;
+                case 'j': return Word.PartOfSpeech.Adjective;
+                case 'a': return Word.PartOfSpeech.Adverb;
+                case 'p': return Word.PartOfSpeech.Pronoun;
+                default: return Word.PartOfSpeech.Unknown;
+            }
         }
 
         protected void set(List<WordMeaning> dictionary) {
@@ -104,17 +107,18 @@ public interface Dictionary {
         }
 
         protected String getFilePath() {
-            return switch (type) {
-                case Adjective -> ROOT_PATH + RAW_ADJECTIVE;
-                case Adverb -> ROOT_PATH + RAW_ADVERB;
-                case Bank -> ROOT_PATH + RAW_BANK;
-                case Dictionary -> ROOT_PATH + RAW_DICTIONARY;
-                case Name -> ROOT_PATH + RAW_NAME;
-                case Noun -> ROOT_PATH + RAW_NOUN;
-                case Verb -> ROOT_PATH + RAW_VERB;
-                case Word -> ROOT_PATH + RAW_WORD;
-                case Country -> ROOT_PATH + RAW_COUNTRY;
-            };
+            switch (type) {
+                case Adjective: return ROOT_PATH + RAW_ADJECTIVE;
+                case Adverb: return ROOT_PATH + RAW_ADVERB;
+                case Bank: return ROOT_PATH + RAW_BANK;
+                case Dictionary: return ROOT_PATH + RAW_DICTIONARY;
+                case Name: return ROOT_PATH + RAW_NAME;
+                case Noun: return ROOT_PATH + RAW_NOUN;
+                case Verb: return ROOT_PATH + RAW_VERB;
+                case Word: return ROOT_PATH + RAW_WORD;
+                case Country: return ROOT_PATH + RAW_COUNTRY;
+                default: return "";
+            }
         }
 
 

@@ -3,7 +3,6 @@ package nx.peter.java.util;
 import nx.peter.java.util.data.IData;
 import nx.peter.java.util.data.Word;
 
-import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -681,384 +680,382 @@ public class Util {
 
     public static <N extends Number> N sum(N a, N b) {
         if (a != null && b != null)
-            if (b instanceof Integer tB)
-                return sum(a, tB);
-            else if (b instanceof Double tB)
-                return sum(a, tB);
-            else if (b instanceof Float tB)
-                return sum(a, tB);
-            else if (b instanceof Long tB)
-                return sum(a, tB);
+            if (b instanceof Integer)
+                return sum(a, (Integer) b);
+            else if (b instanceof Double)
+                return sum(a, (Double) b);
+            else if (b instanceof Float)
+                return sum(a, (Float) b);
+            else if (b instanceof Long)
+                return sum(a, (Long) b);
         return null;
     }
 
     public static <N extends Number> N sum(N a, Integer b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (b + tA);
-            else if (a instanceof Double tA)
-                return (N) (Double) (b + tA);
-            else if (a instanceof Float tA)
-                return (N) (Float) (b + tA);
-            else if (a instanceof Long tA)
-                return (N) (Long) (b + tA);
+            if (a instanceof Integer)
+                return (N) (Integer) ((Integer) a + b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a + b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a + b);
+            else if (a instanceof Long)
+                return (N) (Long) ((Long) a + b);
         return null;
     }
 
     public static <N extends Number> N sum(N a, Long b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (b + tA);
-            else if (a instanceof Double tA)
-                return (N) (Double) (b + tA);
-            else if (a instanceof Float tA)
-                return (N) (Float) (b + tA);
-            else if (a instanceof Long tA)
-                return (N) (Long) (b + tA);
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a + b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a + b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a + b);
+            else if (a instanceof Long)
+                return (N) (Long) ((Long) a + b);
         return null;
     }
 
     public static <N extends Number> N sum(N a, Float b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (b + tA);
-            else if (a instanceof Double tA)
-                return (N) (Double) (b + tA);
-            else if (a instanceof Float tA)
-                return (N) (Float) (b + tA);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (b + tA);
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a + b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a + b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a + b);
+            else if (a instanceof Long)
+                return (N) (Long) (long) ((Long) a + b);
         return null;
     }
 
     public static <N extends Number> N sum(N a, Double b) {
-        if (a != null && b != null) {
-            if (a instanceof Integer tA) {
-                return (N) (Integer) (int) (b + tA);
-            } else if (a instanceof Double tA) {
-                return (N) (Double) (b + tA);
-            } else if (a instanceof Float tA) {
-                return (N) (Float) (float) (b + tA);
-            } else if (a instanceof Long tA) {
-                return (N) (Long) (long) (b + tA);
-            }
-        }
+        if (a != null && b != null)
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a + b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a + b);
+            else if (a instanceof Float)
+                return (N) (Float) (float) ((Float) a + b);
+            else if (a instanceof Long)
+                return (N) (Long) (long) ((Long) a + b);
         return null;
     }
 
 
     public static <N extends Number> N diff(N a, N b) {
         if (a != null && b != null)
-            if (b instanceof Integer tB)
-                return diff(a, tB);
-            else if (b instanceof Double tB)
-                return diff(a, tB);
-            else if (b instanceof Float tB)
-                return diff(a, tB);
-            else if (b instanceof Long tB)
-                return diff(a, tB);
+            if (b instanceof Integer)
+                return diff(a, (Integer) b);
+            else if (b instanceof Double)
+                return diff(a, (Double) b);
+            else if (b instanceof Float)
+                return diff(a, (Float) b);
+            else if (b instanceof Long)
+                return diff(a, (Long) b);
         return null;
     }
 
     public static <N extends Number> N diff(N a, Integer b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (tA - b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA - b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (tA - b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (tA - b);
+            if (a instanceof Integer)
+                return (N) (Integer) ((Integer) a - b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a - b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a - b);
+            else if (a instanceof Long)
+                return (N) (Long) ((Long) a - b);
         return null;
     }
 
     public static <N extends Number> N diff(N a, Long b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA - b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA - b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (tA - b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (tA - b);
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a - b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a - b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a - b);
+            else if (a instanceof Long)
+                return (N) (Long) ((Long) a - b);
         return null;
     }
 
     public static <N extends Number> N diff(N a, Float b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA - b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA - b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (tA - b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (tA - b);
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a - b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a - b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a - b);
+            else if (a instanceof Long)
+                return (N) (Long) (long) ((Long) a - b);
         return null;
     }
 
     public static <N extends Number> N diff(N a, Double b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA - b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA - b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (float) (tA - b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (tA - b);
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a - b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a - b);
+            else if (a instanceof Float)
+                return (N) (Float) (float) ((Float) a - b);
+            else if (a instanceof Long)
+                return (N) (Long) (long) ((Long) a - b);
         return null;
     }
 
 
     public static <N extends Number> N divide(N a, N b) {
         if (a != null && b != null)
-            if (b instanceof Integer tB)
-                return divide(a, tB);
-            else if (b instanceof Double tB)
-                return divide(a, tB);
-            else if (b instanceof Float tB)
-                return divide(a, tB);
-            else if (b instanceof Long tB)
-                return divide(a, tB);
+            if (b instanceof Integer)
+                return divide(a, (Integer) b);
+            else if (b instanceof Double)
+                return divide(a, (Double) b);
+            else if (b instanceof Float)
+                return divide(a, (Float) b);
+            else if (b instanceof Long)
+                return divide(a, (Long) b);
         return null;
     }
 
-    public static <N extends Number> N divide(N a, Integer b) {
-        if (a != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA / b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA / b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (float) (tA / b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (tA / b);
+    public static <N extends Number> N divide(N number, Integer a) {
+        if (number != null)
+            if (number instanceof Integer)
+                return (N) (Integer) (a / (Integer) number);
+            else if (number instanceof Double)
+                return (N) (Double) (a / (Double) number);
+            else if (number instanceof Float)
+                return (N) (Float) (a / (Float) number);
+            else if (number instanceof Long)
+                return (N) (Long) (a / (Long) number);
         return null;
     }
 
-    public static <N extends Number> N divide(N a, Float b) {
-        if (a != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA / b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA / b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (float) (tA / b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (tA / b);
+    public static <N extends Number> N divide(N number, Float a) {
+        if (number != null)
+            if (number instanceof Integer)
+                return (N) (Integer) (int) (a / (Integer) number);
+            else if (number instanceof Double)
+                return (N) (Double) (a / (Double) number);
+            else if (number instanceof Float)
+                return (N) (Float) (a / (Float) number);
+            else if (number instanceof Long)
+                return (N) (Long) (long) (a / (Long) number);
         return null;
     }
 
-    public static <N extends Number> N divide(N a, Long b) {
-        if (a != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA / b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA / b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (float) (tA / b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (tA / b);
+    public static <N extends Number> N divide(N number, Long a) {
+        if (number != null)
+            if (number instanceof Integer)
+                return (N) (Integer) (int) (a / (Integer) number);
+            else if (number instanceof Double)
+                return (N) (Double) (a / (Double) number);
+            else if (number instanceof Float)
+                return (N) (Float) (a / (Float) number);
+            else if (number instanceof Long)
+                return (N) (Long) (a / (Long) number);
         return null;
     }
 
-    public static <N extends Number> N divide(N a, Double b) {
-        if (a != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA / b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA / b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (float) (tA / b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (tA / b);
+    public static <N extends Number> N divide(N number, Double a) {
+        if (number != null)
+            if (number instanceof Integer)
+                return (N) (Integer) (int) (a / (Integer) number);
+            else if (number instanceof Double)
+                return (N) (Double) (a / (Double) number);
+            else if (number instanceof Float)
+                return (N) (Float) (float) (a / (Float) number);
+            else if (number instanceof Long)
+                return (N) (Long) (long) (a / (Long) number);
         return null;
     }
 
     public static <N extends Number> N divide(Integer a, N number) {
         if (number != null)
-            if (number instanceof Integer tA)
-                return (N) (Integer) (a / tA);
-            else if (number instanceof Double tA)
-                return (N) (Double) (a / tA);
-            else if (number instanceof Float tA)
-                return (N) (Float) (a / tA);
-            else if (number instanceof Long tA)
-                return (N) (Long) (a / tA);
+            if (number instanceof Integer)
+                return (N) (Integer) (int) (a / (Integer) number);
+            else if (number instanceof Double)
+                return (N) (Double) (a / (Double) number);
+            else if (number instanceof Float)
+                return (N) (Float) (a / (Float) number);
+            else if (number instanceof Long)
+                return (N) (Long) (a / (Long) number);
         return null;
     }
 
     public static <N extends Number> N divide(Float a, N number) {
         if (number != null)
-            if (number instanceof Integer tA)
-                return (N) (Integer) (int) (a / tA);
-            else if (number instanceof Double tA)
-                return (N) (Double) (a / tA);
-            else if (number instanceof Float tA)
-                return (N) (Float) (a / tA);
-            else if (number instanceof Long tA)
-                return (N) (Long) (long) (a / tA);
+            if (number instanceof Integer)
+                return (N) (Integer) (int) (a / (Integer) number);
+            else if (number instanceof Double)
+                return (N) (Double) (a / (Double) number);
+            else if (number instanceof Float)
+                return (N) (Float) (a / (Float) number);
+            else if (number instanceof Long)
+                return (N) (Long) (long) (a / (Long) number);
         return null;
     }
 
     public static <N extends Number> N divide(Double a, N number) {
         if (number != null)
-            if (number instanceof Integer tA)
-                return (N) (Integer) (int) (a / tA);
-            else if (number instanceof Double tA)
-                return (N) (Double) (a / tA);
-            else if (number instanceof Float tA)
-                return (N) (Float) (float) (a / tA);
-            else if (number instanceof Long tA)
-                return (N) (Long) (long) (a / tA);
+            if (number instanceof Integer)
+                return (N) (Integer) (int) (a / (Integer) number);
+            else if (number instanceof Double)
+                return (N) (Double) (a / (Double) number);
+            else if (number instanceof Float)
+                return (N) (Float) (float) (a / (Float) number);
+            else if (number instanceof Long)
+                return (N) (Long) (long) (a / (Long) number);
         return null;
     }
 
     public static <N extends Number> N divide(Long a, N number) {
         if (number != null)
-            if (number instanceof Integer tA)
-                return (N) (Integer) (int) (a / tA);
-            else if (number instanceof Double tA)
-                return (N) (Double) (a / tA);
-            else if (number instanceof Float tA)
-                return (N) (Float) (a / tA);
-            else if (number instanceof Long tA)
-                return (N) (Long) (a / tA);
+            if (number instanceof Integer)
+                return (N) (Integer) (int) (a / (Integer) number);
+            else if (number instanceof Double)
+                return (N) (Double) (a / (Double) number);
+            else if (number instanceof Float)
+                return (N) (Float) (a / (Float) number);
+            else if (number instanceof Long)
+                return (N) (Long) (a / (Long) number);
         return null;
     }
 
 
     public static <N extends Number> N product(N a, N b) {
         if (a != null && b != null)
-            if (b instanceof Integer tB)
-                return product(a, tB);
-            else if (b instanceof Double tB)
-                return product(a, tB);
-            else if (b instanceof Float tB)
-                return product(a, tB);
-            else if (b instanceof Long tB)
-                return product(a, tB);
+            if (b instanceof Integer)
+                return product(a, (Integer) b);
+            else if (b instanceof Double)
+                return product(a, (Double) b);
+            else if (b instanceof Float)
+                return product(a, (Float) b);
+            else if (b instanceof Long)
+                return product(a, (Long) b);
         return null;
     }
 
     public static <N extends Number> N product(N a, Integer b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (tA * b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA * b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (tA * b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (tA * b);
+            if (a instanceof Integer)
+                return (N) (Integer) ((Integer) a * b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a * b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a * b);
+            else if (a instanceof Long)
+                return (N) (Long) ((Long) a * b);
         return null;
     }
 
     public static <N extends Number> N product(N a, Long b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA * b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA * b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (tA * b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (tA * b);
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a * b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a * b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a * b);
+            else if (a instanceof Long)
+                return (N) (Long) ((Long) a * b);
         return null;
     }
 
     public static <N extends Number> N product(N a, Float b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA * b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA * b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (tA * b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (tA * b);
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a * b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a * b);
+            else if (a instanceof Float)
+                return (N) (Float) ((Float) a * b);
+            else if (a instanceof Long)
+                return (N) (Long) (long) ((Long) a * b);
         return null;
     }
 
     public static <N extends Number> N product(N a, Double b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return (N) (Integer) (int) (tA * b);
-            else if (a instanceof Double tA)
-                return (N) (Double) (tA * b);
-            else if (a instanceof Float tA)
-                return (N) (Float) (float) (tA * b);
-            else if (a instanceof Long tA)
-                return (N) (Long) (long) (tA * b);
+            if (a instanceof Integer)
+                return (N) (Integer) (int) ((Integer) a * b);
+            else if (a instanceof Double)
+                return (N) (Double) ((Double) a * b);
+            else if (a instanceof Float)
+                return (N) (Float) (float) ((Float) a * b);
+            else if (a instanceof Long)
+                return (N) (Long) (long) ((Long) a * b);
         return null;
     }
 
 
     public static <N extends Number> double pow(N a, N b) {
         if (a != null && b != null)
-            if (b instanceof Integer tB)
-                return pow(a, tB);
-            else if (b instanceof Double tB)
-                return pow(a, tB);
-            else if (b instanceof Float tB)
-                return pow(a, tB);
-            else if (b instanceof Long tB)
-                return pow(a, tB);
+            if (b instanceof Integer)
+                return pow(a, (Integer) b);
+            else if (b instanceof Double)
+                return pow(a, (Double) b);
+            else if (b instanceof Float)
+                return pow(a, (Float) b);
+            else if (b instanceof Long)
+                return pow(a, (Long) b);
         return 0;
     }
 
     public static <N extends Number> double pow(N a, Integer b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Double tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Float tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Long tA)
-                return Math.pow(tA, b);
+            if (a instanceof Integer)
+                return Math.pow((Integer) a, b);
+            else if (a instanceof Double)
+                return Math.pow((Double) a, b);
+            else if (a instanceof Float)
+                return Math.pow((Float) a, b);
+            else if (a instanceof Long)
+                return Math.pow((Long) a, b);
         return 0;
     }
 
     public static <N extends Number> double pow(N a, Long b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Double tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Float tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Long tA)
-                return Math.pow(tA, b);
+            if (a instanceof Integer)
+                return Math.pow((Integer) a, b);
+            else if (a instanceof Double)
+                return Math.pow((Double) a, b);
+            else if (a instanceof Float)
+                return Math.pow((Float) a, b);
+            else if (a instanceof Long)
+                return Math.pow((Long) a, b);
         return 0;
     }
 
     public static <N extends Number> double pow(N a, Float b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Double tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Float tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Long tA)
-                return Math.pow(tA, b);
+            if (a instanceof Integer)
+                return Math.pow((Integer) a, b);
+            else if (a instanceof Double)
+                return Math.pow((Double) a, b);
+            else if (a instanceof Float)
+                return Math.pow((Float) a, b);
+            else if (a instanceof Long)
+                return Math.pow((Long) a, b);
         return 0;
     }
 
     public static <N extends Number> double pow(N a, Double b) {
         if (a != null && b != null)
-            if (a instanceof Integer tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Double tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Float tA)
-                return Math.pow(tA, b);
-            else if (a instanceof Long tA)
-                return Math.pow(tA, b);
+            if (a instanceof Integer)
+                return Math.pow((Integer) a, b);
+            else if (a instanceof Double)
+                return Math.pow((Double) a, b);
+            else if (a instanceof Float)
+                return Math.pow((Float) a, b);
+            else if (a instanceof Long)
+                return Math.pow((Long) a, b);
         return 0;
     }
 
@@ -1075,23 +1072,6 @@ public class Util {
         return result;
     }
 
-
-    public static void clearConsole() {
-        // System.out.println("\033[H\033[2J");
-        // System.out.flush();
-        /*try {
-            final String os = System.getProperty("os.name");
-            if (os.contains("Windows"))
-                Runtime.getRuntime().exec("cls");
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }*/
-        try {
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        } catch (InterruptedException | IOException e) {
-            System.out.println(e.getMessage());
-        }
-    }
 
     public static void sleep(long millis) {
         try {
@@ -1119,7 +1099,7 @@ public class Util {
 
         @Override
         public String toString() {
-            return "{Text: '" + text + "', Index: " + index + "}";
+            return "{\"Text\": \"" + text + "\", \"Index\": " + index + "}";
         }
     }
 
@@ -1127,89 +1107,109 @@ public class Util {
         public MinMax {
             N a = min, b = max;
             if (a != null && b != null) {
-                if (a instanceof Integer tA) {
-                    if (b instanceof Integer tB) {
+                if (a instanceof Integer) {
+                    int tA = (Integer) a;
+                    if (b instanceof Integer) {
+                        int tB = (Integer) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Double tB) {
+                    } else if (b instanceof Double) {
+                        double tB = (Double) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Float tB) {
+                    } else if (b instanceof Float) {
+                        float tB = (Float) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Long tB) {
-                        Number tMax = Math.max(tA, tB);
-                        Number tMin = Math.min(tA, tB);
-                        max = (N) tMax;
-                        min = (N) tMin;
-                    }
-                } else if (a instanceof Double tA) {
-                    if (b instanceof Integer tB) {
-                        Number tMax = Math.max(tA, tB);
-                        Number tMin = Math.min(tA, tB);
-                        max = (N) tMax;
-                        min = (N) tMin;
-                    } else if (b instanceof Double tB) {
-                        Number tMax = Math.max(tA, tB);
-                        Number tMin = Math.min(tA, tB);
-                        max = (N) tMax;
-                        min = (N) tMin;
-                    } else if (b instanceof Float tB) {
-                        Number tMax = Math.max(tA, tB);
-                        Number tMin = Math.min(tA, tB);
-                        max = (N) tMax;
-                        min = (N) tMin;
-                    } else if (b instanceof Long tB) {
+                    } else if (b instanceof Long) {
+                        long tB = (Long) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
                     }
-                } else if (a instanceof Float tA) {
-                    if (b instanceof Integer tB) {
+                } else if (a instanceof Double) {
+                    double tA = (Double) a;
+                    if (b instanceof Integer) {
+                        int tB = (Integer) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Double tB) {
+                    } else if (b instanceof Double) {
+                        double tB = (Double) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Float tB) {
+                    } else if (b instanceof Float) {
+                        float tB = (Float) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Long tB) {
+                    } else if (b instanceof Long) {
+                        long tB = (Long) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
                     }
-                } else if (a instanceof Long tA) {
-                    if (b instanceof Integer tB) {
+                } else if (a instanceof Float) {
+                    float tA = (Float) a;
+                    if (b instanceof Integer) {
+                        int tB = (Integer) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Double tB) {
+                    } else if (b instanceof Double) {
+                        double tB = (Double) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Float tB) {
+                    } else if (b instanceof Float) {
+                        float tB = (Float) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
                         min = (N) tMin;
-                    } else if (b instanceof Long tB) {
+                    } else if (b instanceof Long) {
+                        long tB = (Long) b;
+                        Number tMax = Math.max(tA, tB);
+                        Number tMin = Math.min(tA, tB);
+                        max = (N) tMax;
+                        min = (N) tMin;
+                    }
+                } else if (a instanceof Long) {
+                    long tA = (Long) a;
+                    if (b instanceof Integer) {
+                        int tB = (Integer) b;
+                        Number tMax = Math.max(tA, tB);
+                        Number tMin = Math.min(tA, tB);
+                        max = (N) tMax;
+                        min = (N) tMin;
+                    } else if (b instanceof Float) {
+                        float tB = (Float) b;
+                        Number tMax = Math.max(tA, tB);
+                        Number tMin = Math.min(tA, tB);
+                        max = (N) tMax;
+                        min = (N) tMin;
+                    } else if (b instanceof Double) {
+                        double tB = (Double) b;
+                        Number tMax = Math.max(tA, tB);
+                        Number tMin = Math.min(tA, tB);
+                        max = (N) tMax;
+                        min = (N) tMin;
+                    } else if (b instanceof Long) {
+                        long tB = (Long) b;
                         Number tMax = Math.max(tA, tB);
                         Number tMin = Math.min(tA, tB);
                         max = (N) tMax;
