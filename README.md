@@ -1,4 +1,5 @@
-# Data
+# Data [![](https://jitpack.io/v/Petersburg2020/Data.svg)](https://jitpack.io/#Petersburg2020/Data)
+
 Data is a Java project that allows users to manipulate data from a String.
 
 #   Add Data to Your Project
