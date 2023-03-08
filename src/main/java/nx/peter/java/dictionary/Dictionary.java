@@ -1,5 +1,6 @@
 package nx.peter.java.dictionary;
 
+import nx.peter.java.util.storage.File;
 import nx.peter.java.util.storage.FileManager;
 import nx.peter.java.util.Random;
 import nx.peter.java.util.Util;
@@ -11,27 +12,56 @@ import java.util.List;
 
 public interface Dictionary {
     Word generateWord();
+
     Word getFirstWord();
+
     Word getLastWord();
+
     Word nextWord(IData<?> word);
+
     Word nextWord(CharSequence word);
+
     Word previousWord(IData<?> word);
+
     Word previousWord(CharSequence word);
+
+    boolean isFirstWord(CharSequence word);
+
+    boolean isLastWord(CharSequence word);
+
     boolean isLastWord(IData<?> word);
+
     boolean isFirstWord(IData<?> word);
+
+    Letters.Words getWords();
+
     Word getWord(CharSequence word);
+
+    Word getWord(IData<?> word);
+
+    List<String> getStringWords();
+
+    String[] getStringArrayWords();
+
     boolean containsWord(IData<?> word);
+
     boolean containsWord(CharSequence word);
+
     int getWordCount(CharSequence word);
+
     int getWordCount(IData<?> word);
+
     int getWordCount();
 
+    boolean isEmpty();
+
+    boolean isNotEmpty();
 
 
     abstract class Builder implements Dictionary {
         protected List<WordMeaning> dictionary;
-        private Type type;
-        private Texts texts;
+        protected Type type;
+        protected Texts texts;
 
         public static final String RAW_DICTIONARY = "dictionary.txt";
         public static final String RAW_WORD = "words.txt";
@@ -39,18 +69,17 @@ public interface Dictionary {
         public static final String RAW_BANK = "banks.txt";
         public static final String RAW_ADJECTIVE = "adjectives.txt";
         public static final String RAW_ADVERB = "adverbs.txt";
-        public static final String RAW_NOUN  = "nouns.txt";
+        public static final String RAW_NOUN = "nouns.txt";
         public static final String RAW_VERB = "verbs.txt";
         private static final String RAW_COUNTRY = "countries.txt";
 
-        public static final String ROOT_PATH = "src/nx/peter/store/dictionary/";
+        public static final String ROOT_PATH = File.FILES_FOLDER + "dictionary/";
 
         public Builder(Type type) {
             reset();
             setFilePath(type);
             format();
         }
-
 
         protected void reset() {
             type = null;
@@ -60,29 +89,41 @@ public interface Dictionary {
 
         protected void format() {
             if (type != null) {
-                List<String> lines = FileManager.readLines(getFilePath());
-                texts = new Texts(Util.toString(lines));
-                for (String line : lines) {
-                    if (type.equals(Type.Dictionary)) {
-                        String[] split = line.split(" - ");
-                        Word word = new Word(split[0].trim());
-                        word.setPartOfSpeech(getPartOfSpeech(split[1].charAt(0)));
-                        Sentence meaning = new Sentence(split[1].substring(2).trim());
-                        add(new IWordMeaning(word, meaning));
-                    } else
-                        add(new IWordMeaning(new Word(line)));
+                if (!type.equals(Type.LoremIpsum)) {
+                    List<String> lines = FileManager.readLines(getFilePath());
+                    texts = new Texts(Util.toString(lines));
+                    for (String line : lines) {
+                        if (type.equals(Type.Dictionary)) {
+                            String[] split = line.split(" - ");
+                            Word word = new Word(split[0].trim());
+                            word.setPartOfSpeech(getPartOfSpeech(split[1].charAt(0)));
+                            Sentence meaning = new Sentence(split[1].substring(2).trim());
+                            add(new IWordMeaning(word, meaning));
+                        } else
+                            add(new IWordMeaning(new Word(line)));
+                    }
+
+                } else {
+                    for (Word word : LoremIpsum.getInstance().getWords())
+                        add(new IWordMeaning(word));
                 }
             }
         }
 
         private Word.PartOfSpeech getPartOfSpeech(char letter) {
             switch (letter) {
-                case 'n': return Word.PartOfSpeech.Noun;
-                case 'v': return Word.PartOfSpeech.Verb;
-                case 'j': return Word.PartOfSpeech.Adjective;
-                case 'a': return Word.PartOfSpeech.Adverb;
-                case 'p': return Word.PartOfSpeech.Pronoun;
-                default: return Word.PartOfSpeech.Unknown;
+                case 'n':
+                    return Word.PartOfSpeech.Noun;
+                case 'v':
+                    return Word.PartOfSpeech.Verb;
+                case 'j':
+                    return Word.PartOfSpeech.Adjective;
+                case 'a':
+                    return Word.PartOfSpeech.Adverb;
+                case 'p':
+                    return Word.PartOfSpeech.Pronoun;
+                default:
+                    return Word.PartOfSpeech.Unknown;
             }
         }
 
@@ -108,16 +149,26 @@ public interface Dictionary {
 
         protected String getFilePath() {
             switch (type) {
-                case Adjective: return ROOT_PATH + RAW_ADJECTIVE;
-                case Adverb: return ROOT_PATH + RAW_ADVERB;
-                case Bank: return ROOT_PATH + RAW_BANK;
-                case Dictionary: return ROOT_PATH + RAW_DICTIONARY;
-                case Name: return ROOT_PATH + RAW_NAME;
-                case Noun: return ROOT_PATH + RAW_NOUN;
-                case Verb: return ROOT_PATH + RAW_VERB;
-                case Word: return ROOT_PATH + RAW_WORD;
-                case Country: return ROOT_PATH + RAW_COUNTRY;
-                default: return "";
+                case Adjective:
+                    return ROOT_PATH + RAW_ADJECTIVE;
+                case Adverb:
+                    return ROOT_PATH + RAW_ADVERB;
+                case Bank:
+                    return ROOT_PATH + RAW_BANK;
+                case Dictionary:
+                    return ROOT_PATH + RAW_DICTIONARY;
+                case Name:
+                    return ROOT_PATH + RAW_NAME;
+                case Noun:
+                    return ROOT_PATH + RAW_NOUN;
+                case Verb:
+                    return ROOT_PATH + RAW_VERB;
+                case Word:
+                    return ROOT_PATH + RAW_WORD;
+                case Country:
+                    return ROOT_PATH + RAW_COUNTRY;
+                default:
+                    return "";
             }
         }
 
@@ -322,7 +373,7 @@ public interface Dictionary {
             List<Sentence> meanings = new ArrayList<>();
             for (WordMeaning detail : dictionary)
                 meanings.add(detail.getMeaning());
-            return new ISentence.Sentences(meanings);
+            return new ISentence.Sentences(texts, meanings);
         }
 
         public List<String> getStringMeanings() {
@@ -340,6 +391,7 @@ public interface Dictionary {
         Adverb,
         Bank,
         Dictionary,
+        LoremIpsum,
         Name,
         Noun,
         Verb,
@@ -349,10 +401,15 @@ public interface Dictionary {
 
     interface WordMeaning {
         Word getWord();
+
         Sentence getMeaning();
+
         boolean isValid();
+
         boolean equalsWord(IData<?> word);
+
         boolean equals(WordMeaning another);
+
         boolean equalsMeaning(IData<?> meaning);
     }
 }

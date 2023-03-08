@@ -30,6 +30,6 @@ This is how to initiate it; using the Java syntax:
 Using other functions too, you can modify data by other functions as shown below:
 ![other functions](https://user-images.githubusercontent.com/61753269/209491603-d00d2519-a454-4eee-acf0-9da1a8c8b238.png)
 
-The documentation will soon be released. 
+The documentation will be released soon. 
 
 Stay tuned!

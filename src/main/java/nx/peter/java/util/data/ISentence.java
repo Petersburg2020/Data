@@ -311,7 +311,8 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
                             }
                         }
                     }
-                } break;
+                }
+                break;
                 case GrammaticalError: {
                     String OTHERS = "the he she a her him they them we to though thorough our ours you yours their theirs there over above";
                     for (Word w : getWords())
@@ -416,14 +417,17 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
         });
     }
 
+    public Lines extractLines() {
+        return new Lines(this, DataManager.extractLines(this));
+    }
+
     public Sentences extractSentences() {
-        return new Sentences(DataManager.extractSentences(this));
+        return new Sentences(this, DataManager.extractSentences(this));
     }
 
     public Paragraphs extractParagraphs() {
-        return new Paragraphs(DataManager.extractParagraphs(this));
+        return new Paragraphs(this, DataManager.extractParagraphs(this));
     }
-
 
 
     public static class ErrorDefinition {
@@ -451,123 +455,125 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
         }
     }
 
-    public static class Sentences implements Iterable<Sentence> {
-        protected List<Sentence> sentences;
+    protected static class LettersList<S extends Letters<S>> implements Iterable<S> {
+        protected List<S> letters;
+        protected final Letters<?> source;
 
-        public Sentences(List<Sentence> sentences) {
-            this.sentences = sentences;
+        public LettersList(Letters<?> source, List<S> letters) {
+            this.source = source;
+            this.letters = letters;
         }
 
-        public int size() {
-            return sentences.size();
+        public boolean contains(S paragraph) {
+            return paragraph != null && letters.contains(paragraph);
         }
 
-        public boolean contains(ISentence sentence) {
-            for (Sentence s : sentences)
-                if (s.equals(sentence))
-                    return true;
+        public boolean containsIgnoreType(Letters<?> letters) {
+            if (letters != null)
+                for (S s : this.letters)
+                    if (s.contains(letters))
+                        return true;
             return false;
         }
 
+        public int size() {
+            return letters.size();
+        }
+
         public boolean isEmpty() {
-            return sentences.isEmpty();
+            return letters.isEmpty();
         }
 
         public boolean isNotEmpty() {
             return !isEmpty();
+        }
+
+        @Override
+        public Iterator<S> iterator() {
+            return letters.iterator();
+        }
+
+        public Letters<?> getSource() {
+            return source;
+        }
+
+        public boolean equals(LettersList<S> another) {
+            return another != null && letters.equals(another.letters);
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder toString = new StringBuilder();
+            int count = 0;
+            for (S s : letters)
+                toString.append(s.get()).append(++count < size() ? "\n" : "");
+            return toString.toString();
+        }
+
+    }
+
+    public static class Sentences  extends LettersList<Sentence> {
+        public Sentences(Letters<?> source, List<Sentence> sentences) {
+            super(source, sentences);
         }
 
         public List<Sentence> getSentences() {
-            return new ArrayList<>(sentences);
+            return new ArrayList<>(letters);
         }
 
-        public ISentence get(int index) {
-            return index > 0 && index <= size() ? sentences.get(index - 1) : null;
+        public Sentence getSentence(int sentence) {
+            return sentence > 0 && sentence <= size() ? letters.get(sentence - 1) : new Sentence();
         }
 
-        @Override
-        public Iterator<Sentence> iterator() {
-            return sentences.iterator();
-        }
-
-        @Override
-        public String toString() {
-            String toString = "";
-            int count = 0;
-            for (Sentence sentence : sentences)
-                toString += sentence.get() + (++count < size() ? "\n" : "");
-            return toString;
-        }
-
-        public boolean equals(Sentences another) {
-            return another != null && another.sentences.equals(sentences);
-        }
     }
 
-    public static class Paragraphs implements IParagraph {
-        protected List<Paragraph> paragraphs;
+    public static class Paragraphs extends LettersList<Paragraph> {
 
-        public Paragraphs(Paragraph... paragraphs) {
-            this(Arrays.asList(paragraphs));
+        public Paragraphs(Letters<?> source, Paragraph... paragraphs) {
+            this(source, Arrays.asList(paragraphs));
         }
 
-        public Paragraphs(List<Paragraph> paragraphs) {
-            this.paragraphs = paragraphs;
+        public Paragraphs(Letters<?> source, List<Paragraph> paragraphs) {
+            super(source, paragraphs);
         }
 
-        public Paragraph getParagraph(int index) {
-            return index >= -1 && index <= size() ? paragraphs.get(index) : null;
-        }
-
-        public int size() {
-            return paragraphs.size();
-        }
-
-        public boolean isEmpty() {
-            return paragraphs.isEmpty();
-        }
-
-        public boolean isNotEmpty() {
-            return !isEmpty();
-        }
-
-        public boolean contains(ISentence sentence) {
-            for (Paragraph p : paragraphs)
-                if (p.equals(sentence))
-                    return true;
-            return false;
+        public Paragraph getParagraph(int paragraph) {
+            return paragraph >= -1 && paragraph <= size() ? letters.get(paragraph) : null;
         }
 
         public List<Paragraph> getParagraphs() {
-            return new ArrayList<>(paragraphs);
+            return new ArrayList<>(letters);
         }
 
-        @Override
-        public Iterator<Paragraph> iterator() {
-            return paragraphs.iterator();
-        }
-
-        @Override
-        public String toString() {
-            String toString = "";
-            int count = 0;
-            for (Paragraph paragraph : paragraphs)
-                toString += paragraph.get() + (++count < size() ? "\n" : "");
-            return toString;
-        }
-
-        public boolean equals(Paragraphs another) {
-            return another != null && paragraphs.equals(another.paragraphs);
-        }
-
-        @Override
         public Sentences getSentences() {
             List<Sentence> sentences = new ArrayList<>();
-            for (Paragraph paragraph : paragraphs)
+            for (Paragraph paragraph : letters)
                 sentences.addAll(paragraph.extractSentences().getSentences());
-            return new Sentences(sentences);
+            return new Sentences(getSource(), sentences);
         }
     }
+
+    public static class Lines extends LettersList<Line> {
+
+        public Lines(Letters<?> source, Line... lines) {
+            this(source, Arrays.asList(lines));
+        }
+
+        public Lines(Letters<?> source, List<Line> lines) {
+            super(source, lines);
+        }
+
+        public Line getLine(int line) {
+            return line >= -1 && line <= size() ? letters.get(line) : null;
+        }
+
+        public List<Line> getLines() {
+            return new ArrayList<>(letters);
+        }
+
+    }
+
+
 
     public interface OnScanErrorListener {
         void onScanStarted(SentenceError error, long startTimeInMillis);
@@ -579,21 +585,21 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
 
     public interface OnGetErrorsListener {
         void onGetErrors(List<ErrorDefinition> errors, long startTimeInMillis, long endTimeInMillis, int durationInSeconds);
+
         void onStillGetting(List<SentenceError> asList, int duration);
     }
 
     public interface OnGetTotalErrorsListener {
         void onGetTotalErrors(int totalErrors, long startTimeInMillis, long endTimeInMillis, int durationInSeconds);
+
         void onStillGetting(int errorCount, int duration);
     }
 
     public interface OnCheckErrorListener {
         void onFinishedCheckError(SentenceError error, boolean exists);
+
         void onStillChecking(SentenceError error, int duration);
     }
 
-    protected interface IParagraph extends Iterable<Paragraph> {
-        Sentences getSentences();
-    }
 
 }

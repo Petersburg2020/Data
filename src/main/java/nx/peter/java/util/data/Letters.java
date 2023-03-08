@@ -24,6 +24,10 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         super(letters);
     }
 
+    @Override
+    public L set(CharSequence letters) {
+        return super.set(letters instanceof IData ? ((IData<?>) letters).get() : letters);
+    }
 
     public Alphabet getAlphabetAt(int index) {
         return index > -1 && index < length() && DataManager.isAlphabet(charAt(index)) ? new Alphabet(charAt(index)) : null;
@@ -72,7 +76,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     public int getPreviousAlphabetIndex(int start) {
         if (start > 0 && start <= length() - 1)
             for (int index = start + 1; index >= 0; index--)
-                if (DataManager.isAlphabet(data.substring(0, start).charAt(index)))
+                if (DataManager.isAlphabet(data.charAt(index)))
                     return index;
         return -1;
     }

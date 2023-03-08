@@ -250,6 +250,11 @@ public abstract class Data<D extends Data> implements IData<D> {
 	}
 
 	@Override
+	public boolean isLine() {
+		return getType().equals(DataType.Line);
+	}
+
+	@Override
 	public boolean isIndex() {
 		return getType().equals(DataType.Index);
 	}
@@ -453,7 +458,7 @@ public abstract class Data<D extends Data> implements IData<D> {
 	}
 
 	@Override
-	public boolean contains(IData data) {
+	public boolean contains(IData<?> data) {
 		return contains(data + "");
 	}
 
@@ -493,8 +498,8 @@ public abstract class Data<D extends Data> implements IData<D> {
 	}
 
 	@Override
-	public int comparesTo(IData data) {
-		return comparesTo(String.valueOf(data));
+	public int comparesTo(IData<?> data) {
+		return comparesTo(data != null ? data.get() : "");
 	}
 
 	@Override
@@ -503,17 +508,17 @@ public abstract class Data<D extends Data> implements IData<D> {
 	}
 
 	@Override
-	public boolean equals(IData another) {
+	public boolean equals(IData<?> another) {
 		return another != null && another.getClass().equals(getClass()) && equalsIgnoreType(another) && another.getType().equals(getType());
 	}
 
 	@Override
-	public boolean equalsIgnoreCase(IData another) {
+	public boolean equalsIgnoreCase(IData<?> another) {
 		return another != null && another.get().equalsIgnoreCase(get());
 	}
 
 	@Override
-	public boolean equalsIgnoreType(IData another) {
+	public boolean equalsIgnoreType(IData<?> another) {
 		return another != null && another.get().equals(get());
 	}
 

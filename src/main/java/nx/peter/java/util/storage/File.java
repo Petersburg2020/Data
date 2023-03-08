@@ -114,7 +114,7 @@ import java.util.List;
  * @since   1.0
  */
 public class File extends java.io.File {
-    public static final String FILES_FOLDER = "src/nx/peter/store/";
+    public static final String FILES_FOLDER = "src/main/java/nx/peter/store/";
 
     /**
      * Creates a new {@code File} instance by converting the given

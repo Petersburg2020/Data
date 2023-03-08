@@ -1,7 +1,9 @@
 package nx.peter.java.util.data;
 
+import nx.peter.java.util.Util;
 import nx.peter.java.util.data.comparator.ComparedLetters;
 import nx.peter.java.util.param.IntString;
+import nx.peter.java.util.param.StringPair;
 
 import java.util.*;
 
@@ -488,39 +490,24 @@ public class DataManager {
 
     public static List<Paragraph> extractParagraphs(CharSequence letters) {
         List<Paragraph> paragraphs = new ArrayList<>();
-        String texts = letters.toString();
+        Texts texts = new Texts(letters != null ? letters.toString() : "");
         int start = 0, end;
-        if (letters.length() > 0)
-            while (start < letters.length() - 1) {
-                end = texts.indexOf(".\n", start);
-                String paragraph = "";
-                if (end >= 0) {
-                    paragraph = texts.substring(start, end + 1);
-                    if (paragraph.contains("?\n")) {
-                        end = paragraph.indexOf("?\n");
-                        paragraph = paragraph.substring(0, end + 1);
-                    }
-                    if (paragraph.contains("!\n")) {
-                        end = paragraph.indexOf("!\n");
-                        paragraph = paragraph.substring(0, end + 1);
-                    }
-                } else {
-                    if (texts.contains("?\n")) {
-                        end = texts.indexOf("?\n");
-                        paragraph = texts.substring(0, end + 1);
-                        if (paragraph.contains("!\n")) {
-                            end = paragraph.indexOf("!\n");
-                            paragraph = paragraph.substring(0, end + 1);
-                        }
-                    } else if (texts.contains("!\n")) {
-                        end = texts.indexOf("!\n");
-                        paragraph = texts.substring(0, end + 1);
-                    } else paragraph = texts.substring(start);
-                }
-                start = end + 1;
+        if (texts.length() > 0)
+            while (start > -1 && start < texts.length() - 1) {
+                IntString first = getFirstOccurrence(
+                        new IntString('.', texts.indexOf(".\n", start)),
+                        new IntString('?', texts.indexOf("?\n", start)),
+                        new IntString('!', texts.indexOf("!\n", start)),
+                        new IntString('\n', texts.indexOf("\n", start))
+                );
+                end = first.index;
+
+                String paragraph = end >= 0 && end < texts.length() - 2 ? texts.substring(start, end + 1) : texts.substring(start);
                 paragraphs.add(new Paragraph(paragraph.trim()));
-                if (start <= 0)
-                    break;
+
+                if (end <= 0) break;
+
+                start = end + (first.letter.contentEquals("\n") ? "" : " ").length();
             }
         return paragraphs;
     }
@@ -530,58 +517,63 @@ public class DataManager {
     }
 
     public static <S extends ISentence> List<Paragraph> extractParagraphs(S texts) {
-        return extractParagraphs(texts.get());
+        return extractParagraphs(texts != null ? texts.get() : "");
+    }
+
+    public static List<Line> extractLines(CharSequence letters) {
+        List<Line> lines = new ArrayList<>();
+        String texts = letters != null ? letters.toString() : "";
+        Letters.Split split = new Texts(texts).split("\n");
+        for (String data : split) lines.add(new Line(data));
+        return lines;
     }
 
     public static List<Sentence> extractSentences(CharSequence letters) {
         List<Sentence> sentences = new ArrayList<>();
-        String texts = letters.toString();
+        Texts texts = new Texts(letters != null ? letters.toString() : "");
+
         int start = 0, end;
-        if (letters.length() > 0)
-            while (start < letters.length() - 1) {
-                end = texts.indexOf(". ", start);
-                String sentence = "";
-                if (end >= 0) {
-                    // Main.println("We are here for (.) cos end=" + end);
-                    sentence = texts.substring(start, end + 1);
-                    if (sentence.contains("? ")) {
-                        // Main.println("We are here for (?) cos end=" + end);
-                        end = sentence.indexOf("? ");
-                        sentence = sentence.substring(0, end + 1);
-                    }
-                    if (sentence.contains("! ")) {
-                        // Main.println("We are here for (!) cos end=" + end);
-                        end = sentence.indexOf("! ");
-                        sentence = sentence.substring(0, end + 1);
-                    }
-                } else {
-                    if (texts.contains("? ")) {
-                        // Main.println("We are here for (?) cos end=" + end);
-                        end = texts.indexOf("? ");
-                        sentence = texts.substring(0, end + 1);
-                        if (sentence.contains("! ")) {
-                            // Main.println("We are here for (!) cos end=" + end);
-                            end = sentence.indexOf("! ");
-                            sentence = sentence.substring(0, end + 1);
-                        }
-                    } else if (texts.contains("! ")) {
-                        end = texts.indexOf("! ");
-                        sentence = texts.substring(0, end + 1);
-                    } else {
-                        // Main.println("We are here for (None) cos end=" + end);
-                        sentence = texts.substring(start);
-                    }
-                }
-                start = end + 1;
+        if (texts.length() > 0)
+            while (start < texts.length() - 1) {
+                IntString first = getFirstOccurrence(
+                        new IntString('.', texts.indexOf(". ", start)),
+                        new IntString('?', texts.indexOf("? ", start)),
+                        new IntString('!', texts.indexOf("! ", start)),
+                        new IntString('\n', texts.indexOf("\n", start))
+                );
+                end = first.index;
+
+                String sentence = end >= 0 && end < texts.length() - 2 ? texts.substring(start, end + 1) : texts.substring(start);
                 sentences.add(new Sentence(sentence.trim()));
-                if (start <= 0)
-                    break;
+
+                if (end <= 0) break;
+
+                start = end + (first.letter.contentEquals("\n") ? "" : " ").length();
             }
         return sentences;
     }
 
-    public static <S extends ISentence> List<Sentence> extractSentences(S sentence) {
-        return extractSentences(sentence.get());
+    public static IntString getFirstOccurrence(IntString... values) {
+        IntString value = values.length > 0 ? values[0] : null;
+        if (value != null)
+            for (IntString str : values)
+                value = getFirstOccurrence(value, str);
+        return value;
+    }
+
+    public static IntString getFirstOccurrence(IntString a, IntString b) {
+        return getFirstOccurrence(a.index, a.letter, b.index, b.letter);
+    }
+
+    public static IntString getFirstOccurrence(int a, String aStr, int b, String bStr) {
+        int min = Math.min(a, b);
+        int index = min > -1 ? min : Math.max(a, b);
+        String letter = index == a ? aStr : bStr;
+        return new IntString(letter, index);
+    }
+
+    public static <S extends ISentence> List<Sentence> extractSentences(S texts) {
+        return extractSentences(texts != null ? texts.get() : "");
     }
 
     public static List<Sentence> extractSentences(Texts texts) {
@@ -748,10 +740,16 @@ public class DataManager {
 
             Object val;
             switch (type) {
-                case OBJECT: val = extractObject(value); break;
-                case ARRAY: val = extractArray(value); break;
-                default: val = toObject(value);
-            };
+                case OBJECT:
+                    val = extractObject(value);
+                    break;
+                case ARRAY:
+                    val = extractArray(value);
+                    break;
+                default:
+                    val = toObject(value);
+            }
+            ;
 
             array.add(val);
 
@@ -810,9 +808,14 @@ public class DataManager {
 
             Object val;
             switch (type) {
-                case OBJECT: val = extractObject(value); break;
-                case ARRAY: val = extractArray(value); break;
-                default: val = toObject(value);
+                case OBJECT:
+                    val = extractObject(value);
+                    break;
+                case ARRAY:
+                    val = extractArray(value);
+                    break;
+                default:
+                    val = toObject(value);
             }
             object.put(key, val);
 
@@ -896,13 +899,20 @@ public class DataManager {
 
     public static Object toObject(String value) {
         switch (getType(value)) {
-            case BOOLEAN: return value.contentEquals("true");
-            case INTEGER: return extractIntegers(value).get(0);
-            case LONG: return !extractLongs(value).isEmpty() ? extractLongs(value).get(0) : Long.MIN_VALUE;
-            case FLOAT: return !extractFloats(value).isEmpty() ? extractFloats(value).get(0) : Float.MIN_VALUE;
-            case DOUBLE: return !extractDecimals(value).isEmpty() ? extractDecimals(value).get(0) : Double.MIN_VALUE;
-            case STRING: return value.length() > 1 ? new Word(value).remove("\"", value.length() - 2).remove("\"").replaceAll("@10", "\n").replaceAll("@09", "\t").get() : value;
-            default: return null;
+            case BOOLEAN:
+                return value.contentEquals("true");
+            case INTEGER:
+                return extractIntegers(value).get(0);
+            case LONG:
+                return !extractLongs(value).isEmpty() ? extractLongs(value).get(0) : Long.MIN_VALUE;
+            case FLOAT:
+                return !extractFloats(value).isEmpty() ? extractFloats(value).get(0) : Float.MIN_VALUE;
+            case DOUBLE:
+                return !extractDecimals(value).isEmpty() ? extractDecimals(value).get(0) : Double.MIN_VALUE;
+            case STRING:
+                return value.length() > 1 ? new Word(value).remove("\"", value.length() - 2).remove("\"").replaceAll("@10", "\n").replaceAll("@09", "\t").get() : value;
+            default:
+                return null;
         }
     }
 

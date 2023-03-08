@@ -389,9 +389,12 @@ public class Util {
 
     public static int indexOf(String source, String text, int index, Position position) {
         switch (position) {
-            case After: return source.substring(0, index).lastIndexOf(text);
-            case Before: return source.substring(index + 1).indexOf(text);
-            default: return -1;
+            case After:
+                return source.substring(0, index).lastIndexOf(text);
+            case Before:
+                return source.substring(index + 1).indexOf(text);
+            default:
+                return -1;
         }
     }
 
@@ -399,10 +402,14 @@ public class Util {
 
     public static String toString(List<String> lines) {
         StringBuilder text = new StringBuilder();
+        int count = 0;
         for (String line : lines)
-            if (line != null)
-                text.append(line).append("\n");
-        return text.substring(0, text.lastIndexOf("\n"));
+            if (line != null) {
+                text.append(line);
+                if (count < lines.size() - 1)
+                    text.append("\n");
+            }
+        return text.toString();
     }
 
     public static <O> List<String> toList(List<O> lines) {
@@ -1612,6 +1619,7 @@ public class Util {
 
     /**
      * An array of items
+     *
      * @param <I> item type
      */
     public static abstract class Array<I> implements Iterable<I> {
