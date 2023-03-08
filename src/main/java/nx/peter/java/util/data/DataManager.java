@@ -524,7 +524,11 @@ public class DataManager {
         List<Line> lines = new ArrayList<>();
         String texts = letters != null ? letters.toString() : "";
         Letters.Split split = new Texts(texts).split("\n");
-        for (String data : split) lines.add(new Line(data));
+        int line = 0;
+        for (String data : split) {
+            line++;
+            lines.add(new Line(line, data));
+        }
         return lines;
     }
 

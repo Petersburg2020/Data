@@ -2,16 +2,30 @@ package nx.peter.java.util.data;
 
 //
 public class Line extends Letters<Line> {
+    protected int number;
 
-    public Line() {
+    public Line(int number) {
+        super();
+        setNumber(number);
     }
 
-    public Line(char... letters) {
+    public Line(int number, char... letters) {
         super(letters);
+        setNumber(number);
     }
 
-    public Line(CharSequence letters) {
+    public Line(int number, CharSequence letters) {
         super(letters);
+        setNumber(number);
+    }
+
+    public Line setNumber(int number) {
+        this.number = number;
+        return this;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     @Override
@@ -20,6 +34,8 @@ public class Line extends Letters<Line> {
             return super.set(letters);
         return this;
     }
+
+
 
     @Override
     public DataType getType() {

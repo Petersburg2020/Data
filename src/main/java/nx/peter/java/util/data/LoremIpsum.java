@@ -32,11 +32,17 @@ public class LoremIpsum {
         paragraphs = new ArrayList<>();
         List<String> lines = FileManager.readLines(File.FILES_FOLDER + "dictionary/lorem_texts.txt");
         for (int line = 0; line < lines.size() / 2; line += 2) {
-            this.lines.add(new Line(lines.get(line)));
-            paragraphs.add(new Paragraph(lines.get(line)));
+            Paragraph paragraph = new Paragraph(lines.get(line));
+            for (Line l : paragraph.extractLines())
+                this.lines.add(l.setNumber(this.lines.size() + 1));
+            paragraphs.add(paragraph);
         }
         lorem = Util.toString(lines);
         sentences = getParagraphs().getSentences().getSentences();
+    }
+
+    public Line getLine(int line) {
+        return getLines().getLine(line);
     }
 
     public Paragraph getParagraph(int paragraph) {

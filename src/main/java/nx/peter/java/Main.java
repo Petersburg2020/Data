@@ -13,6 +13,7 @@ public class Main {
         Dictionary dictionary = ipsum.getLoremDictionary();
         System.out.println(dictionary.generateWord().toSentenceCase());
 
+        System.out.println(ipsum.getLines());
 
     }
 }
