@@ -1,16 +1,16 @@
 package nx.peter.java.util.data;
 
 import nx.peter.java.dictionary.Dictionary;
+import nx.peter.java.dictionary.LatinDictionary;
 import nx.peter.java.util.Util;
-import nx.peter.java.util.storage.File;
-import nx.peter.java.util.storage.FileManager;
+import nx.peter.java.io.File;
+import nx.peter.java.io.FileManager;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class LoremIpsum {
-    protected List<Paragraph> paragraphs;
+    protected List<Paragraph> paragraphs, intParagraphs;
     protected List<Sentence> sentences;
     protected List<Line> lines;
     protected String lorem;
@@ -19,26 +19,26 @@ public class LoremIpsum {
         initParagraphs();
     }
 
-    private LoremIpsum(List<Paragraph> paragraphs) {
-        this.paragraphs = paragraphs;
-    }
-
     public static LoremIpsum getInstance() {
         return new LoremIpsum();
     }
 
     private void initParagraphs() {
+        lorem = "";
         this.lines = new ArrayList<>();
         paragraphs = new ArrayList<>();
         List<String> lines = FileManager.readLines(File.FILES_FOLDER + "dictionary/lorem_texts.txt");
         for (int line = 0; line < lines.size() / 2; line += 2) {
             Paragraph paragraph = new Paragraph(lines.get(line));
-            for (Line l : paragraph.extractLines())
-                this.lines.add(l.setNumber(this.lines.size() + 1));
+            lorem += lines.get(line);
+            if (line < lines.size() - 2) lorem += "\n";
             paragraphs.add(paragraph);
         }
-        lorem = Util.toString(lines);
         sentences = getParagraphs().getSentences().getSentences();
+
+        int line = 0;
+        for (Sentence sentence : sentences)
+            this.lines.add(new Line(++line, sentence.get()));
     }
 
     public Line getLine(int line) {
@@ -74,6 +74,10 @@ public class LoremIpsum {
         return new Texts.Lines(getLoremText(), lines);
     }
 
+    public int getLineCount() {
+        return getLines().size();
+    }
+
     public Texts.Sentences getSentences() {
         return new Texts.Sentences(getLoremText(), sentences);
     }
@@ -99,7 +103,7 @@ public class LoremIpsum {
     public Texts.Words getWords() {
         List<Word> words = new ArrayList<>();
         for (Paragraph p : paragraphs)
-            words.addAll(p.getWords().toList());
+            words.addAll(p.extractWords().toList());
         return new Texts.Words(words, getTexts());
     }
 
@@ -123,7 +127,7 @@ public class LoremIpsum {
         return temp;
     }
 
-    public Dictionary getLoremDictionary() {
+    public Dictionary getDictionary() {
         return new IDictionary();
     }
 

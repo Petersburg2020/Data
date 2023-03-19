@@ -8,6 +8,7 @@ public class Word extends Letters<Word> {
         Interjection,
         Noun,
         Pronoun,
+        Preposition,
         Unknown,
         Verb
     }
@@ -16,6 +17,18 @@ public class Word extends Letters<Word> {
 
     public Word(){
         super();
+    }
+
+    public Word(CharSet charSet) {
+        super(charSet);
+    }
+
+    public Word(CharSet charSet, char... letters) {
+        super(charSet, letters);
+    }
+
+    public Word(CharSet charSet, CharSequence letters) {
+        super(charSet, letters);
     }
 
     public Word(char... word) {
@@ -70,7 +83,7 @@ public class Word extends Letters<Word> {
 
     @Override
     public String toString() {
-        return "(" + (!partOfSpeech.equals(PartOfSpeech.Unknown) && partOfSpeech.toString().length() > 4 ? partOfSpeech.toString().substring(0, 3) : partOfSpeech) + ") " + super.toString();
+        return "(" + (!partOfSpeech.equals(PartOfSpeech.Unknown) && partOfSpeech.toString().length() > 4 ? partOfSpeech.toString().substring(0, !partOfSpeech.equals(PartOfSpeech.Preposition) ? 3 : 4) : partOfSpeech) + ") " + super.toString();
     }
 
 

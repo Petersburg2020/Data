@@ -1,4 +1,4 @@
-package nx.peter.java.util.storage;
+package nx.peter.java.io;
 
 import nx.peter.java.util.Util;
 

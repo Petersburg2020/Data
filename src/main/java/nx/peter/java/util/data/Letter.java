@@ -1,32 +1,63 @@
 package nx.peter.java.util.data;
 
+import java.nio.charset.StandardCharsets;
+
 public class Letter<L extends Letter> extends Data<L> {
 	protected int index;
+	protected CharSet charSet;
 	
 	public Letter() {
 		super();
 	}
-	
+
+	public Letter(CharSet charSet) {
+		this(charSet, "");
+	}
+
 	public Letter(char letter) {
 		super(letter);
 	}
-	
+
+	public Letter(CharSet charSet, char alphabet) {
+		this(charSet, alphabet + "");
+	}
+
 	public Letter(CharSequence letter) {
 		super(letter);
 	}
-	
+
+	public Letter(CharSet charSet, CharSequence alphabet) {
+		super(alphabet);
+		setCharSet(charSet);
+	}
+
 	public Letter(char letter, int index) {
 		super(letter);
 		this.index = index;
 	}
 	
-	public Letter(Letter another) {
-		this(another != null ? another.get() : "", another != null ? another.getIndex() : -1);
+	public Letter(Letter<?> another) {
+		this(another != null ? another.charSet : CharSet.English, another != null ? another.get() : "", another != null ? another.getIndex() : -1);
 	}
 	
 	public Letter(CharSequence letter, int index) {
 		super(letter);
 		this.index = index;
+	}
+
+	public Letter(CharSet charSet, CharSequence letter, int index) {
+		super(letter);
+		this.index = index;
+		setCharSet(charSet);
+	}
+
+	public CharSet getCharSet() {
+		return charSet;
+	}
+
+	public L setCharSet(CharSet charSet) {
+		this.charSet = charSet;
+		return set(data);
 	}
 
 	public int getIndex() {
@@ -37,6 +68,7 @@ public class Letter<L extends Letter> extends Data<L> {
 	public L reset() {
 		super.reset();
 		index = -1;
+		setCharSet(CharSet.English);
 		return (L) this;
 	}
 	
@@ -91,15 +123,28 @@ public class Letter<L extends Letter> extends Data<L> {
 		return DataType.Letter;
 	}
 	
-	public boolean equalsIgnoreCase(Letter another) {
-		return new Letter(this).toLowerCase().equals(new Letter(another).toLowerCase());
+	public boolean equalsIgnoreCase(Letter<?> another) {
+		return another != null && DataManager.equalsIgnoreCaseAlphabet(another.get(), get());
 	}
 
 	@Override
-	public boolean equals(IData another) {
-		return super.equals(another) && (another instanceof Letter && ((Letter) another).getIndex() == index);
+	public boolean equalsIgnoreCase(IData<?> another) {
+		return another instanceof Letter && equalsIgnoreCase((Letter<?>) another);
+	}
+
+	@Override
+	public boolean equalsIgnoreType(IData<?> another) {
+		return another != null && DataManager.equalsIgnoreCaseAlphabet(another.get(), get());
+	}
+
+	protected CharSequence toUtf8(CharSequence what) {
+		return charSet.equals(IData.CharSet.Latin) ? super.toUtf8(what) : what;
+	}
+
+	@Override
+	public boolean equals(IData<?> another) {
+		return another instanceof Letter && ((Letter<?>) another).index == index && equalsIgnoreType(another);
 	}
 	
-	
-	
+
 }

@@ -7,13 +7,18 @@ import nx.peter.java.util.data.comparator.ComparedLetters;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
 public abstract class Letters<L extends Letters> extends Data<L> {
+    protected CharSet charSet;
+
     public Letters() {
         super();
+    }
+
+    public Letters(CharSet charSet) {
+        this(charSet, "");
     }
 
     public Letters(char... letters) {
@@ -24,10 +29,183 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         super(letters);
     }
 
+    public Letters(CharSet charSet, char... letters) {
+        super(letters);
+        setCharSet(charSet);
+    }
+
+    public Letters(CharSet charSet, CharSequence letters) {
+        super(letters);
+        setCharSet(charSet);
+    }
+
+    @Override
+    public L reset() {
+        charSet = CharSet.English;
+        return super.reset();
+    }
+
     @Override
     public L set(CharSequence letters) {
         return super.set(letters instanceof IData ? ((IData<?>) letters).get() : letters);
     }
+
+    public CharSet getCharSet() {
+        return charSet;
+    }
+
+    public L setCharSet(CharSet charSet) {
+        this.charSet = charSet;
+        return set(data);
+    }
+
+
+    public Letter<?> getLetterAt(int index) {
+        return index > -1 && index < length() && DataManager.isLetter(charAt(index)) ? new Letter<>(charAt(index)) : null;
+    }
+
+    public Letter<?> getNextLetter(int start) {
+        return getLetterAt(getNextLetterIndex(start));
+    }
+
+    public int getNextLetterIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isLetter(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
+
+    public Character getCharacterAt(int index) {
+        return index > -1 && index < length() && DataManager.isCharacter(charAt(index)) ? new Character(charAt(index)) : null;
+    }
+
+    public Character getNextCharacter(int start) {
+        return getCharacterAt(getNextCharacterIndex(start));
+    }
+
+    public int getNextCharacterIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isCharacter(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
+
+    public Subscript getSubscriptAt(int index) {
+        return index > -1 && index < length() && DataManager.isSubscript(charAt(index)) ? new Subscript(charAt(index)) : null;
+    }
+
+    public Subscript getNextSubscript(int start) {
+        return getSubscriptAt(getNextSubscriptIndex(start));
+    }
+
+    public int getNextSubscriptIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isSubscript(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
+
+    public Superscript getSuperscriptAt(int index) {
+        return index > -1 && index < length() && DataManager.isSuperscript(charAt(index)) ? new Superscript(charAt(index)) : null;
+    }
+
+    public Superscript getNextSuperscript(int start) {
+        return getSuperscriptAt(getNextSuperscriptIndex(start));
+    }
+
+    public int getNextSuperscriptIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isSuperscript(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
+
+    public Index getIndexAt(int index) {
+        return index > -1 && index < length() && DataManager.isIndex(charAt(index)) ? new Index(charAt(index)) : null;
+    }
+
+    public Index getNextIndex(int start) {
+        return getIndexAt(getNextLetterIndex(start));
+    }
+
+    public int getNextIndexIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isIndex(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
+
+    public Operator getOperatorAt(int index) {
+        return index > -1 && index < length() && DataManager.isOperator(charAt(index)) ? new Operator(charAt(index)) : null;
+    }
+
+    public Operator getNextOperator(int start) {
+        return getOperatorAt(getNextOperatorIndex(start));
+    }
+
+    public int getNextOperatorIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isOperator(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
+
+    public FractionData getFractionAt(int index) {
+        return index > -1 && index < length() && DataManager.isFraction(charAt(index)) ? new FractionData(charAt(index)) : null;
+    }
+
+    public FractionData getNextFraction(int start) {
+        return getFractionAt(getNextFractionIndex(start));
+    }
+
+    public int getNextFractionIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isFraction(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
 
     public Alphabet getAlphabetAt(int index) {
         return index > -1 && index < length() && DataManager.isAlphabet(charAt(index)) ? new Alphabet(charAt(index)) : null;
@@ -48,6 +226,49 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         }
         return -1;
     }
+
+
+    public Alphabet getVowelAt(int index) {
+        return index > -1 && index < length() && DataManager.isVowel(charAt(index)) ? new Alphabet(charAt(index)) : null;
+    }
+
+    public Alphabet getNextVowel(int start) {
+        return getVowelAt(getNextVowelIndex(start));
+    }
+
+    public int getNextVowelIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isVowel(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
+
+    public Alphabet getConsonantAt(int index) {
+        return index > -1 && index < length() && DataManager.isConsonant(charAt(index)) ? new Alphabet(charAt(index)) : null;
+    }
+
+    public Alphabet getNextConsonant(int start) {
+        return getConsonantAt(getNextConsonantIndex(start));
+    }
+
+    public int getNextConsonantIndex(int from) {
+        if (from >= 0 && from < length() - 2) {
+            int index = from;
+            for (char c : data.substring(from + 1).toCharArray()) {
+                index++;
+                if (DataManager.isConsonant(c))
+                    return index;
+            }
+        }
+        return -1;
+    }
+
 
     public Number getNextNumber(int from) {
         return getNumberAt(getNextNumberIndex(from));
@@ -334,7 +555,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     public int getAlphabetCount(CharSequence letter) {
         int count = 0;
         for (char l : toCharArray())
-            if (DataManager.isAlphabet(l) && DataManager.isAlphabet(letter) && letter.equals(l + ""))
+            if (DataManager.isAlphabet(charSet, l) && DataManager.isAlphabet(charSet, letter) && letter.equals(l + ""))
                 count++;
         return count;
     }
@@ -363,7 +584,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         List<Integer> indexes = new ArrayList<>();
         if (getLetterCount(letter) > 0)
             for (int index = 0; index < length(); index++)
-                if (new Alphabet(letter).equals(new Alphabet(charAt(index))))
+                if (new Alphabet(charSet, letter).equals(new Alphabet(charSet, charAt(index))))
                     indexes.add(index);
         return indexes;
     }
@@ -400,10 +621,10 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     public NumbersCount getNumbersCount() {
         List<NumberCount> counts = new LinkedList<>();
         for (Number number : extractNumbers())
-            if (!counts.contains(new NumberCount(number, getNumberIndexes(number))))
-                counts.add(new NumberCount(number, getNumberIndexes(number)));
+            if (!counts.contains(new NumberCount(this, number, getNumberIndexes(number))))
+                counts.add(new NumberCount(this, number, getNumberIndexes(number)));
         // System.out.println("Inner: " + number + " Index: " + getNumberIndexes(number));
-        return new NumbersCount(counts);
+        return new NumbersCount(this, counts);
     }
 
     public int getOperatorCount(char operator) {
@@ -429,66 +650,66 @@ public abstract class Letters<L extends Letters> extends Data<L> {
 
     public AlphabetsCount getAlphabetsCount() {
         List<AlphabetCount> counts = new LinkedList<>();
-        for (char l : DataManager.ALPHABETS.toCharArray())
-            if (contains(l) && !counts.contains(new AlphabetCount(new Alphabet(l), getLetterCount(l), getLetterIndexes(l))))
-                counts.add(new AlphabetCount(new Alphabet(l), getLetterCount(l), getLetterIndexes(l)));
-        return new AlphabetsCount(counts);
+        for (char l : (charSet.equals(CharSet.Latin) ? DataManager.ALPHABETS_LATIN : DataManager.ALPHABETS_ENGLISH).toCharArray())
+            if (contains(l) && !counts.contains(new AlphabetCount(this, new Alphabet(charSet, l), getLetterCount(l), getLetterIndexes(l))))
+                counts.add(new AlphabetCount(this, new Alphabet(charSet, l), getLetterCount(l), getLetterIndexes(l)));
+        return new AlphabetsCount(this, counts);
     }
 
     public LettersCount getLettersCount() {
         List<LetterCount> counts = new LinkedList<>();
         for (char l : data.toCharArray())
-            if (contains(l) && !counts.contains(new LetterCount(l, getLetterCount(l), getLetterIndexes(l))))
-                counts.add(new LetterCount(l, getLetterCount(l), getLetterIndexes(l)));
-        return new LettersCount(counts);
+            if (contains(l) && !counts.contains(new LetterCount(this, l, getLetterCount(l), getLetterIndexes(l))))
+                counts.add(new LetterCount(this, l, getLetterCount(l), getLetterIndexes(l)));
+        return new LettersCount(this, counts);
     }
 
     public OperatorsCount getOperatorsCount() {
         List<OperatorCount> counts = new LinkedList<>();
         for (Operator op : extractOperators())
-            if (!counts.contains(new OperatorCount(op, getOperatorCount(op), getOperatorIndexes(op))))
-                counts.add(new OperatorCount(op, getOperatorCount(op), getOperatorIndexes(op)));
-        return new OperatorsCount(counts);
+            if (!counts.contains(new OperatorCount(this, op, getOperatorCount(op), getOperatorIndexes(op))))
+                counts.add(new OperatorCount(this, op, getOperatorCount(op), getOperatorIndexes(op)));
+        return new OperatorsCount(trim(), counts);
     }
 
     public LettersCount getCharactersCount() {
         List<LetterCount> counts = new LinkedList<>();
         for (char l : DataManager.CHARACTERS.toCharArray())
             if (contains(l))
-                counts.add(new LetterCount(l, getLetterIndexes(l)));
-        return new LettersCount(counts);
+                counts.add(new LetterCount(this, l, getLetterIndexes(l)));
+        return new LettersCount(this, counts);
     }
 
     public AlphabetsCount getConsonantsCount() {
         List<AlphabetCount> counts = new LinkedList<>();
         for (char l : DataManager.CONSONANTS.toCharArray())
             if (contains(l))
-                counts.add(new AlphabetCount(new Alphabet(l), getLetterIndexes(l)));
-        return new AlphabetsCount(counts);
+                counts.add(new AlphabetCount(this, new Alphabet(charSet, l), getLetterIndexes(l)));
+        return new AlphabetsCount(this, counts);
     }
 
     public LettersCount getFractionsCount() {
         List<LetterCount> counts = new LinkedList<>();
         for (char l : DataManager.FRACTIONS.toCharArray())
             if (contains(l))
-                counts.add(new LetterCount(l, getLetterIndexes(l)));
-        return new LettersCount(counts);
+                counts.add(new LetterCount(this, l, getLetterIndexes(l)));
+        return new LettersCount(this, counts);
     }
 
     public LettersCount getIndexesCount() {
         List<LetterCount> counts = new LinkedList<>();
         for (char l : DataManager.INDEXES.toCharArray())
             if (contains(l))
-                counts.add(new LetterCount(l, getLetterIndexes(l)));
-        return new LettersCount(counts);
+                counts.add(new LetterCount(this, l, getLetterIndexes(l)));
+        return new LettersCount(this, counts);
     }
 
     public AlphabetsCount getVowelsCount() {
         List<AlphabetCount> counts = new LinkedList<>();
-        for (char l : DataManager.VOWELS.toCharArray())
+        for (char l : (charSet.equals(CharSet.Latin) ? DataManager.VOWELS_LATIN : DataManager.VOWELS_ENGLISH).toCharArray())
             if (contains(l))
-                counts.add(new AlphabetCount(new Alphabet(l), getLetterIndexes(l)));
-        return new AlphabetsCount(counts);
+                counts.add(new AlphabetCount(this, new Alphabet(charSet, l), getLetterIndexes(l)));
+        return new AlphabetsCount(this, counts);
     }
 
     public boolean contentEquals(Letters<?> another) {
@@ -501,7 +722,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
 
 
     public Letters<?> subLetters(int start) {
-        return !isEmpty() && start >= 0 && start < length() ? new Sentence(data.substring(start)) : null;
+        return !isEmpty() && start >= 0 && start < length() ? new Sentence(charSet, data.substring(start)) : null;
     }
 
     public Letters<?> subLetters(IData<?> where) {
@@ -533,7 +754,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     }
 
     public Letters<?> subLetters(int start, int end) {
-        return !isEmpty() && start >= 0 && start < length() && start < end ? new Sentence(data.substring(start, end)) : null;
+        return !isEmpty() && start >= 0 && start < length() && start < end ? new Sentence(charSet, data.substring(start, end)) : null;
     }
 
 
@@ -763,6 +984,12 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         return (L) this;
     }
 
+    /*String toUpperCase(char data) {
+        switch (data) {
+            case ''
+        }
+    }*/
+
     public L trim() {
         data = data.trim();
         return (L) this;
@@ -801,6 +1028,11 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         return -1;
     }
 
+    public Letter<?> getNextValidLetter(int start) {
+        int index = getNextValidLetterIndex(start);
+        return index > -1 ? new Letter<>(data.charAt(index)) : null;
+    }
+
     public boolean hasNextValidLetterIndex(int start) {
         return getNextValidLetterIndex(start) > -1;
     }
@@ -810,6 +1042,14 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         return split(delimiter, "", "", mustContain);
     }
 
+    /**
+     * Split data with a delimiter and each split element must contain some elements
+     * @param delimiter the element for splitting the data
+     * @param ifContain if the element of split contains this
+     * @param mustEnd element of split must end with this if it contains <b>"ifContain"</b>
+     * @param mustContain list of what must be included in each split content
+     * @return a list of strings in a split object
+     */
     @SafeVarargs
     public final <O> Split split(CharSequence delimiter, CharSequence ifContain, CharSequence mustEnd, O... mustContain) {
         return split(delimiter, ifContain, mustEnd, Arrays.asList(mustContain), new ArrayList<>());
@@ -849,7 +1089,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
             }
 
             @Override
-            public boolean contains(IData data) {
+            public boolean contains(IData<?> data) {
                 return contains(data != null ? data.get() : null);
             }
 
@@ -864,7 +1104,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
             }
 
             @Override
-            public Letters getData() {
+            public Letters<?> getData() {
                 return Letters.this;
             }
 
@@ -1025,21 +1265,21 @@ public abstract class Letters<L extends Letters> extends Data<L> {
 
     private boolean containsData(CharSequence delimiter) {
         for (String d : splitDelimiter(delimiter))
-            if (!contains(delimiter)) return false;
+            if (!contains(d)) return false;
         return true;
     }
 
 
     public Words extractWords() {
-        return new Words(DataManager.extractWords(data), this);
+        return new Words(DataManager.extractWords(data, charSet), this);
     }
 
     public Words getWords() {
-        return new Words(DataManager.getWords(data), this);
+        return new Words(DataManager.getWords(charSet, data), this);
     }
 
     public Words getWordsOnly() {
-        return new Words(DataManager.getWordsOnly(data), this);
+        return new Words(DataManager.getWordsOnly(charSet, data), this);
     }
 
     public int lastIndexOf(CharSequence letters) {
@@ -1063,13 +1303,13 @@ public abstract class Letters<L extends Letters> extends Data<L> {
 
         <O> boolean contains(O data);
 
-        boolean contains(IData data);
+        boolean contains(IData<?> data);
 
         boolean contains(CharSequence data);
 
         boolean equals(Split another);
 
-        Letters getData();
+        Letters<?> getData();
 
         List<String> getAll();
 
@@ -1281,9 +1521,11 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     public static abstract class Count<C extends Count, D> {
         public final int count;
         protected int index;
+        protected Letters<?> letters;
         protected final List<Integer> indexes;
 
-        public Count(int count, List<Integer> indexes) {
+        public Count(Letters<?> letters, int count, List<Integer> indexes) {
+            this.letters = letters;
             this.count = Math.abs(count);
             this.indexes = indexes;
             index = 0;
@@ -1323,8 +1565,10 @@ public abstract class Letters<L extends Letters> extends Data<L> {
 
     public static abstract class DataCount<I extends DataCount<I, C, D>, C extends Count<C, D>, D extends IData> implements Iterable<C> {
         protected final List<C> counts;
+        protected final Letters<?> letters;
 
-        public DataCount(List<C> counts) {
+        public DataCount(Letters<?> letters, List<C> counts) {
+            this.letters = letters;
             this.counts = counts;
         }
 
@@ -1410,29 +1654,29 @@ public abstract class Letters<L extends Letters> extends Data<L> {
 
     public static class LettersCount extends DataCount<LettersCount, LetterCount, Letter> {
 
-        public LettersCount(List<LetterCount> counts) {
-            super(counts);
+        public LettersCount(Letters<?> letters, List<LetterCount> counts) {
+            super(letters, counts);
             this.counts.sort(Comparator.comparing(l -> String.valueOf(l.index)));
         }
 
         public LetterCount getCount(char letter) {
-            return getCount(new Letter(letter));
+            return getCount(new Letter<>(letter));
         }
 
         public LetterCount getCount(int letter) {
-            return getCount(new Letter(letter + ""));
+            return getCount(new Letter<>(letter + ""));
         }
 
         public boolean contains(char letter) {
-            return contains(new Letter(letter));
+            return contains(new Letter<>(letter));
         }
 
     }
 
     public static class OperatorsCount extends DataCount<OperatorsCount, OperatorCount, Operator> {
 
-        public OperatorsCount(List<OperatorCount> counts) {
-            super(counts);
+        public OperatorsCount(Letters<?> letters, List<OperatorCount> counts) {
+            super(letters, counts);
         }
 
         public OperatorCount getCount(char operator) {
@@ -1442,7 +1686,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         @Override
         public OperatorCount getCount(Operator data) {
             OperatorCount count = super.getCount(data);
-            return count != null ? count : new OperatorCount(data, 0);
+            return count != null ? count : new OperatorCount(letters, data, 0);
         }
 
         public boolean contains(char operator) {
@@ -1456,8 +1700,8 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     }
 
     public static class NumbersCount extends DataCount<NumbersCount, NumberCount, Number> {
-        public NumbersCount(List<NumberCount> counts) {
-            super(counts);
+        public NumbersCount(Letters<?> letters, List<NumberCount> counts) {
+            super(letters, counts);
         }
 
         public NumberCount getCount(double number) {
@@ -1471,7 +1715,7 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         @Override
         public NumberCount getCount(Number data) {
             NumberCount count = super.getCount(data);
-            return count != null ? count : new NumberCount(data, 0);
+            return count != null ? count : new NumberCount(letters, data, 0);
         }
 
         public boolean contains(double number) {
@@ -1485,22 +1729,22 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     }
 
     public static class AlphabetsCount extends DataCount<AlphabetsCount, AlphabetCount, Alphabet> {
-        public AlphabetsCount(List<AlphabetCount> counts) {
-            super(counts);
+        public AlphabetsCount(Letters<?> letters, List<AlphabetCount> counts) {
+            super(letters, counts);
         }
 
         public AlphabetCount getCount(char alphabet) {
-            return getCount(new Alphabet(alphabet));
+            return getCount(new Alphabet(letters.getCharSet(), alphabet));
         }
 
         @Override
         public AlphabetCount getCount(Alphabet data) {
             AlphabetCount count = super.getCount(data);
-            return count != null ? count : new AlphabetCount(data, 0);
+            return count != null ? count : new AlphabetCount(letters, data, 0, new ArrayList<>());
         }
 
         public boolean contains(char alphabet) {
-            return contains(new Alphabet(alphabet));
+            return contains(new Alphabet(letters.getCharSet(), alphabet));
         }
     }
 
@@ -1508,17 +1752,13 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     public static class AlphabetCount extends Count<AlphabetCount, Alphabet> {
         public final Alphabet alphabet;
 
-        public AlphabetCount(Alphabet data, List<Integer> indexes) {
-            this(data, indexes.size(), indexes);
+        public AlphabetCount(Letters<?> letters, Alphabet data, List<Integer> indexes) {
+            this(letters, data, indexes.size(), indexes);
         }
 
-        public AlphabetCount(Alphabet data, int count, List<Integer> indexes) {
-            super(count, indexes);
+        public AlphabetCount(Letters<?> letters, Alphabet data, int count, List<Integer> indexes) {
+            super(letters, count, indexes);
             this.alphabet = data;
-        }
-
-        public AlphabetCount(Alphabet data, int count, Integer... indexes) {
-            this(data, count, Arrays.asList(indexes));
         }
 
         @Override
@@ -1535,17 +1775,13 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     public static class LetterCount extends Count<LetterCount, Letter> {
         public final char letter;
 
-        public LetterCount(char letter, List<Integer> indexes) {
-            this(letter, indexes.size(), indexes);
+        public LetterCount(Letters<?> letters, char letter, List<Integer> indexes) {
+            this(letters, letter, indexes.size(), indexes);
         }
 
-        public LetterCount(char letter, int count, List<Integer> indexes) {
-            super(count, indexes);
+        public LetterCount(Letters<?> letters, char letter, int count, List<Integer> indexes) {
+            super(letters, count, indexes);
             this.letter = letter;
-        }
-
-        public LetterCount(char letter, int count, Integer... indexes) {
-            this(letter, count, Arrays.asList(indexes));
         }
 
         public boolean isAlphabet() {
@@ -1568,8 +1804,8 @@ public abstract class Letters<L extends Letters> extends Data<L> {
             return DataManager.isNumber(letter);
         }
 
-        public Letter getData() {
-            return new Letter(letter);
+        public Letter<?> getData() {
+            return new Letter<>(letter);
         }
 
         public Alphabet getAlphabet() {
@@ -1585,13 +1821,13 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     public static class OperatorCount extends Count<OperatorCount, Operator> {
         public final Operator operator;
 
-        public OperatorCount(Operator operator, int count, List<Integer> indexes) {
-            super(count, indexes);
+        public OperatorCount(Letters<?> letters, Operator operator, int count, List<Integer> indexes) {
+            super(letters, count, indexes);
             this.operator = operator;
         }
 
-        public OperatorCount(Operator operator, int count, Integer... indexes) {
-            this(operator, count, Arrays.asList(indexes));
+        public OperatorCount(Letters<?> letters, Operator operator, int count, Integer... indexes) {
+            this(letters, operator, count, Arrays.asList(indexes));
         }
 
         public boolean equals(char operator) {
@@ -1616,17 +1852,17 @@ public abstract class Letters<L extends Letters> extends Data<L> {
     public static class NumberCount extends Count<NumberCount, Number> {
         public final Number number;
 
-        public NumberCount(Number number, List<Integer> indexes) {
-            this(number, indexes.size(), indexes);
+        public NumberCount(Letters<?> letters, Number number, List<Integer> indexes) {
+            this(letters, number, indexes.size(), indexes);
         }
 
-        public NumberCount(Number number, int count, List<Integer> indexes) {
-            super(count, indexes);
+        public NumberCount(Letters<?> letters, Number number, int count, List<Integer> indexes) {
+            super(letters, count, indexes);
             this.number = number;
         }
 
-        public NumberCount(Number number, int count, Integer... indexes) {
-            this(number, count, Arrays.asList(indexes));
+        public NumberCount(Letters<?> letters, Number number, int count, Integer... indexes) {
+            this(letters, number, count, Arrays.asList(indexes));
         }
 
         public boolean isInteger() {

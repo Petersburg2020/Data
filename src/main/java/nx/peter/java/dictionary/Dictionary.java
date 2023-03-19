@@ -1,11 +1,12 @@
 package nx.peter.java.dictionary;
 
-import nx.peter.java.util.storage.File;
-import nx.peter.java.util.storage.FileManager;
+import nx.peter.java.io.File;
+import nx.peter.java.io.FileManager;
 import nx.peter.java.util.Random;
 import nx.peter.java.util.Util;
 import nx.peter.java.util.data.*;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -62,6 +63,7 @@ public interface Dictionary {
         protected List<WordMeaning> dictionary;
         protected Type type;
         protected Texts texts;
+        protected IData.CharSet charSet;
 
         public static final String RAW_DICTIONARY = "dictionary.txt";
         public static final String RAW_WORD = "words.txt";
@@ -71,6 +73,7 @@ public interface Dictionary {
         public static final String RAW_ADVERB = "adverbs.txt";
         public static final String RAW_NOUN = "nouns.txt";
         public static final String RAW_VERB = "verbs.txt";
+        public static final String RAW_LATIN = "latin.txt";
         private static final String RAW_COUNTRY = "countries.txt";
 
         public static final String ROOT_PATH = File.FILES_FOLDER + "dictionary/";
@@ -83,6 +86,7 @@ public interface Dictionary {
 
         protected void reset() {
             type = null;
+            charSet = IData.CharSet.English;
             texts = new Texts();
             dictionary = new ArrayList<>();
         }
@@ -93,24 +97,123 @@ public interface Dictionary {
                     List<String> lines = FileManager.readLines(getFilePath());
                     texts = new Texts(Util.toString(lines));
                     for (String line : lines) {
-                        if (type.equals(Type.Dictionary)) {
-                            String[] split = line.split(" - ");
-                            Word word = new Word(split[0].trim());
-                            word.setPartOfSpeech(getPartOfSpeech(split[1].charAt(0)));
-                            Sentence meaning = new Sentence(split[1].substring(2).trim());
-                            add(new IWordMeaning(word, meaning));
-                        } else
-                            add(new IWordMeaning(new Word(line)));
-                    }
+                        switch (type) {
+                            case Dictionary:
+                                String[] split = line.split(" - ");
+                                Word word = new Word(split[0].trim());
+                                word.setPartOfSpeech(getPartOfSpeech(split[1].charAt(0)));
+                                Sentence meaning = new Sentence(split[1].substring(2).trim());
+                                add(new IWordMeaning(word, meaning));
+                                break;
+                            case Latin:
+                                charSet = IData.CharSet.Latin;
+                                texts = new Texts(IData.CharSet.Latin, texts);
+                                Texts tLine = new Texts(IData.CharSet.Latin, line);
+                                if (tLine.isNotEmpty()) {
+                                    if (tLine.startsWith("\"")) {
+                                        word = new Word(IData.CharSet.Latin, tLine.subLetters(0, tLine.subLetters(1).indexBefore("\",")));
+                                        Letters.Words words = word.extractWords();
+                                        // System.out.println(words);
 
+                                        Letters<?> others = tLine.subLetters(word.length() + 1);
+                                        meaning = new Sentence(extractMeaning(others.subLetters(0, others.indexBefore(others.getNextNumber(0)) - 1)));
+
+                                        // System.out.println("\n" + word.get());
+                                        Letters.Words otherWords = others.extractWords();
+                                        Word first = words.getFirst();
+                                        int previousIndex = 0;
+                                        for (Word w : words) {
+                                            int length = w.length();
+                                            IWordMeaning prev = getPrevious();
+                                            Letter<?> letter = word.getLetterAt(word.getNextAlphabetIndex(previousIndex) - 1);
+                                            Letter<?> nLetter = word.getLetterAt(word.getNextAlphabetIndex(previousIndex) + w.length());
+                                            // System.out.println("Previous letter: " + letter);
+                                            // System.out.println("Next alphabet: " + word.getNextAlphabet(previousIndex));
+                                            if (letter != null && letter.equalsIgnoreType("-")) {
+                                                letter = word.getLetterAt(word.getNextAlphabetIndex(previousIndex) - 2);
+                                                // System.out.println("Letter: " + letter);
+                                                if (prev != null && letter != null && letter.equalsIgnoreType("(")) {
+                                                    setToPrevious(new Word(charSet, prev.word.get() + ", " + w.get() + (nLetter != null && nLetter.equalsIgnoreType(")") ? " )" : "")).toSentenceCase().setPartOfSpeech(getPartOfSpeech(otherWords.getLast().get())));
+                                                    previousIndex = word.getNextAlphabetIndex(previousIndex) + length - 1;
+                                                    // System.out.println(previousIndex + ": " + getPrevious().getWord());
+                                                    continue;
+                                                } else w.set(first.get() + "-" + w.get());
+                                            } else if (prev != null && letter != null && letter.equalsIgnoreType("(")) {
+                                                setToPrevious(new Word(charSet, toUtf8(prev.word.get() + " (" + w.get() + (nLetter != null && nLetter.equalsIgnoreType(")") ? ")" : ""))).toSentenceCase().setPartOfSpeech(getPartOfSpeech(otherWords.getLast().get())));
+                                                previousIndex = word.getNextAlphabetIndex(previousIndex) + length - 1;
+                                                // System.out.println(previousIndex + ": " + getPrevious().getWord());
+                                                continue;
+                                            } else if (prev != null && prev.word.contains("(") && !prev.word.contains(")")) {
+                                                setToPrevious(new Word(prev.word.get() + ", " + w.get() + (nLetter != null && nLetter.equalsIgnoreType(")") ? " )" : "")).toSentenceCase().setPartOfSpeech(getPartOfSpeech(otherWords.getLast().get())));
+                                                previousIndex = word.getNextAlphabetIndex(previousIndex) + length - 1;
+                                                // System.out.println(previousIndex + ": " + getPrevious().getWord());
+                                                continue;
+                                            }
+
+                                            previousIndex = word.getNextAlphabetIndex(previousIndex) + length - 1;
+                                            w.toSentenceCase().setPartOfSpeech(getPartOfSpeech(otherWords.getLast().get()));
+                                            // System.out.println(previousIndex + ": " + w);
+                                            add(new IWordMeaning(w, meaning.toSentenceCase()));
+                                        }
+                                    } else {
+                                        Letters.Words words = tLine.extractWords();
+                                        word = words.getFirst().setPartOfSpeech(getPartOfSpeech(words.getLast().get()));
+
+                                        Letter<?> letter = tLine.getNextCharacter(0);
+
+                                        if (letter != null && letter.equalsIgnoreType("-")) {
+                                            for (int i = 0; i < 2; i++) {
+                                                word = words.get(i).setPartOfSpeech(getPartOfSpeech(words.getLast().get()));
+                                                Letters<?> others = tLine.subLetters(tLine.indexAfter(","));
+                                                meaning = new Sentence(extractMeaning(others.subLetters(0, others.indexBefore(others.getNextNumber(0)) - 1)));
+
+                                                add(new IWordMeaning(word.toSentenceCase(), meaning.toSentenceCase()));
+                                                /*if (word.contains("Agricult"))
+                                                    System.out.println(getPrevious());*/
+                                            }
+                                            continue;
+                                        }
+
+                                        Letters<?> others = tLine.subLetters(tLine.indexAfter(","));
+                                        meaning = new Sentence(extractMeaning(others.subLetters(0, others.indexBefore(others.getNextNumber(0)) - 1)));
+                                        add(new IWordMeaning(word.toSentenceCase(), meaning.toSentenceCase()));
+                                    }
+                                }
+                                break;
+                            default:
+                                add(new IWordMeaning(new Word(line)));
+                        }
+                    }
                 } else {
+                    texts = new Texts(IData.CharSet.Latin, texts);
                     for (Word word : LoremIpsum.getInstance().getWords())
                         add(new IWordMeaning(word));
                 }
             }
         }
 
-        private Word.PartOfSpeech getPartOfSpeech(char letter) {
+        IWordMeaning getPrevious() {
+            return dictionary.isEmpty() ? null : (IWordMeaning) dictionary.get(dictionary.size() - 1);
+        }
+
+        void setToPrevious(CharSequence text) {
+            getPrevious().getWord().set(text);
+            if (text instanceof Word) getPrevious().getWord().setPartOfSpeech(((Word) text).getPartOfSpeech());
+        }
+
+        Sentence extractMeaning(Letters<?> letters) {
+            return new Sentence(letters.startsWith("\"") ? letters.subLetters(1, letters.length() - 2).get() : letters.get());
+        }
+
+        Word.PartOfSpeech getPartOfSpeech(String text) {
+            try {
+                return Word.PartOfSpeech.valueOf(text);
+            } catch (IllegalArgumentException e) {
+                return Word.PartOfSpeech.Unknown;
+            }
+        }
+
+        Word.PartOfSpeech getPartOfSpeech(char letter) {
             switch (letter) {
                 case 'n':
                     return Word.PartOfSpeech.Noun;
@@ -165,6 +268,8 @@ public interface Dictionary {
                     return ROOT_PATH + RAW_VERB;
                 case Word:
                     return ROOT_PATH + RAW_WORD;
+                case Latin:
+                    return ROOT_PATH + RAW_LATIN;
                 case Country:
                     return ROOT_PATH + RAW_COUNTRY;
                 default:
@@ -235,13 +340,13 @@ public interface Dictionary {
         }
 
         public boolean containsWord(CharSequence word) {
-            return word != null && containsWord(new Word(word));
+            return word != null && containsWord(new Word(charSet, toUtf8(word)));
         }
 
         public boolean containsWord(IData<?> word) {
             if (word == null) return false;
             for (WordMeaning w : dictionary)
-                if (w.getWord().equalsIgnoreCase(word))
+                if (w.getWord().equalsIgnoreCase(toUtf8(word)))
                     return true;
             return false;
         }
@@ -265,14 +370,19 @@ public interface Dictionary {
         }
 
         protected int indexOf(CharSequence word) {
-            return indexOf(new Word(word));
+            return indexOf(new Word(charSet, toUtf8(word)));
         }
 
         public Word getWord(CharSequence word) {
-            for (WordMeaning w : dictionary)
-                if (w.equalsWord(new Word(word)))
-                    return w.getWord();
+            if (word != null)
+                for (WordMeaning w : dictionary)
+                    if (w.equalsWord(new Word(charSet, toUtf8(word))))
+                        return w.getWord();
             return null;
+        }
+
+        protected CharSequence toUtf8(CharSequence what) {
+            return charSet.equals(IData.CharSet.Latin) ? new String(what.toString().getBytes(StandardCharsets.UTF_8)) : what;
         }
 
         public Word getWord(IData<?> word) {
@@ -338,12 +448,21 @@ public interface Dictionary {
             public boolean equals(WordMeaning another) {
                 return another != null && equalsMeaning(another.getMeaning()) && equalsWord(another.getWord());
             }
+
+            @Override
+            public String toString() {
+                return word.get() + " [" + word.getPartOfSpeech() + "] - " + meaning.get();
+            }
         }
     }
 
     abstract class FullBuilder extends Builder {
+        public FullBuilder(Type type) {
+            super(type);
+        }
+
         public FullBuilder() {
-            super(Type.Dictionary);
+            this(Type.Dictionary);
         }
 
 
@@ -352,7 +471,16 @@ public interface Dictionary {
         }
 
         public WordMeaning getWordMeaning(IData<?> word) {
+            System.out.println("Index: " + indexOf(word) + ", Size: " + getWordCount());
             return containsWord(word) ? dictionary.get(indexOf(word)) : new IWordMeaning(new Word(word.get()));
+        }
+
+        public WordMeaning getWordMeaning(CharSequence word) {
+            return getWordMeaning(word != null ? new Texts(charSet, word) : null);
+        }
+
+        public WordMeaning generate() {
+            return getWordMeaning(generateWord());
         }
 
         public boolean containsMeaning(CharSequence meaning) {
@@ -391,6 +519,7 @@ public interface Dictionary {
         Adverb,
         Bank,
         Dictionary,
+        Latin,
         LoremIpsum,
         Name,
         Noun,

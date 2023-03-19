@@ -25,7 +25,7 @@ public interface IData<D extends IData> extends CharSequence, Comparable<D>, Ser
 
     int count(double data);
 
-    int count(IData data);
+    int count(IData<?> data);
 
     int count(CharSequence data);
 
@@ -35,87 +35,39 @@ public interface IData<D extends IData> extends CharSequence, Comparable<D>, Ser
 
     int length();
 
-    D append(int data);
+    <O> D append(O data);
 
-    D append(char data);
-
-    D append(long data);
-
-    D append(double data);
-
-    D append(boolean word);
-
-    D append(IData data);
+    D append(IData<?> data);
 
     D append(CharSequence data);
 
-    D append(int data, int index);
+    <O> D append(O data, int index);
 
-    D append(char data, int index);
-
-    D append(long data, int index);
-
-    D append(double data, int index);
-
-    D append(boolean word, int index);
-
-    D append(IData data, int index);
+    D append(IData<?> data, int index);
 
     D append(CharSequence data, int index);
 
-    int indexOf(int data);
+    <O> int indexOf(O data);
 
-    int indexOf(double data);
-
-    int indexOf(long data);
-
-    int indexOf(boolean data);
-
-    int indexOf(char data);
-
-    int indexOf(IData data);
+    int indexOf(IData<?> data);
 
     int indexOf(CharSequence data);
 
-    int indexOf(int data, int start);
+    <O> int indexOf(O data, int start);
 
-    int indexOf(char data, int start);
-
-    int indexOf(long data, int start);
-
-    int indexOf(boolean data, int start);
-
-    int indexOf(double data, int start);
-
-    int indexOf(IData data, int start);
+    int indexOf(IData<?> data, int start);
 
     int indexOf(CharSequence data, int start);
 
-    int indexBefore(int data);
+    <O> int indexBefore(O data);
 
-    int indexBefore(char data);
-
-    int indexBefore(long data);
-
-    int indexBefore(double data);
-
-    int indexBefore(boolean data);
-
-    int indexBefore(IData data);
+    int indexBefore(IData<?> data);
 
     int indexBefore(CharSequence data);
 
-    int indexAfter(int data);
+    <O> int indexAfter(O data);
 
-    int indexAfter(char data);
-
-    int indexAfter(long data);
-
-    int indexAfter(boolean data);
-
-    int indexAfter(double data);
-
-    int indexAfter(IData data);
+    int indexAfter(IData<?> data);
 
     int indexAfter(CharSequence data);
 
@@ -127,11 +79,17 @@ public interface IData<D extends IData> extends CharSequence, Comparable<D>, Ser
 
     boolean isWord();
 
+    boolean isTexts();
+
+    boolean isParagraph();
+
     boolean isLine();
 
     boolean isIndex();
 
     boolean isAlphabet();
+
+    boolean isAlphabet(CharSet charSet);
 
     boolean isCharacter();
 
@@ -147,31 +105,13 @@ public interface IData<D extends IData> extends CharSequence, Comparable<D>, Ser
 
     boolean isValid();
 
-    boolean contains(boolean data);
-
-    boolean contains(char data);
-
-    boolean contains(double data);
-
-    boolean contains(int data);
-
-    boolean contains(long data);
-
     <O> boolean contains(O data);
 
     boolean contains(IData<?> data);
 
     boolean contains(CharSequence data);
 
-    int comparesTo(boolean data);
-
-    int comparesTo(char data);
-
-    int comparesTo(double data);
-
-    int comparesTo(int data);
-
-    int comparesTo(long data);
+    <O> int comparesTo(O data);
 
     int comparesTo(IData<?> data);
 
@@ -181,7 +121,11 @@ public interface IData<D extends IData> extends CharSequence, Comparable<D>, Ser
 
     boolean equalsIgnoreCase(IData<?> another);
 
+    boolean equalsIgnoreCase(CharSequence another);
+
     boolean equalsIgnoreType(IData<?> another);
+
+    boolean equalsIgnoreType(CharSequence another);
 
     enum DataType {
         Alphabet,
@@ -197,7 +141,13 @@ public interface IData<D extends IData> extends CharSequence, Comparable<D>, Ser
         Subscript,
         Superscript,
         Texts,
-        Paragraph, Word
+        Paragraph,
+        Word
+    }
+
+    enum CharSet {
+        English,
+        Latin
     }
 
     interface OnFinishedLoadingListener<P> {

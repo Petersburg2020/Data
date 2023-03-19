@@ -1,6 +1,10 @@
 package nx.peter.java.dictionary;
 
-public class FullDictionary extends Dictionary.FullBuilder {
+public abstract class FullDictionary extends Dictionary.FullBuilder {
+    public FullDictionary(Type type) {
+        super(type);
+    }
+
     public FullDictionary() {
         super();
     }

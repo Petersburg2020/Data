@@ -1,4 +1,4 @@
-package nx.peter.java.util.storage;
+package nx.peter.java.io;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -114,6 +114,28 @@ public class FileManager {
             System.out.println(e.getMessage());
             return false;
         }
+    }
+
+
+    public static boolean delete(CharSequence path) {
+        return new File(path).delete();
+    }
+
+
+    public static boolean copy(CharSequence source, CharSequence destination) {
+        return writeFile(destination, readLines(source), false);
+    }
+
+    public static boolean copy(InputStream source, CharSequence destination) {
+        return writeFile(destination, readLines(source), false);
+    }
+
+    public static boolean copy(CharSequence source, OutputStream destination) {
+        return writeStream(destination, readLines(source));
+    }
+
+    public static boolean copy(InputStream source, OutputStream destination) {
+        return writeStream(destination, readLines(source));
     }
 
 

@@ -1,14 +1,21 @@
 package nx.peter.java.util.data;
 
-import nx.peter.java.util.Util;
 import nx.peter.java.util.data.comparator.ComparedLetters;
 import nx.peter.java.util.param.IntString;
-import nx.peter.java.util.param.StringPair;
 
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class DataManager {
-    public static final String ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    public static final String ALPHABETS_ENGLISH = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    public static final String ALPHABETS_LATIN = new String("ABCDEFGHIJKLMNOPQRSTUVWXYZĀĒĪŌŪaābcdeēfghiījklmnoōpqrstuūvwxyz".getBytes(StandardCharsets.UTF_8));
+
+    public static final String AA = "ĀāAa";
+    public static final String EE = "ĒēEe";
+    public static final String II = "ĪīIi";
+    public static final String OO = "ŌōOo";
+    public static final String UU = "ŪūUu";
+
     public static final String NUMBERS = "1234567890";
     public static final String CHARACTERS = "{}();.,-∅_+!?/#$@*~`|•√π÷×¶∆=°^¥€¢£%©®™✓[]><\"⁻ᵐ’‘‹›«»„“”¡¿\\←↑↓→ΩΠμ§ⁿ':";
 
@@ -16,7 +23,8 @@ public class DataManager {
     public static final String FRACTIONS = "⅙⅐⅛⅑⅒½⅓¼⅕⅔⅖⅗¾⅜⅘⅝⅚⅞";
     public static final String UPPER_CASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     public static final String LOWER_CASE = "abcdefghijklmnopqrstuvwxyz";
-    public static final String VOWELS = "AEIOUaeiou";
+    public static final String VOWELS_ENGLISH = "AEIOUaeiou";
+    public static final String VOWELS_LATIN = "ĀĒĪŌŪAEIOUāēīōūaeiou";
     public static final String CONSONANTS = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
 
     public static final String OPERATORS = "-+*÷×/";
@@ -28,7 +36,7 @@ public class DataManager {
 
     public static final String EQUALITY_NOT_EQUAL_TO = "≠";
     public static final String EQUALITY_EQUAL_TO = "=";
-    public static final String EWUALITY_ALMOST_EQUAL_TO = "≈";
+    public static final String EQUALITY_ALMOST_EQUAL_TO = "≈";
     public static final String EQUALITY_IDENTICAL_TO = "≡";
     public static final String EQUALITY_NOT_IDENTICAL_TO = "≢";
     public static final String EQUALITY_GREATER_EQUAL_TO = "≥";
@@ -100,6 +108,71 @@ public class DataManager {
     public static final String ANGLE_SYMBOLS = ANGLE_ANGLE + ANGLE_ACUTE_ANGLE + ANGLE_SPHERICAL_ANGLE
             + ANGLE_DEGREE + ANGLE_DIAMETER + ANGLE_MEASURED_ANGLE + ANGLE_NOT_PARALLEL_TO
             + ANGLE_RIGHT_ANGLE + ANGLE_PARALLEL_TO + ANGLE_PERPENDICULAR;
+
+
+    public static boolean equalsIgnoreCaseAlphabet(char comparator, char letter) {
+        return equalsIgnoreCaseAlphabet(comparator, letter + "");
+    }
+
+    public static boolean equalsIgnoreCaseAlphabet(char comparator, CharSequence letter) {
+        return equalsIgnoreCaseAlphabet(comparator + "", letter);
+    }
+
+    public static boolean equalsIgnoreCaseAlphabet(CharSequence comparator, char letter) {
+        return equalsIgnoreCaseAlphabet(comparator, letter + "");
+
+    }
+
+    public static boolean equalsIgnoreCaseAlphabet(CharSequence comparator, CharSequence letter) {
+        if (letter != null && letter.length() == 1 && comparator != null && comparator.length() == 1)
+            return equalsAlphabet(comparator.toString().toLowerCase(), letter.toString().toLowerCase());
+        return false;
+    }
+
+    public static boolean equalsAlphabet(char comparator, char letter) {
+        return equalsAlphabet(comparator, letter + "");
+    }
+
+    public static boolean equalsAlphabet(char comparator, CharSequence letter) {
+        return equalsAlphabet(comparator + "", letter);
+    }
+
+    public static boolean equalsAlphabet(CharSequence comparator, char letter) {
+        return equalsAlphabet(comparator, letter + "");
+
+    }
+
+    public static boolean equalsAlphabet(CharSequence comparator, CharSequence letter) {
+        if (letter != null && letter.length() == 1 && comparator != null && comparator.length() == 1) {
+            String l = letter.toString();
+            String comp = comparator.toString();
+            switch (l) {
+                case "a":
+                    return comp.contentEquals("ā") || l.contentEquals(comp);
+                case "e":
+                    return comp.contentEquals("ē") || l.contentEquals(comp);
+                case "i":
+                    return comp.contentEquals("ī") || l.contentEquals(comp);
+                case "o":
+                    return comp.contentEquals("ō") || l.contentEquals(comp);
+                case "u":
+                    return comp.contentEquals("ū") || l.contentEquals(comp);
+                case "ā":
+                    return comp.contentEquals("a") || l.contentEquals(comp);
+                case "ē":
+                    return comp.contentEquals("e") || l.contentEquals(comp);
+                case "ī":
+                    return comp.contentEquals("i") || l.contentEquals(comp);
+                case "ō":
+                    return comp.contentEquals("o") || l.contentEquals(comp);
+                case "ū":
+                    return comp.contentEquals("u") || l.contentEquals(comp);
+                default: return l.contentEquals(comp);
+            }
+        }
+        return false;
+    }
+
 
 
     public static boolean isSubscript(char letter) {
@@ -191,12 +264,25 @@ public class DataManager {
 
 
     public static boolean isAlphabet(char letter) {
-        return isAlphabet(letter + "");
+        return isAlphabet(Alphabet.CharSet.English, letter);
+    }
+
+    public static boolean isAlphabet(Alphabet.CharSet charSet, char letter) {
+        return isAlphabet(charSet, letter + "");
     }
 
     public static boolean isAlphabet(CharSequence letter) {
-        if (letter != null && letter.length() == 1)
-            return ALPHABETS.contains(letter);
+        return isAlphabet(Alphabet.CharSet.English, letter);
+    }
+
+    public static boolean isAlphabet(Alphabet.CharSet charSet, CharSequence letter) {
+        if (letter != null && letter.length() == 1 && charSet != null)
+            switch (charSet) {
+                case English:
+                    return ALPHABETS_ENGLISH.contains(letter.toString());
+                case Latin:
+                    return ALPHABETS_LATIN.contains(letter.toString());
+            }
         return false;
     }
 
@@ -221,21 +307,42 @@ public class DataManager {
     }
 
     public static boolean isVowel(char letter) {
-        return isVowel(letter + "");
+        return isVowel(Alphabet.CharSet.English, letter);
+    }
+
+    public static boolean isVowel(Alphabet.CharSet charSet, char letter) {
+        return isVowel(charSet,letter + "");
     }
 
     public static boolean isVowel(CharSequence letter) {
-        if (letter != null && letter.length() == 1)
-            return VOWELS.contains(letter);
+        return isVowel(Alphabet.CharSet.English, letter);
+    }
+
+    public static boolean isVowel(Alphabet.CharSet charSet, CharSequence letter) {
+        if (letter != null && letter.length() == 1 && charSet != null)
+            switch (charSet) {
+                case English:
+                    return VOWELS_ENGLISH.contains(letter);
+                case Latin:
+                    return VOWELS_LATIN.contains(letter);
+            }
         return false;
     }
 
     public static boolean isLetter(char letter) {
-        return isLetter(letter + "");
+        return isLetter(IData.CharSet.English, letter);
+    }
+
+    public static boolean isLetter(IData.CharSet charSet, char letter) {
+        return isLetter(charSet, letter + "");
     }
 
     public static boolean isLetter(CharSequence letter) {
-        return isIndex(letter) || isAlphabet(letter) || isCharacter(letter) || isSpecialCharacter(letter)
+        return isLetter(IData.CharSet.English, letter);
+    }
+
+    public static boolean isLetter(IData.CharSet charSet, CharSequence letter) {
+        return isIndex(letter) || isAlphabet(charSet, letter) || isCharacter(letter) || isSpecialCharacter(letter)
                 || isFraction(letter) || isOperator(letter) || isNumber(letter);
     }
 
@@ -439,58 +546,71 @@ public class DataManager {
     }
 
     public static List<Word> getWordsOnly(CharSequence letters) {
+        return getWordsOnly(IData.CharSet.English, letters);
+    }
+
+    public static List<Word> getWordsOnly(IData.CharSet charSet, CharSequence letters) {
         List<Word> words = new ArrayList<>();
         for (String word : letters.toString().split(" ")) {
             String w = word;
             if (w.length() > 1 && isCharacter(word.charAt(word.length() - 1)))
                 w = w.substring(0, word.length() - 1);
-            if (w.length() == 1 && !isAlphabet(w))
+            if (w.length() == 1 && !isAlphabet(charSet, w))
                 continue;
-            words.add(new Word(w));
+            words.add(new Word(charSet, w));
         }
         return words;
     }
 
     public static List<Word> getWords(CharSequence letters) {
+        return getWords(IData.CharSet.English, letters);
+    }
+
+    public static List<Word> getWords(IData.CharSet charSet, CharSequence letters) {
         List<Word> words = new ArrayList<>();
         for (String word : letters.toString().split(" "))
-            words.add(new Word(word));
+            words.add(new Word(charSet, word));
         return words;
     }
 
+    public static <L extends Letters> List<Word> extractWords(L letters) {
+        return extractWords(letters != null ? letters.get() : "", letters != null ? letters.getCharSet() : IData.CharSet.English);
+    }
+
     public static List<Word> extractWords(CharSequence letters) {
+        return extractWords(letters, IData.CharSet.English);
+    }
+
+    public static List<Word> extractWords(CharSequence letters, IData.CharSet charSet) {
         List<Word> words = new ArrayList<>();
+        if (letters == null) return words;
         String word = "";
         for (IntString property : getProperties(letters)) {
-            if (isAlphabet(property.letter))
+            if (isAlphabet(charSet, property.letter))
                 word += property.letter;
             else {
                 if (word.length() > 0)
-                    words.add(new Word(word));
+                    words.add(new Word(charSet, word));
                 word = "";
             }
             if (property.index + 1 == letters.length())
                 if (word.length() > 0)
-                    words.add(new Word(word));
+                    words.add(new Word(charSet, word));
         }
         return words;
     }
 
-    public static List<Word> getWords(Sentence sentence) {
-        return getWords(sentence.get());
-    }
-
-    public static List<Word> getWords(Paragraph paragraph) {
-        return getWords(paragraph.get());
-    }
-
-    public static List<Word> getWords(Texts texts) {
-        return getWords(texts.get());
+    public static <S extends Letters> List<Word> getWords(S sentence) {
+        return getWords(sentence != null ? sentence.getCharSet() : IData.CharSet.English, sentence != null ? sentence.get() : "");
     }
 
     public static List<Paragraph> extractParagraphs(CharSequence letters) {
+        return extractParagraphs(IData.CharSet.English, letters);
+    }
+
+    public static List<Paragraph> extractParagraphs(IData.CharSet charSet, CharSequence letters) {
         List<Paragraph> paragraphs = new ArrayList<>();
-        Texts texts = new Texts(letters != null ? letters.toString() : "");
+        Texts texts = new Texts(charSet, letters != null ? letters.toString() : "");
         int start = 0, end;
         if (texts.length() > 0)
             while (start > -1 && start < texts.length() - 1) {
@@ -503,7 +623,7 @@ public class DataManager {
                 end = first.index;
 
                 String paragraph = end >= 0 && end < texts.length() - 2 ? texts.substring(start, end + 1) : texts.substring(start);
-                paragraphs.add(new Paragraph(paragraph.trim()));
+                paragraphs.add(new Paragraph(charSet, paragraph.trim()));
 
                 if (end <= 0) break;
 
@@ -517,24 +637,35 @@ public class DataManager {
     }
 
     public static <S extends ISentence> List<Paragraph> extractParagraphs(S texts) {
-        return extractParagraphs(texts != null ? texts.get() : "");
+        return extractParagraphs(texts != null ? texts.getCharSet() : IData.CharSet.English, texts != null ? texts.get() : "");
     }
 
     public static List<Line> extractLines(CharSequence letters) {
         List<Line> lines = new ArrayList<>();
         String texts = letters != null ? letters.toString() : "";
-        Letters.Split split = new Texts(texts).split("\n");
-        int line = 0;
-        for (String data : split) {
+
+        int start = 0, end = 0, line = 0;
+        while (start >= 0 && end >= 0) {
+            if (start > texts.length() - 1) break;
             line++;
-            lines.add(new Line(line, data));
+            end = texts.indexOf("\n", start);
+            Line l = new Line(line, end >= 0 && end < texts.length() - 1 ? texts.substring(start, end) : texts.substring(start));
+            if (l.isNotEmpty())
+                lines.add(l);
+
+            if (end < 0 || end >= texts.length() - 1) break;
+            start = end + 1;
         }
         return lines;
     }
 
     public static List<Sentence> extractSentences(CharSequence letters) {
+        return extractSentences(IData.CharSet.English, letters);
+    }
+
+    public static List<Sentence> extractSentences(IData.CharSet charSet, CharSequence letters) {
         List<Sentence> sentences = new ArrayList<>();
-        Texts texts = new Texts(letters != null ? letters.toString() : "");
+        Texts texts = new Texts(charSet, letters != null ? letters.toString() : "");
 
         int start = 0, end;
         if (texts.length() > 0)
@@ -547,12 +678,15 @@ public class DataManager {
                 );
                 end = first.index;
 
+
                 String sentence = end >= 0 && end < texts.length() - 2 ? texts.substring(start, end + 1) : texts.substring(start);
-                sentences.add(new Sentence(sentence.trim()));
+                sentences.add(new Sentence(charSet, sentence.trim()));
+
+                // System.out.println("Start: " + start + ", End: " + end + ", Content: \"" + sentence + "\"");
 
                 if (end <= 0) break;
 
-                start = end + (first.letter.contentEquals("\n") ? "" : " ").length();
+                start = end + (first.letter.contentEquals("\n") ? "" : " ").length() + 1;
             }
         return sentences;
     }
@@ -577,7 +711,7 @@ public class DataManager {
     }
 
     public static <S extends ISentence> List<Sentence> extractSentences(S texts) {
-        return extractSentences(texts != null ? texts.get() : "");
+        return extractSentences(texts != null ? texts.getCharSet() : IData.CharSet.English, texts != null ? texts.get() : "");
     }
 
     public static List<Sentence> extractSentences(Texts texts) {
@@ -631,10 +765,14 @@ public class DataManager {
     }
 
     public static List<Letter> extractLetters(CharSequence letters) {
+        return extractLetters(IData.CharSet.English, letters);
+    }
+
+    public static List<Letter> extractLetters(IData.CharSet charSet, CharSequence letters) {
         List<Letter> letterList = new ArrayList<>();
         for (IntString prop : getProperties(letters))
-            if (isLetter(prop.letter))
-                letterList.add(new Letter(prop.letter));
+            if (isLetter(charSet, prop.letter))
+                letterList.add(new Letter<>(charSet, prop.letter));
         return letterList;
     }
 
@@ -753,7 +891,6 @@ public class DataManager {
                 default:
                     val = toObject(value);
             }
-            ;
 
             array.add(val);
 

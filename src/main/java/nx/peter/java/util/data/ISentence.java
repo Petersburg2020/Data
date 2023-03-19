@@ -8,6 +8,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public abstract class ISentence<S extends ISentence> extends Letters<S> {
     public enum SentenceType {
@@ -31,6 +33,14 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
 
     public ISentence(CharSequence sentence) {
         super(sentence);
+    }
+
+    public ISentence(CharSet charSet) {
+        super(charSet);
+    }
+
+    public ISentence(CharSet charSet, CharSequence letters) {
+        super(charSet, letters);
     }
 
     @Override
@@ -455,7 +465,7 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
         }
     }
 
-    protected static class LettersList<S extends Letters<S>> implements Iterable<S> {
+    protected abstract static class LettersList<S extends Letters<S>> implements Iterable<S> {
         protected List<S> letters;
         protected final Letters<?> source;
 
@@ -463,6 +473,10 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
             this.source = source;
             this.letters = letters;
         }
+
+        public abstract S getAfter(int index);
+
+        public abstract S getBefore(int index);
 
         public boolean contains(S paragraph) {
             return paragraph != null && letters.contains(paragraph);
@@ -501,13 +515,14 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
             return another != null && letters.equals(another.letters);
         }
 
+        int count;
         @Override
         public String toString() {
-            StringBuilder toString = new StringBuilder();
-            int count = 0;
-            for (S s : letters)
-                toString.append(s.get()).append(++count < size() ? "\n" : "");
-            return toString.toString();
+            count = 0;
+            return letters.stream().map(s -> {
+                count++;
+                return s.get() + (count < size() ? "\n" : "");
+            }).collect(Collectors.joining());
         }
 
     }
@@ -525,6 +540,15 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
             return sentence > 0 && sentence <= size() ? letters.get(sentence - 1) : new Sentence();
         }
 
+        @Override
+        public Sentence getAfter(int sentence) {
+            return getSentence(sentence + 1);
+        }
+
+        @Override
+        public Sentence getBefore(int sentence) {
+            return getSentence(sentence - 1);
+        }
     }
 
     public static class Paragraphs extends LettersList<Paragraph> {
@@ -535,6 +559,16 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
 
         public Paragraphs(Letters<?> source, List<Paragraph> paragraphs) {
             super(source, paragraphs);
+        }
+
+        @Override
+        public Paragraph getAfter(int paragraph) {
+            return getParagraph(paragraph + 1);
+        }
+
+        @Override
+        public Paragraph getBefore(int paragraph) {
+            return getParagraph(paragraph - 1);
         }
 
         public Paragraph getParagraph(int paragraph) {
@@ -555,16 +589,22 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
 
     public static class Lines extends LettersList<Line> {
 
-        public Lines(Letters<?> source, Line... lines) {
-            this(source, Arrays.asList(lines));
-        }
-
         public Lines(Letters<?> source, List<Line> lines) {
             super(source, lines);
         }
 
+        @Override
+        public Line getAfter(int line) {
+            return getLine(line + 1);
+        }
+
+        @Override
+        public Line getBefore(int line) {
+            return getLine(line - 1);
+        }
+
         public Line getLine(int line) {
-            return line >= -1 && line <= size() ? letters.get(line) : null;
+            return line >= -1 && line <= size() ? letters.get(line) : new Line(line);
         }
 
         public List<Line> getLines() {

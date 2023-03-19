@@ -147,7 +147,7 @@ public class Password {
                 while(password.length() < length){
                     int type = Random.nextInt(2);
                     switch (type) {
-                        case 0: all = DataManager.ALPHABETS; break;
+                        case 0: all = DataManager.ALPHABETS_ENGLISH; break;
                         case 1: all = DataManager.NUMBERS;
                     }
                     password.append(all.charAt(Random.nextInt(all.length() - 1)));
@@ -157,7 +157,7 @@ public class Password {
                 break;
 
             case Alphabet:
-                all = DataManager.ALPHABETS;
+                all = DataManager.ALPHABETS_ENGLISH;
                 while(password.length() < length)
                     password.append(all.charAt(Random.nextInt(all.length() - 1)));
 
@@ -168,7 +168,7 @@ public class Password {
                     int type = Random.nextInt(2);
                     switch (type) {
                         case 0: all = DataManager.SPECIAL_CHARACTERS; break;
-                        case 1: all = DataManager.ALPHABETS;
+                        case 1: all = DataManager.ALPHABETS_ENGLISH;
                     }
                     password.append(all.charAt(Random.nextInt(all.length() - 1)));
                     if(password.length() == length && !followsRestriction(password.toString(), Restriction.AlphaCharacter))
@@ -202,7 +202,7 @@ public class Password {
                 while(password.length() < length){
                     int type = Random.nextInt(3);
                     switch (type) {
-                        case 0: all = DataManager.ALPHABETS; break;
+                        case 0: all = DataManager.ALPHABETS_ENGLISH; break;
                         case 1: all = DataManager.SPECIAL_CHARACTERS; break;
                         case 2: all = DataManager.NUMBERS;
                     }
@@ -213,7 +213,7 @@ public class Password {
                 break;
 
             default:
-                all = DataManager.SPECIAL_CHARACTERS + DataManager.ALPHABETS + DataManager.NUMBERS;
+                all = DataManager.SPECIAL_CHARACTERS + DataManager.ALPHABETS_ENGLISH + DataManager.NUMBERS;
 
                 while(password.length() < length)
                     password.append(all.charAt(Random.nextInt(all.length() - 1)));

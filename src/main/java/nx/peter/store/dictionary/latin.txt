@@ -1,0 +1,2862 @@
+"eo, ire, ivi (ii), itus",to go,5,1,,Verb
+"ferō, ferre, tulī, latus","to bring, fetch",5,1,,Verb
+"nōlō, nōlle, nōluī, ----","to be unwilling, wish not, refuse",5,1,,Verb
+"possum, posse, potuī, ----","to be possible, be able, be able to",5,1,,Verb
+"praetereō, praeterīre, praeterīvī (-iī), praeteritus","to pass over, pass by, omit",5,1,,Verb
+"sum, esse, fui, futurus","to be, exist",5,1,,Verb
+"volo, velle, volui, ---","to want, wish, be willing",5,1,,Verb
+"a (ab, abs)","abl: from, away from",5,1,,Preposition
+ad,"acc: to, toward, for (purpose), at, until",5,1,,Preposition
+"aqua, aquae",(f.) water,5,1,,Noun
+"cena, cenae","(f.) supper, dinner",5,1,,Noun
+coram,abl: in the presence of,5,1,,Preposition
+"culpa, culpae","(f.) blame, fault",5,1,,Noun
+cum,"abl: with; (subord. conj.) when, after",5,1,,Preposition
+de,"abl: from, down from, about, concerning",5,1,,Preposition
+"doctrina, doctrinae","(f.) teaching, doctrine",5,1,,Noun
+e (ex),"abl: from, out of",5,1,,Preposition
+"ecclesia, ecclesiae","(f.) church, assembly",5,1,,Noun
+et,"and, even, too",5,1,,Conjunction
+"familia, familiae","(f.) household, family",5,1,,Noun
+"gloria, gloriae",(f.) glory,5,1,,Noun
+"gratia, gratiae","(f.) grace, favor, credit; pl., thanks",5,1,,Noun
+"hora, horae",(f.) hour,5,1,,Noun
+in,"acc: into, onto, against, for (the purpose of); abl: in, on, among, by means of, with",5,1,,Preposition
+"missa, missae",(f.) Mass,5,1,,Noun
+"natura, naturae","(f.) nature, character",5,1,,Noun
+"papa, papae",(m.) pope,5,1,,Noun
+pro,"abl: in front of, in behalf of, for, instead of, on behalf of",5,1,,Preposition
+-que,and ,5,1,,Conjunction
+sine,abl: without,5,1,,Preposition
+super,"acc: above, upon, over; abl: about, concerning",5,1,,Preposition
+"terra, terrae","(f.) earth, land, ground",5,1,,Noun
+"vita, vitae",(f.) life,5,1,,Noun
+"abeō, abīre, abiī/abīvī, abitus","to abdicate, resign, absent onself, depart, go away, leave",5,2,4,Verb
+"discēdō, discēdere, discessī, discessus","to go away, depart, break up",5,2,,Verb
+"mussō, mussāre, mussāvī, mussātus","to murmur, whisper, keep quiet, be at a loss",5,2,,Verb
+"vertō, vertere, vertī, versus","to turn, flee, exchange, rout",5,2,,Verb
+"ager, agri",(m.) field; pl. country,5,2,,Noun
+"agnus, agni",(m.) lamb,5,2,,Noun
+"ancilla, ancillae","(f.) maid, (female) servant",5,2,,Noun
+"angelus, angeli","(m.) messenger, angel",5,2,,Noun
+"apostolus, apostoli",(m.) apostle,5,2,,Noun
+"archangelus, archangeli",(m.) archangel,5,2,,Noun
+"Christus, Christi","(m.) Anointed One, Messiah, Christ",5,2,,Noun
+"Deus, Dei",(m.) God,5,2,,Noun
+"discipulus, discipuli","(m.) disciple, student",5,2,,Noun
+"dominus, domini","(m.)lord, master",5,2,,Noun
+"episcopus, episcopi","(m.) overseer, bishop",5,2,,Noun
+"filius, filii",(m.) son,5,2,,Noun
+hodie,today (adv.) ,5,2,,Adverb
+"iudaea, iudaeae",(f.) Judea,5,2,,Noun
+"iustitia, iustitiae","(f.) righteousness, justice",5,2,,Noun
+"Maria, Mariae",(f.) Mary,5,2,,Noun
+"minister, ministri","(m.) servant, minister",5,2,,Noun
+nam,for (coord. conj.),5,2,,Conjunction
+non,"no, not (adv.)",5,2,,Adverb
+"Petrus, Petri",(m.) Peter,5,2,,Noun
+"populus, populi","(m.) people, nation",5,2,,Noun
+"potentia, potentiae",(f.) power,5,2,,Noun
+"psalmus, psalmi",(m.) psalm,5,2,,Noun
+"puer, pueri","(m.) boy, child, servant",5,2,,Noun
+"servus, servi","(m.) servant, slave",5,2,,Noun
+trans,acc: across,5,2,,Preposition
+"absum, abesse, āfuī, -------","to be absent, be missing",5,3,4,Verb
+"dormiō, dormīre, dormīvī, dormītus","to sleap, slumber",5,3,,Verb
+"noceō, nocēre, nocuī, -------","to harm, injure, hurt",5,3,,Verb
+"vexō, vexāre, vexāvī, vexātus","to annoy, irritate, vex, toss, shake",5,3,,Verb
+"caelum, caeli","(n.) heaven, sky",5,3,,Noun
+"canticum, cantici","(n.) song, canticle",5,3,,Noun
+"chorus, chori","(m.) choir, round dance",5,3,,Noun
+"donum, doni",(n.) gift,5,3,,Noun
+"Evangelium, Evangelii ","(n.) Good News, Gospel",5,3,,Noun
+"festum, festi","(n.) feast, feast-day",5,3,,Noun
+"gaudium, gaudii",(n.) joy,5,3,,Noun
+hic,"here, in this place (adv.)",5,3,,Adverb
+"hymnus, hymni",(m.) hymn,5,3,,Noun
+ibi,"there, in that place, then (adv.)",5,3,,Adverb
+in saecula (saeculorum),forever,5,3,,Adverb
+"liber, libri",(m.) book,5,3,,Noun
+"mysterium, mysterii",(n.) mystery,5,3,,Noun
+"odium, odii",(n.) hatred,5,3,,Noun
+"peccatum, peccati",(n.) sin,5,3,,Noun
+"praeceptum, praecepti","(n.) lesson, precept, command",5,3,,Noun
+"praemium, praemii","(n.) reward, compensation",5,3,,Noun
+"regina, reginae",(f.) queen,5,3,,Noun
+"regnum, regni","(n.) kingdom, royalty, kingship",5,3,,Noun
+"sabbatum, sabbati",(n.) Sabbath,5,3,,Noun
+"sacrificium, sacrificii",(n.) sacrifice,5,3,,Noun
+"saeculum, saeculi","(n.) age, world",5,3,,Noun
+"testamentum, testamenti","(n.) testament, covenant",5,3,,Noun
+"universum, universi",(n.) universe,5,3,,Noun
+"verbum, verbi",(n.) word,5,3,,Noun
+"vinum, vini",(n.) wine,5,3,,Noun
+"vir, viri","(m.) man, husband",5,3,,Noun
+"vitium, vitii","(n.) fault, sin, vice",5,3,,Noun
+"admoveō, admovēre, admōvī, admōtus","to move to, bring up, apply",5,4,,Verb
+"effugiō, effugere, effūgī, effugitus","to flee (from), escape, elude, run away",5,4,,Verb
+"obsideō, obsidēre, obsēdī, obsessus","to sit near, frequent, besiege, invest",5,4,,Verb
+"vigilō, vigilāre, vigilāvī, vigilātus","to be awake, keep vigilant",5,4,,Verb
+"aeternus, -a, -um",eternal,5,4,,Adjective
+"animus, animi","(m.) heart, mind, spirit",5,4,,Noun
+"antiquus, -a, -um","old, ancient, ancients, forefathers",5,4,,Adjective
+"aurum, auri",(n.) gold,5,4,,Noun
+"beatus, -a, -um","blessed, happy",5,4,,Adjective
+"bonus, -a, -um",good,5,4,,Adjective
+"cenaculum, cenaculi","(n.) dining room, upper room, upstairs room ",5,4,,Noun
+"clarus, -a, -um","clear, bright, glorious, famous",5,4,,Adjective
+"gladius, gladii",(m.) sword,5,4,,Noun
+"impius, -a, -um","wicked, godless",5,4,,Adjective
+in aeternum,forever,5,4,,Adverb
+"magister, magistri","(m.) teacher, master, rabbi",5,4,,Noun
+"magnus, -a, -um","great, large, big",5,4,,Adjective
+"malus, -a, -um","bad, evil, wicked, miserable",5,4,,Adjective
+"meus, -a, -um","my, mine",5,4,,Adjective
+"modus, modi","(m.) manner, way",5,4,,Noun
+"mortuus, -a, -um","dead, late",5,4,,Adjective
+"multus, -a, -um","much, many",5,4,,Adjective
+"mundus, mundi",(m.) world,5,4,,Noun
+"noster, nostra, nostrum","our, ours",5,4,,Adjective
+"novus, -a, -um","new, recent",5,4,,Adjective
+"numerus, numeri","(m.) number, multitude",5,4,,Noun
+"pius, -a, -um","holy, loving, tender, pious",5,4,,Adjective
+Sabaoth,"armies, hosts",5,4,,Adjective
+"sacer, sacra, sacrum","holy, sacred",5,4,,Adjective
+"sacramentum, saramenti",(n.) sacrament,5,4,,Noun
+"tuus, -a, -um ","your, yours (sing.)",5,4,,Adjective
+ubi,"where?, where, in which place, when, as soon as",5,4,,Adverb
+"verus, -a, -um",true,5,4,,Adjective
+"vivus, -a, -um","living, alive",5,4,,Adjective
+"adveniō, advenīre, advēnī, adventus","to arrive, end up, get",5,5,4,Verb
+"ēsuriō, ēsurīre, ēsurīvī, -------","to be hungry, desire, yearn",5,5,,Verb
+"occurrō, occurere, occurrī, occursus","to run to meet, attack, oppose",5,5,,Verb
+"vincō, vincere, vīcī, victus",to conquer,5,5,4,Verb
+"adoro, -rare, -ravi, -ratus 1","to worship, adore",5,5,1,Verb
+"ambulo, ambulare, ambulavi, ambulatus","to walk, take a walk, ‘live’",5,5,1,Verb
+"benedictus, -a, -um","blessed, blest",5,5,,Adjective
+"canto, cantare, cantavi, cantatus","to sing, chant",5,5,1,Verb
+"divinus, -a, -um",divine,5,5,,Adjective
+"do, dare, dedi, datus 1",to give,5,5,1,Verb
+"documentum, documenti",(n.) example,5,5,,Noun
+"dono, -nare, -navi, -natus 1","to give, grant, forgive",5,5,1,Verb
+enim,"for, indeed",5,5,,Adverb
+"exoro, -rare, -ravi, -ratus 1",to beseech,5,5,1,Verb
+"famulus, famuli",(m.) servant,5,5,,Noun
+"iustus, -a, -um","righteous, just",5,5,,Adjective
+"laudo, -dare, -davi, -datus 1",to praise,5,5,1,Verb
+"libero, -rare, -ravi, -ratus 1",to free,5,5,1,Verb
+merito,"rightly, deservedly (adv.)",5,5,,Adverb
+numquam,never,5,5,,Adverb
+nunc,"now, at present",5,5,,Adverb
+"observo, -vare, -vavi, -vatus 1","to watch, observe",5,5,1,Verb
+"opero, -rare,-ravi, -ratus 1",to work,5,5,1,Verb
+"oro, orare, oravi, oratus 1",to pray,5,5,1,Verb
+"principium, prinicipii",(n.) beginning,5,5,,Noun
+quoque,"too, also",5,5,,Other
+"regno, -nare, -navi, -natus 1","to rule, reign, govern, restrain",5,5,1,Verb
+"sacro, -rare, -ravi, -ratus 1","to make holy, consecrate",5,5,1,Verb
+"sanctus, -a, -um","hallowed, holy, (pl.) saints",5,5,,Adjective
+semper,"always, ever",5,5,,Adverb
+"servo, servare, servavi, servatus","to keep, preserve",5,5,1,Verb
+"stella, stellae",(f.) star,5,5,,Noun
+"via, viae","(f.) way, road, street",5,5,,Noun
+"voco, -care, -cavi, -catus 1","to call, invite, summon",5,5,1,Verb
+"advesperāscit, advesperāscere, advesperāvit (only used in 3rd singular)","to get dark, become dark",5,6,,Verb
+"audio, audire, audivi, auditus",to hear ,5,6,4,Verb
+"excipiō, excipere, excēpī, exceptus","to take out, to except",5,6,,Verb
+"facio, facere, feci, factus 3","to do, make",5,6,3,Verb
+"invenio, invenire, invini, inventus","to come upon, find",5,6,4,Verb
+"olfaciō, olfacere, olfēcī, olfactus","to smell, scent out, detect",5,6,,Verb
+"trado, tradere, tradidi, traditus","to give over, hand down, betray",5,6,3,Verb
+"venio, venire, veni, ventus",to come ,5,6,4,Verb
+"vīsitō, vīsitāre, vīsitāvī, vīsitātus",to visit,5,6,,Verb
+adhuc,"yet, so far, till now, still (adv.)",5,6,,Conjunction
+"Aegyptius, -a, -um",Egyptian,5,6,,Adjective
+"ago, agere, egi, actus 3","to do, act, drive, conduct",5,6,3,Verb
+aut,or,5,6,,Conjunction
+"bibo, -bere, bibi, bibtus 3",to drink,5,6,3,Verb
+"capio, -pere, cepi, captus 3","to take, receive, understand",5,6,3,Verb
+"Christianus, -a, -um",Christian,5,6,,Adjective
+"credo, credere, credidi, creditus 3","to believe (in), trust (in)",5,6,3,Verb
+"deficio, -cere, -feci, -fectus 3","to fail, waste, vanish",5,6,3,Verb
+"deleo, -lere, -levi, -letus 2",to destroy,5,6,2,Verb
+"domus, domi","(f.) home, house",5,6,,Noun
+"duco, ducere, duxi, ductus 3","to lead, guide",5,6,3,Verb
+"electus, -a, -um","chosen, elect",5,6,,Adjective
+"exemplum, exempli",(n.) example,5,6,,Noun
+"fugo, -gare, -gavi, -gatus 1","to put to flight, chase away",5,6,1,Verb
+"habeo, habere, habui, habitus","to have, hold, consider",5,6,2,Verb
+"Hebraeus, Hebaei",(m.) Hebrew,5,6,,Noun
+"iungo, -gere, iunxi, iunctus 3","to join, unite",5,6,3,Verb
+"misceo, -cere, -cui, mixtus 2","to mix, mingle",5,6,2,Verb
+"natus, nati","(m.) son, child",5,6,,Noun
+-ne,enclitic interrog. particle,5,6,,Other
+quare,"for what reason?, why? (interrog. adv.)",5,6,,Adverb
+"reddo, -dere,-didi,-ditus 3","to give back, render",5,6,3,Verb
+"seduco, -cere, seduxi, -ctus 3",to deceive,5,6,3,Verb
+"templum, templi","(n.) temple, church",5,6,,Noun
+"appropinquo, appropinquare, appropinquavi, appropinquatus","to draw near, approach",5,7,1,Verb
+excitō excitāre excitāvī excitātus ,"to wake up, call forth, raise",5,7,,Verb
+occidualis,western,5,7,,Adjective
+"pernoctō, pernoctāre, pernoctāvī, pernoctātus",to pass the night,5,7,,Verb
+"anima, animae","(f.) soul, life, breath, wind",5,7,,Noun
+bene,"well, okay",5,7,,Adverb
+"carus, -a, -um","(+ dat.) dear, beloved",5,7,,Adjective
+"celebro, -rare, -ravi, -ratus 1",to celebrate,5,7,1,Verb
+"diaconus, diaconi",(m.) deacon,5,7,,Noun
+"dico, dicere, dixi, dictus 3","to say, tell (pass.: be called)",5,7,3,Verb
+"dignus, -a, -um",(+ abl.) worthy (of),5,7,,Adjective
+"firmo, -mare, -mavi, -matus 1","to strengthen, make steady",5,7,1,Verb
+"firmus, -a, -um","steadfast, firm",5,7,,Adjective
+"iesus, iesu, iesum","(m.) (voc. Jesu) Jesus, Joshua",5,7,,Noun
+in primis,"at first, in the first place",5,7,,Adverb
+"laetitia, laetitiae","(f.) gladness, joy",5,7,,Noun
+"liturgia, liturgiae","(f.) (divine) service, liturgy",5,7,,Noun
+"maestus, -a, -um",sad,5,7,,Adjective
+male,"badly, poorly (adv.)",5,7,,Adverb
+"misericordia, misericordiae","(f.) mercy, kindness, pity",5,7,,Noun
+"Nazarenus, -a, -um","of Nazareth, Nazarene, Nazorean",5,7,,Adjective
+"plenus, -a, um (+abl.) ",full (of),5,7,,Adjective
+"primus, -a, um",first ,5,7,,Adjective
+propter,"acc: on account of, because of",5,7,,Preposition
+"responsum, responsi","(n.) answer, response",5,7,,Noun
+"sano, -nare, -navi, -natus 1",to heal,5,7,1,Verb
+"turba, turbae","(f.) crowd, multitude",5,7,,Noun
+una,"together, one",5,7,,Adverb
+"universus, -a, um","all, the whole",5,7,,Adjective
+"unus, -a, um","one, a, an",5,7,,Adjective
+"victoria, victoriae",(f.) victory,5,7,,Noun
+"votum, voti","(n.) vow, prayer",5,7,,Noun
+"arripiō, arripere, arripuī, arreptus",to lay hold of,5,8,,Verb
+"exclāmō, exclāmāre, exclāmāvī, exclāmātus","to shout, cry aloud, exclaim",5,8,,Verb
+"petō, petere, petīvī, petītus","to ask, ask for, beg, bid, request",5,8,4,Verb
+"rego, regere, rexi, rextus 3","to rule, guide, govern",5,8,3,Verb
+"angelicus, -a, -um",angelic,5,8,,Adjective
+"contritus, -a, -um",contrite,5,8,,Adjective
+"cunctus, -a, -um",all,5,8,,Adjective
+etiam,"also, even ",5,8,,Conjunction
+"gloriosus, -a, -um",glorious,5,8,,Adjective
+"gratus, -a, -um","(dat.) pleasing, agreeable",5,8,,Adjective
+iam,"already, now, soon (adv.)",5,8,,Adverb
+"incensum, incensi",(n.) incense,5,8,,Noun
+iterum,again (adv.),5,8,,Adverb
+"meritum, meriti",(n.) merit,5,8,,Noun
+"mirus, -a, -um",wonderful,5,8,,Adjective
+"mundus, -a, -um","pure, clean",5,8,,Adjective
+per,acc: through,5,8,,Preposition
+"pleo, plere, plevi, pletus 2","to fill, complete",5,8,2,Verb
+post,"acc: after, behind",5,8,,Preposition
+quando,when? (interrog. adv.),5,8,,Adverb
+quia,"that, because, as, for, since (subord. conj.)",5,8,,Conjunction
+quod,"that, because, since, as (subord. conj.)",5,8,,Conjunction
+quoniam,"that, because (subord. conj.)",5,8,,Conjunction
+"sacrosanctus, -a, -um","most holy, venerable",5,8,,Adjective
+"salutifer, -a, -um","salutary, saving",5,8,,Adjective
+sed,"but, yet (coord. conj.)",5,8,,Conjunction
+"silentium, silentii",(n.) silence,5,8,,Noun
+"supernus, -a, -um","heavenly, celestial",5,8,,Adjective
+"terrenus, -a,-um",earthly,5,8,,Adjective
+tunc,"then, at that time (adv.)",5,8,,Adverb
+"ascendō, ascendere, ascendī, ascēnsus",to climb,5,9,,Verb
+"explicō, explicāre, explicāvī, explicātus","to unroll, undo, explain, expound",5,9,,Verb
+"pluit, pluere, pluit/plūvit (usually only 3rd singular)",it is raining,5,9,,Verb
+"adiuvo, adiuvare, adiuvi, adiutus","to help, aid, assist",5,9,1,Verb
+"altus, -a, -um","high, deep",5,9,,Adjective
+"apostolicus, -a, -um",apolstolic,5,9,,Adjective
+autem,"but, and ",5,9,,Conjunction
+"catholicus, -a, -um","universal, catholic",5,9,,Adjective
+causa,(improper prep. w/ gen.) for the sake of ,5,9,,Preposition
+"causa, causae","(f.) purpose, reason",5,9,,Noun
+"cereus, cerei","(m.) candle, wax, taper",5,9,,Noun
+certe,"surely, certainly, at least (adv.)",5,9,,Adverb
+diligenter,diligently (adv.),5,9,,Adverb
+"formo, -mare, -mavi, -matus 1","to train, guide, fashion, form",5,9,1,Verb
+inter,"acc: between, among",5,9,,Preposition
+"intro, -rare, -ravi, -ratus 1",to enter,5,9,1,Verb
+"mandatum, mandati","(n.) order, commandment",5,9,,Noun
+"perhibeo, -bere, -bui, -bitus 2","to hold out, produce, afford",5,9,2,Verb
+saepe,"frequently, often, regularly",5,9,,Adverb
+"satio, -iare, -iavi, -iatus 1","to nourish, satisfy",5,9,1,Verb
+"scio, scire, scivi, scitus 4",to know,5,9,4,Verb
+"separo, -rare,-ravi, -ratus 1",to separate,5,9,1,Verb
+"socius, socii","(m.) companion, ally",5,9,,Noun
+statim,"immediately, at once (adv.)",5,9,,Adverb
+sub,acc: (to a place) under  abl: (in or at a place) under,5,9,,Preposition
+"tectum, tecti","(n.) roof, house",5,9,,Noun
+"testimonium, testimonii","(n.) witness, testimony",5,9,,Noun
+vere,truly (adv.),5,9,,Adverb
+"vester, vestra, vestrum","your, yours (pl.)",5,9,,Adjective
+"vestigium, vestigii",(n.) footstep,5,9,,Noun
+"video, videre, vidi, visus","to see, realize",5,9,2,Verb
+"augeō, augēre, auxī, auctus","to increase, strengthen",5,10,,Verb
+"extendō, extendere, extendī, extentus",to stretch out,5,10,,Verb
+"finio, finire, finivi, finitus","to end, finish",5,10,4,Verb
+"praecipitō, praecipitāre, praecipitāvī, praecipitātus",to fall or cast down headlong,5,10,,Verb
+alleluja,alleluja,5,10,,Other
+"annus, anni",(m.) year,5,10,,Noun
+ante,"acc: before; formerly, previously",5,10,,Preposition
+"clerus, cleri",(m.) clergy,5,10,,Noun
+"debitum, debiti",(n.) debt,5,10,,Noun
+"desiderium, desiderii","(n.) want, need, desire",5,10,,Noun
+"detrimentum, detrimenti",(n.) loss,5,10,,Noun
+ecce,look! here! (interjection),5,10,,Other
+eleison,have mercy,5,10,,Verb
+"excelsus, -a, -um","high, lofty, exalted",5,10,,Adjective
+"Galilaea, Galilaeae",(f.) Galiliee,5,10,,Noun
+hosanna,hosanna,5,10,,Other
+"imperium, imperii","(n.) dominion, empire, precept, command",5,10,,Noun
+Kyrie,O Lord!,5,10,,Noun
+"ministerium, ministerii","(n) ministry, service",5,10,,Noun
+perenniter,"constantly, perennially (adv.)",5,10,,Adverb
+"perpetuus, -a, -um","everlasting, perpetual",5,10,,Adjective
+postea,"afterward, later on (adv.)",5,10,,Adverb
+"qui, quae, quod","which? what? (rel. pro.) who, which that",5,10,,Pronoun
+secundum,acc: according to,5,10,,Preposition
+"secundus, -a, -um","next, second",5,10,,Adjective
+"solvo, -vere, -vi, solutus 3","to set free, break up, pay back",5,10,3,Verb
+"spatium, spatii",(n.) space,5,10,,Noun
+subito,"abruptly, all of a sudden, suddenly",5,10,,Adverb
+"tollo, -lere, sustuli, sublatus 3","to take away, lift up, take up",5,10,3,Verb
+"unigenitus, -a, -um","only begotten, only",5,10,,Adjective
+"vinculum, vinculi","(n.) bond, chain",5,10,,Noun
+"aperio, aperire, aperui, apertus","to open, explain",5,11,4,Verb
+"capiō, capere, cēpī, captus","to capture, catch, grapple, captivate, get, lay hold of, pick up, take",5,11,4,Verb
+"extrahō, extrahere, extrāxī, extractus","to draw forth, remove, prolong",5,11,,Verb
+"praecurrō, praecurrere, praecurrī, praecursus","to go ahead, precede, surpass",5,11,,Verb
+apud,"acc: at, among, beside, near, in the presence of",5,11,,Preposition
+"aula, aulae","(f.) hall, church",5,11,,Noun
+"cibus, cibi",(m.) food,5,11,,Noun
+"columna, columnae","(f.) pillar, column",5,11,,Noun
+"craetura, craeturae","(f.) creation, creature",5,11,,Noun
+"dolorosus, -a, -um",sorrowful,5,11,,Adjective
+"exsulto, -tare, -tavi, -tatus 1","to rejoice, exult",5,11,1,Verb
+"flamma, flammae",(f.) flame,5,11,,Noun
+"glorifico, -care, -cavi, -catus 1",to glorify,5,11,1,Verb
+"grego, -gare, -gavi, -gatus 1","to gather, assemble",5,11,1,Verb
+hinc,"here, from here, this way (adv.)",5,11,,Adverb
+"hostia, hostiae","(f.) sacrificial offering, host",5,11,,Noun
+"inclino, -nare, -navi, -natus 1",to bend,5,11,1,Verb
+"innocentia, innocentiae",(f.) innocence,5,11,,Noun
+"laetus, -a, -um",joyful,5,11,,Adjective
+ob,acc: because of,5,11,,Preposition
+"paro, parare, paravi, paratus","to provide, prepare",5,11,1,Verb
+"parvus, -a, -um","little, small",5,11,,Adjective
+"Pascha, Paschae/Paschatis","Passover, Pesach, Pasch, Easter",5,11,,Noun
+"Paulus, Pauli",(m.) Paul,5,11,,Noun
+"propheta, prophetae",(m.) prophet,5,11,,Noun
+"reclino, -nare, -navi, -natus 1",to bend back,5,11,1,Verb
+"resulto, -tare, -tavi, -tatus 1","to resound, rebound",5,11,1,Verb
+"sanctifico, -care, -cavi, -catus 1","to make holy, sanctify",5,11,1,Verb
+"scriptura, scripturae","(f.) writing, scripture",5,11,,Noun
+"tertius, -a, -um",third,5,11,,Adjective
+"caveō, cavēre, cāvī, cautus","to beware, avoid, look out for; give security",5,12,,Verb
+"feriō, ferīre, ferīvī, ferītus","to hit, strike,  kill, cheat",5,12,,Verb
+"mitto, mittere, misis, missus 3","to send, cast, put",5,12,3,Verb
+"pūniō, pūnīre, pūnīvī, pūnītus",to punish,5,12,4,Verb
+"relinquo, -quere, -qui, relictus 3","to leave (behind), abandon",5,12,3,Verb
+"surgo, surgere, surrexi, surrectus","to rise up, arise",5,12,3,Verb
+antequam,before (subord. conj.),5,12,,Conjunction
+atque (ac),"and (also), and (even)",5,12,,Conjunction
+"certus, -a, -um","fixed, sure, certain",5,12,,Adjective
+"clamo, clamare, clamavi, clamatus","to cry out, shout, call upon",5,12,1,Verb
+"collecta, collectae","(f.) collect, collection",5,12,,Noun
+"dēbeō, dēbēre, dēbuī, dēbitus","to owe, ought (+ inf.)",5,12,2,Verb
+"desino, -nere, desii, desitus 3",to cease (+ inf.),5,12,3,Verb
+"Eva, Evae",(f.) Eve,5,12,,Noun
+"guberno, -nare, -navi, -natus 1","to govern, control, rule",5,12,1,Verb
+igitur,"therefore, then",5,12,,Conjunction
+"maximus, -a, -um","greatest, very great",5,12,,Adjective
+"mensa, mensae","(f.) table, banquet",5,12,,Noun
+nimis,too (much) (adv.),5,12,,Adverb
+"optimus, -a, -um","best, very good",5,12,,Adjective
+"permitto, -tere, -misi, -missus 3","to allow, permit (+dat. and inf.)",5,12,3,Verb
+"possum, posse, potui, ---","to be able,  can (+ inf.)",5,12,,Verb
+postquam,after (subord. conj.),5,12,,Conjunction
+"quidam, quaedam, quiddam","a certain (one, thing)",5,12,,Noun
+tamen,"but, however, nevertheless, yet",5,12,,Conjunction
+"valeo, -lere, -lui, --- 2","to be well, be strong, be able (+ inf.)",5,12,2,Verb
+"videor, -deri, ---, visus sum 2","to be seen, seem (+ inf.)",5,12,2,Verb
+"vivo, -vere, vixi, victus 3",to live,5,12,3,Verb
+"celo, celare, celavi, celatus ","to hide, conceal, keep secret",5,13,,Verb
+"festīnō, festīnāre, festīnāvī, festīnātus","to hurry, hasten",5,13,,Verb
+"quiēscō, quiēscere, quiēvī, quiētus","to rest, sleep, stop (doing smthg)",5,13,,Verb
+"addo, -dere, -didi, -ditus 3","to give to, add",5,13,3,Verb
+"baptista, baptistae","(m.) baptizer, baptist",5,13,,Noun
+"brachium, brachii",(n.) arm,5,13,,Noun
+"ceno, cenare, cenavi, cenatus","to dine, eat supper",5,13,1,Verb
+"creo, creare, creavi, creatus 1",to create,5,13,1,Verb
+"desertum, deserti",(n.) desert,5,13,,Noun
+"desertus, -a, -um","forsaken, deserted",5,13,,Adjective
+"dextera, dexterae",(f.) right hand,5,13,,Noun
+"digitus, digiti","(m.) finger, toe",5,13,,Noun
+"-do, -dere, -didi, -ditus 3",to put,5,13,3,Verb
+donec,"while, as long as, till (subord. conj.)",5,13,,Conjunction
+dum,"while, as long as, till (subord. conj.)",5,13,,Conjunction
+etsi,"although, even if (subord. conj.)",5,13,,Conjunction
+"Galilaeus, -a, -um",Galilaean,5,13,,Adjective
+"incarno, -nare, -navi, I-natus 1","to make into flesh, make incarnate",5,13,1,Verb
+"iudaeus, -a, -um",Jewish,5,13,,Adjective
+"muto, -tare, -tavi, -tatus 1","to change, exchange, turn",5,13,1,Verb
+nisi,"unless, if … not, except, but (subord. conj.)",5,13,,Conjunction
+"oculus, oculi",(m.) eye,5,13,,Noun
+"pario, parere, peperi, partus 3","to beget, produce, bear",5,13,3,Verb
+"perdo, -dere, -didi, -ditus 3","to loose, destroy",5,13,3,Verb
+primum,(at) first (adv.),5,13,,Adverb
+"Romanus, -a, -um",Roman,5,13,,Adjective
+si,"if, whether (subord. conj.)",5,13,,Conjunction
+"specio, specere, spexi, spectus 3",to look (at),5,13,3,Verb
+"sto, stare, steti, status 1",to stand (still),5,13,1,Verb
+"tuba, tubae",(f.) trumpet,5,13,,Noun
+ubique,"everywhere, anywhere (adv.)",5,13,,Adverb
+"cesso, cessare, cessavi, cessatus ","to cease, linger, delay",5,14,,Verb
+"fugiō, fugere, fūgī, fugitus","to run away, flee (from)",5,14,,Verb
+"recuperō, recuperāre, recuperāvī, recuperātus","to regain, recoup, recover",5,14,,Verb
+"scribo, scribere, scripsi, scriptus 3",to write,5,14,3,Verb
+"baptisma, baptismatis",(n.) baptism,5,14,,Noun
+"corpus, corporis","(n.) body, flesh, corpse",5,14,,Noun
+"deprecatio, deprecationis","(f.) earnest prayer, supplication",5,14,,Noun
+"detergeo, detergere, detersi, detersus 2","to wipe away, cancel",5,14,2,Verb
+"diligo, diligere, dilexi, dilectus 3",to love,5,14,3,Verb
+ergo,therefore (coord. conj.),5,14,,Conjunction
+"genus, generis","(n.) kind, race, nation",5,14,,Noun
+"homo, hominis","(m.) human being, person",5,14,,Noun
+ideo,"therefore, on that account (adv.)",5,14,,Adverb
+"inhaereo, inhaerere, inhaesi, inhaesus 2","to cling to, adhere to (+ dat.)",5,14,2,Verb
+"ioannes, ioannis",(m.) John,5,14,,Noun
+"lego, legere, legi, lectus 3","to choose, select, read",5,14,3,Verb
+"lumen, luminis","(n.) light, pl: also eyes",5,14,,Noun
+"mater, matris",(f.) mother,5,14,,Noun
+"munus, muneris","(n.) gift, offering, task, duty, pl: also bribes",5,14,,Noun
+"nomen, nominis",(n.) name,5,14,,Noun
+"oratio, orationis","(f.) prayer, speech",5,14,,Noun
+"pater, patris",(m.) father,5,14,,Noun
+"pax, pacis","(f.) harmony, peace",5,14,,Noun
+"princeps, prinicipis","(m.) chief, prince",5,14,,Noun
+quamquam,although (subord. conj.),5,14,,Conjunction
+"redemptor, redemptoris","(m.) one who buys back, redeemer",5,14,,Noun
+"rex, regis",(m.) king,5,14,,Noun
+"ruber, rubra, rubrum",red,5,14,,Adjective
+"sacerdos, sacerdotis",(m.) priest,5,14,,Noun
+"siccus, -a, -um",dry,5,14,,Adjective
+"suscipio, suscipere, suscepi, susceptus 3","to take up, pick up, accept",5,14,3,Verb
+"virgo, virginis",(f.) virgin,5,14,,Noun
+"voluntas, voluntatis",(f.) will,5,14,,Noun
+"concidō, concidere, concidī, -------","to be ruined, perish, fall down",5,15,,Verb
+"gemō, gemere, gemuī, gemitus","to groan, moan",5,15,4,Verb
+"removeō, removēre, remōvī, remōtus","to draw back, set aside, take away",5,15,,Verb
+"ambo, ambonis","(m.) lectern, ambo",5,15,,Noun
+"aptus, -a, -um","fitting, suitable, apt (+ dat., ad + acc.)",5,15,,Adjective
+"caligo, caliginis","(f.) mist, gloom, darkness",5,15,,Noun
+"cantor, cantoris","(m.) singer, cantor",5,15,,Noun
+"cor, cordis, cordium","(n.) heart, soul; sg. abl.  = corde",5,15,,Noun
+"cruor, cruoris",(m.) blood (from a wound),5,15,,Noun
+"finis, finis, finium","(m. & f.) end, conclusion, boundary; pl. territory, district",5,15,,Noun
+"humanus, -a, -um",human,5,15,,Adjective
+"iniquitas, iniquitatis","(f.) bounty, abundance",5,15,,Noun
+"lectio, lectionis",(f.) reading,5,15,,Noun
+"lector, lectoris","(m.) reader, lector",5,15,,Noun
+"manduco, manducare, manducavi, manducatus 1",to eat,5,15,1,Verb
+"mare, maris, marium",(n.) sea,5,15,,Noun
+"mens, mentis, mentium","(f.) mind, intention",5,15,,Noun
+"mors, mortis, mortium",(f.) death,5,15,,Noun
+"panis, panis, panium","(m.) bread, loaf of bread",5,15,,Noun
+"pars, partes, partium","(f.) part, some",5,15,,Noun
+"particeps, participis","(m. & f.) partaker, sharer",5,15,,Noun
+"postis, postis, postium",(m.) doorpost,5,15,,Noun
+prae,"abl: before, in preference to, in comparison with, in consequence of, because of",5,15,,Preposition
+praeter,"acc: except, beyond, past",5,15,,Preposition
+"proximus, -a, -um","nearest (+ dat.), as subst. = neighbor",5,15,,Adjective
+"resurrectio, resurrectionis","(f.) rising again, resurrection",5,15,,Noun
+"salus, salutis","(f.) safety, health, salvation",5,15,,Noun
+"salvus, -a, -um","safe, saved, sound",5,15,,Adjective
+"sanguis, sanguinis",(m.) blood,5,15,,Noun
+satis,"enough, sufficiently, quite, rather ",5,15,,Adverb
+"sono, sonare, sonui, sonitus 1",to (make a) sound,5,15,1,Verb
+"condō, condere, condidī, conditus","to establish, build, place, store",5,16,,Verb
+"haereō, haerēre, haesī, -------","to stick, cling",5,16,,Verb
+"repellō, repellere, reppulī, repulsus","to drive back, repel",5,16,,Verb
+"acer, acris, acre","sharp, bitter, ardent",5,16,,Adjective
+"calix, calicis","(m.) cup, chalice, goblet",5,16,,Noun
+"caritas, caritatis","(f.) love, charity",5,16,,Noun
+"confundo, confundere, confudi, confusus 3","to confound, put to shame, confuse",5,16,3,Verb
+"cornu, cornus","(n.) horn, mountaintop",5,16,,Noun
+"crux, crucis",(f.) cross,5,16,,Noun
+"effundo, effundere, effudi, effusus 3","to pour out, shed, spill",5,16,3,Verb
+"felix, felicis","happy, blessed",5,16,,Adjective
+"figo, figere, fixi, fixus 3","to pierce, fix, fasten",5,16,3,Verb
+"flecto, flectere, flexi, flexus 3","to bend, bow",5,16,3,Verb
+"frango, frangere, fregi, fractus 3",to break,5,16,3,Verb
+"fundo, fundere, fudi, fusus 3",to pour,5,16,3,Verb
+"genu, genus",(n.) knee,5,16,,Noun
+intra,"acc: within, among",5,16,,Preposition
+"manus, manus",(f.) hand,5,16,,Noun
+"memor, memoris",mindful of (+ gen),5,16,,Adjective
+"omnipotens, omnipotentis",all-powerful,5,16,,Adjective
+"omnis, omne","every, all, everyone",5,16,,Adjective
+"paschalis, paschale","of Easter, Paschal",5,16,,Adjective
+"passio, passionis","(f.) suffering, passion",5,16,,Noun
+"potus, potus",(m.) drink,5,16,,Noun
+quapropter,"wherefore, and therefore (coord. conj.)",5,16,,Conjunction
+"ritus, ritus","(m.) ceremony, rite",5,16,,Noun
+"salutaris, salutare","saving, of salvation",5,16,,Adjective
+"scando, scandere, scandi, scansus 3","to climb, mount",5,16,3,Verb
+"similis, simile","like, similar to (+ dat.)",5,16,,Adjective
+"spiritus, spiritus","(m.) breath, spirit",5,16,,Noun
+"suavitas, suavitatis",(f.) sweetness,5,16,,Noun
+"vultus, vultus","(m.) face, countenance",5,16,,Noun
+"circumeo, circumire, circumivi (-ii), circumitus",to go about,5,17,4,Verb
+"condūcō, condūcere, condūxī, conductus","to conduct, lead forth",5,17,,Verb
+"exeo, exire, exivi (-ii), exitus","to go out, leave",5,17,4,Verb
+"iaciō, iacere, iēcī, iactus","to throw, cast, scatter",5,17,,Verb
+"redeo, redire, redivi (-ii), reditus","to go back, return",5,17,4,Verb
+"reprehendō, reprehendere, reprehendī, reprehēnsus","to blame, reprove, refute, hold back, check, catch",5,17,,Verb
+"acceptabilis, acceptabile","agreeable, acceptable, enjoyable, lovely, nice, pleasant, ",5,17,,Adjective
+"admitto, admittere, admisi, admissus 3","to join, admit, allow, permit",5,17,3,Verb
+"adsum (assum), adesse, affui, ---",to be present,5,17,,Verb
+"adventus, adventus","arrival, coming, advent",5,17,,Noun
+"amitto, amittere, amisi, amissus 3","to send off, lose",5,17,3,Verb
+"clemens, clementis",merciful,5,17,,Adjective
+"dilectio, dilectionis",(f.) love,5,17,,Noun
+"episcopalis, episcopale","of a bishop, episcopal",5,17,,Adjective
+"fructus, fructus ",(m.) fruit,5,17,,Noun
+ierusalem,Heb. indeclinable noun = Jerusalem,5,17,,Noun
+"ineo, inire, inivi (-ii), initus","to go in, enter (upon)",5,17,4,Verb
+"intereo, interire, interivi (-ii), interitus","to perish, die",5,17,4,Verb
+"introeo, introire, introivi (-ii), introitus","to go within, enter",5,17,4,Verb
+"invisibilis, invisibile","spiritual, invisible",5,17,,Adjective
+"laus, laudis",(f.) praise,5,17,,Noun
+"locus, loci","(m.) place, location (pl. loca)",5,17,,Noun
+"nuntio, nuntiare, nuntiavi, nuntiatus 1","to declare, announce",5,17,1,Verb
+"obeo, obire, obivi, (-ii), obitus","to go to meet, die",5,17,4,Verb
+"pereo, perire, perivi (-ii), peritus","to perish, die, be lost",5,17,4,Verb
+"pertranseo, pertransire, pertransivi (-ii), pertransitus","to go all about, go away, pierce",5,17,4,Verb
+"pietas, pietatis","(f.) goodness, tenderness, pity",5,17,,Noun
+"placo, placare, placavi, placatus 1","to appease, reconcile",5,17,1,Verb
+"praeeo, praeire, praeivi (-ii), praeitus",to go before,5,17,4,Verb
+"prodeo, prodire, prodivi (-ii), proditus",to go forth,5,17,4,Verb
+"prosum, prodesse, profui, ---","to avail, profit, be advantageous (to) (+ dat.)",5,17,,Verb
+"purgo, purgare, purgavi, purgatus 1","to purify, purge, clean",5,17,1,Verb
+"remissio, remissionis","(f.) forgiveness, remission",5,17,,Noun
+"remitto, remittere, remisi, remissus 3","to send back, forgive",5,17,3,Verb
+"Roma, Romae",(f.) Rome,5,17,,Noun
+"salvator, salvatoris",(m.) savior,5,17,,Noun
+"subeo, subire, subivi (-ii), subitus","to go under, submit to, climb",5,17,4,Verb
+"supplex, supplicis","suppliant = expressing humble, but heartfelt appeal",5,17,,Noun
+"tellus, telluris","(f.) earth, land, soil",5,17,,Noun
+"transeo, transire, transivi (-ii), transitus","to go across, pass through, pass away",5,17,4,Verb
+usque,"as far as, all the way (adv.)",5,17,,Adverb
+"vetus, veteris","old, ancient, former",5,17,,Adjective
+"visibilis, visibile","tangible, visible",5,17,,Adjective
+"vivifico, vivificare, vivificavi, vivificatus 1","to bring to life, make live",5,17,1,Verb
+"cōnficiō, cōnficere, cōnfēcī, cōnfectus",to finish,5,18,,Verb
+"custodio, custodire, custodivi, custoditus","to guard, watch over",5,18,4,Verb
+"impediō, impedīre, impedīvī, impedītus","to entangle, hold fast",5,18,,Verb
+"perficio, perficere, perfeci, perfectus 3","to do completely, finish, accomplish",5,18,3,Verb
+"revocō, revocāre, revocāvī, revocātus","to call back, recover, refer, revoke",5,18,,Verb
+"altare, altaris, altarium",(n.) altar,5,18,,Noun
+"ars, artis, artium","(f.) (practical) knowledge, art, trick",5,18,,Noun
+"ascensio, ascensionis","(f.) going up, ascension",5,18,,Noun
+"baptizo, baptizare, baptizavi, baptizatus 1","to immerse, baptize",5,18,1,Verb
+"benignus, -a, -um",kindly,5,18,,Adjective
+"cedo, cedere, cessi, cessus 3","to go, yield",5,18,3,Verb
+circum,"acc: around, about",5,18,,Preposition
+"claudo, claudere, clausi, clausus 3","to shut, close, lock",5,18,3,Verb
+"clementia, clementia","(f.) mercy, clemency",5,18,,Noun
+"cotidianus, -a, -um",daily,5,18,,Adjective
+cotidie,daily (adv.),5,18,,Adverb
+"devotus, -a, -um","devout, devoted",5,18,,Adjective
+"evangelizo, evangelizare, evangelizavi, evangelizatus 1",to preach the gospel,5,18,1,Verb
+"festus, -a, um",festal,5,18,,Adjective
+"grex, gregis","(m.) flock, herd",5,18,,Noun
+"humanitas, humanitatis",(f.) humanity,5,18,,Noun
+inde,"from there, from then (adv.)",5,18,,Adverb
+"indeficiens, indeficientis",unfailing,5,18,,Adjective
+"intendo, intendere, intendi, intentus (-sus) 3","to aim (at), look at intently",5,18,3,Verb
+"interficio, interficere, interfeci, interfectus 3","to do away with, kill",5,18,3,Verb
+"Levita (Levites), Levitae","(m.) deacon, Levite",5,18,,Noun
+"lex, legis","(f.) law, Torah",5,18,,Noun
+"Lucas, Lucae",(m.) Luke,5,18,,Noun
+"ostendo, ostendere, ostendi, ostentus (-sus) 3","to show, explain",5,18,3,Verb
+"pastor, pastoris","(m.) shepherd, pastor",5,18,,Noun
+"pervenio, pervenire, perveni, perventus 4","to arrive, attain",5,18,4,Verb
+"sapientia, sapientiae",(f.) wisdom,5,18,,Noun
+"subvenio, subvenire, subveni, subventus 4","to come upon, assist, come to help (+ dat.)",5,18,4,Verb
+"sufficio, sufficere, suffeci, suffectus 3","to be enough, be sufficient",5,18,3,Verb
+"supervenio, supervinire, superveni, superventus 4","to come upon, overtake (+ dat.), come up, arrive",5,18,4,Verb
+"tendo, tendere, tetendi, tentus (tensus) 3","to stretch, extend",5,18,3,Verb
+"tenebrae, tenebrarum","(f.) pl. darkness, gloom",5,18,,Noun
+"coniciō, conicere, coniēcī, coniectus","to hurl, throw",5,19,,Verb
+"incitō, incitāre, incitāvī, incitātus",to spur on,5,19,,Verb
+"rīdeō, rīdēre, rīsī, rīsus","to laugh, laugh at",5,19,,Verb
+"alo, alere, alui, altus 3","to nourish, feed, nurse, attend",5,19,3,Verb
+"appareo, apparere, apparui, apparitus 2","to show forth, appear, emerge",5,19,2,Verb
+"auris, auris, aurium",(f.) ear,5,19,,Noun
+"cado, cadere, cecidi, casus 3","to fall (down), drop",5,19,3,Verb
+"caput, capitis","(n.) head, chapter, pate",5,19,,Noun
+"caro, carnis","(f.) flesh, meat",5,19,,Noun
+"curo, curare, curavi, curatus 1","to heal, cure, care for",5,19,1,Verb
+deinde,"then, next, thereupon (adv.)",5,19,,Adverb
+"desidero, desiderare, desideravi, desideratus 1",to desire,5,19,1,Verb
+"dies, diei",(m. & f.) day,5,19,,Noun
+"dilectus, -a, -um",beloved,5,19,,Adjective
+"doceo, docere, docui, doctus 2",to teach,5,19,2,Verb
+"dulcis, dulce","sweet, kind",5,19,,Adjective
+"ego, mei",I (pron.),5,19,,Noun
+"fidelis, fidele","faithful, believing",5,19,,Adjective
+"fides, fidei","(f.) faith, faithfulness",5,19,,Noun
+"frater, fratris",(m.) brother,5,19,,Noun
+"latus, lateris",(n.) side,5,19,,Noun
+"mulier, mulieris","(f.) woman, wife",5,19,,Noun
+"os, oris",(n.) mouth,5,19,,Noun
+"pes, pedis",(m.) foot,5,19,,Noun
+"prex, precis","(f.) entreaty, prayer",5,19,,Noun
+"res, rei","(f.) thing, matter, affair",5,19,,Noun
+"spes, spei",(f.) hope,5,19,,Noun
+"supersubstantialis, supersubstantiale",life-sustaining,5,19,,Adjective
+sursum,"on high, upward (adv.)",5,19,,Adverb
+"tu, tui",you (pron.),5,19,,Noun
+"vulnero, vulnerare, vulneravi, vulneratus 1",to wound,5,19,1,Verb
+"cōnsidō, cōnsidere, cōnsēdī, cōnsessus","to set down, settle",5,20,,Verb
+"induō, induere, induī, indūtus",to put on,5,20,,Verb
+"saltō, saltāre, saltāvī, saltātus",to dance,5,20,,Verb
+"arbor, arboris",(f.) tree,5,20,,Noun
+"audeo, audere, ---, ausus sum 2","to dare, be bold, have the courage",5,20,2,Verb
+"benedictio, benedictionis","(f.) blessing, benediction",5,20,,Noun
+"confido, confidere, ---, confisus sum3","to trust (in), confide (in), hope (in), (w/ dat.)",5,20,3,Verb
+"consubstantialis, consubstantiale","of the same nature (as), consubstantial (+ dat.)",5,20,,Adjective
+"gaudeo, gaudere, ---, gavisus sum","to rejoice, be glad",5,20,2,Verb
+"ignis, ignis, ignium",(m.) fire,5,20,,Noun
+"innocens, innocentis","clean, pure, innocent",5,20,,Adjective
+"lacrima, lacrimae",(f.) tear (from the eye),5,20,,Noun
+"memoria, memoriae","(f.) remembrance, memory",5,20,,Noun
+"miror, mirari, ---, miratus sum 1","to wonder (at), be amazed (at)",5,20,1,Verb
+"miser, misera, miserum","wretched, pitiable",5,20,,Adjective
+"misereor, misereri, ---, misertus sum 2",to have pity on (w/ gen. or dat.),5,20,2,Verb
+"morior, mori, ---, mortuus sum 4",to die,5,20,4,Verb
+"nascor, nasci, ---, natus sum 4","to be born, arise",5,20,4,Verb
+nihil (nil),"nothing, not at all (noun, adv.)",5,20,,Noun
+"nox, noctis, noctium",(f.) night,5,20,,Noun
+opus est,"it is necessary, there is a need (+ inf. or abl.)",5,20,,Verb
+"opus, operis","(n.) work, deed",5,20,,Noun
+"orior, oriri, ---, ortus sum 4","to spring up, arise, appear",5,20,4,Verb
+"paternus, -a, -um","of a father, paternal",5,20,,Adjective
+"patior, pati, ---, passus sum 4","to suffer, allow",5,20,4,Verb
+"peccator, peccatoris",(m.) sinner,5,20,,Noun
+"pecco, peccare, peccavi, peccatus 1",to sin,5,20,1,Verb
+"potens, potentis","powerful (in), having power (over)",5,20,,Adjective
+"potestas, potestatis","(f.) power, authority",5,20,,Noun
+"precor, precari, ---, precatus 1","to ask, pray",5,20,1,Verb
+"scelus, sceleris","(n.) crime, sin",5,20,,Noun
+valde,"greatly, very (much) (adv.)",5,20,,Adverb
+vero,"indeed, but indeed (adv.)",5,20,,Adverb
+"cōnspiciō, cōnspicere, cōnspexī, cōnspectus",to catch sight of,5,21,,Verb
+"īnspiciō, īnspicere, īnspexī, īnspectus","to consider, perceive",5,21,,Verb
+"simulō, simulāre, simulāvī, simulātus","to pretend, sham",5,21,,Verb
+"lacrimo, lacrimare, lacrimavi, lacrimatus",to weep,5,21,1,Verb
+"affectus, affectus","(m.) devotion, affection, sense",5,21,,Noun
+"amplector, amplecti, ---, amplexus sum 3",to embrace,5,21,3,Verb
+"assiduus, -a, -um","constant, unceasing",5,21,,Adjective
+"caelicola, caelicolae",(n.) heaven-dweller,5,21,,Noun
+"conor, conari, ---, conatus sum 1","to try, strive (+ inf.)",5,21,1,Verb
+"conspectus, conspectus","(m.) sight, presence",5,21,,Noun
+"corona, coronae","(f.) wreath, crown",5,21,,Noun
+"exspecto, exspectare, exspectavi, exspectatus 1","to look for, wait for",5,21,1,Verb
+"fletus, fletus",(m.) weeping,5,21,,Noun
+"fungor, fungi, ---, functus sum 3",to perform (+ abl.),5,21,3,Verb
+"gradior, gradi, ---, gressus sum 3","to walk, step",5,21,3,Verb
+"laetor, laetari, ---, laetatus sum 1","to rejoice, be glad",5,21,1,Verb
+"liber, libera, liberum",free,5,21,,Adjective
+"miseror, miserari, ---, miseratus sum 1","to bewail, pity",5,21,1,Verb
+neque (nec),"and not, nor",5,21,,Adverb
+"nosco, noscere, novi, notus 3","to get acquainted with, get to know (pres. stem); know (perf. stem)",5,21,3,Verb
+"ovis, ovis, ovium",(f.) sheep,5,21,,Noun
+quattuor,four (indecl. adj.),5,21,,Adjective
+"semita, semitae",(f.) path,5,21,,Noun
+"senex, senis",old,5,21,,Adjective
+"sepelio, sepelire, sepelivi (sepelii) sepultus, 4",to bury,5,21,4,Verb
+septem,seven (indecl. adj.),5,21,,Adjective
+"solor, solari, ---, solatus sum 1","to console, comfort",5,21,1,Verb
+"substantia, substantiae","(f.) nature, substance",5,21,,Noun
+"tango, tangere, tetigi, tactus 3",to touch,5,21,3,Verb
+"vestio, vestire, vestivi (vestii), vestitus 4",to clothe,5,21,4,Verb
+"cōnstituō, cōnstituere, cōnstituī, cōnstitūtus","to arrange, establish, place",5,22,,Verb
+"interpellō, interpellāre, interpellāvī, interpellātus","to interpret, disturb, impede, obstruct",5,22,,Verb
+"soleō, solēre, (solitus sum)","to be used to, be accustomed, be wont",5,22,,Verb
+"antistes, antistitis",(m.) bishop,5,22,,Noun
+"cantus, cantus",(m.) chant,5,22,,Noun
+"civitas, civitatis",(f.) city,5,22,,Noun
+"claritas, claritatis","(f.) light, brightness, glory, fame",5,22,,Noun
+"communis, commune","common, joint, unclean",5,22,,Adjective
+"cura, curae","(f.) care, concern",5,22,,Noun
+"dignor, dignari, ---, dignatus sum 1","to consider worthwhile, deign",5,22,1,Verb
+"fateor, fateri, ---, fassus sum 2","to acknowledge, confess (+ acc.), praise (+ dat.)",5,22,2,Verb
+"intercessio, intercessionis",(f.) intercession,5,22,,Noun
+"introitus, introitus","(m.) a going in, introit",5,22,,Noun
+"iubeo, iubere, iussi, iussus 2","to command, ask, bid",5,22,2,Verb
+"iudico, iudicare, iudicavi, iudicatus 1",to judge,5,22,1,Verb
+"loquor, loqui, ---, locutus sum 3",to speak,5,22,3,Verb
+"major, majus (gen. majoris)","greater, older",5,22,,Adjective
+"memoror, memorari, ---, memoratus sum 1","to be mindful of, remember (+ gen. or acc.)",5,22,1,Verb
+ne,"that…not, in order not to, in order that…not",5,22,,Adverb
+"peto, petere, petivi (petii) petitus 3","to ask (for), entreat",5,22,3,Verb
+"planctus, planctus",(m.) mourning,5,22,,Noun
+"postulo, postulare, postulavi, postulatus 1","to ask (for), pray for, require, demand",5,22,1,Verb
+"praedico, praedicare, praedicavi, praedicatus 1","to preach, proclaim",5,22,1,Verb
+"respondeo, respondere, respondi, responsus 2","to answer, respond (to) (+ dat.)",5,22,2,Verb
+"rogo, rogare, rogavi, rogatus 1","to ask (for), pray, bessech",5,22,1,Verb
+"sequor, sequi, ---, secutus sum",to follow,5,22,,Verb
+"serenus, -a, -um","bright, serene",5,22,,Adjective
+"spina, spinae",(f.) thorn,5,22,,Noun
+ut,"in order that, that, when, as",5,22,,Conjunction
+"utor, uti, ---, usus sum","to use, enjoy, be friends with (+ abl.)",5,22,,Verb
+"cōnsulō, cōnsulere, cōnsuluī, cōnsultus","to consider, consult, ask for advice",5,23,,Verb
+"inūrō, inūrere, inussī, inustus","to brand, inflict, curl, adorn",5,23,,Verb
+"stringō, stringere, strīnxī, strictus","to reduce, inhibit, diminish, narrow",5,23,,Verb
+"amor, amare, amavi, amatus 1",to love,5,23,1,Verb
+"cogitatio, cogitationis",(f.) thought,5,23,,Noun
+"commemoratio, commemorationis","(f.) remembrance, commemoration",5,23,,Noun
+"delicia, deliciae","(f.) pleasure, delight",5,23,,Noun
+"factor, factoris","(m.) maker, doer",5,23,,Noun
+"hic, haec, hoc",this (demon. pron.),5,23,,Adjective
+"ille, illa, illud",that (demon. pron.),5,23,,Pronoun
+"illumino, illuminare, illuminavi, illuminatus 1","to make shine, illuminate, enlighten",5,23,1,Verb
+"is, ea, id","this, that (he, she, it) (unemphat. demon. pron.)",5,23,,Adjective
+"iste, ista, istud","this, that (of yours!) (unemphat. demon. pron.)",5,23,,Adjective
+ita,"so, thus, in this way (adv.)",5,23,,Adverb
+"labor, labi, ---, lapsus sum ","to slide, (slip and) fall",5,23,,Verb
+"largior, largiri, ---, largitus sum","to grant, bestow",5,23,,Verb
+"operor, operari, ---, operatus sum 1","to work, perform",5,23,1,Verb
+"ordo, ordinis","(m.) rank, order",5,23,,Noun
+"qualis, quale",(of) what kind (of),5,23,,Adjective
+"quantus, -a, -um","how much, how great",5,23,,Adjective
+"sedeo, seder, sedi, sessus 2","to sit (down), be seated",5,23,2,Verb
+"sensus, sensus","(m.) feeling, sense, understanding, mind",5,23,,Noun
+"sextus, -a, -um",sixth,5,23,,Adjective
+sic,"so, thus, such",5,23,,Adverb
+sicut,"like, (just) as",5,23,,Other
+"talis, tale","such, of such a sort",5,23,,Adjective
+tam,"so, to such a degree (adv.)",5,23,,Adverb
+"tantus, -a, -um","so much, so great",5,23,,Adjective
+"tueor, tueri, ---, tuitus sum","to watch, protect, uphold",5,23,,Verb
+"vitis, vitis, vitium","(f.) vine, grapevine",5,23,,Noun
+"convoco, convocare, convocavi, convocatus","to call together, convene",5,24,,Verb
+"iubeō, iubēre, iussī, iussus","to order, bid",5,24,,Verb
+"stupeō, stupēre, stupuī, -------",to be astounded,5,24,,Verb
+"accendo, accendere, accendi, accensus 3","to kindle, set on fire",5,24,3,Verb
+"caelestis, caeleste","heavenly, divine",5,24,,Adjective
+"cano, canere, cecini, cantus 3","to sing, prophesy",5,24,3,Verb
+"commixtio, commixtionis",(f.) mingling,5,24,,Noun
+confestim,"at once, immediately (adv.)",5,24,,Adverb
+"consors, consortis, consortium",(m. or f.) sharer,5,24,,Noun
+"creator, creatoris","(m.) maker, creator",5,24,,Noun
+"crimen, crimins","(n.) guilt, sin, crime, blame",5,24,,Noun
+"dexter, dextera, dexterum",right,5,24,,Adjective
+"illustro, illustrare, illustravi, illustratus 1","to illuminate, enlighten, explain",5,24,1,Verb
+"ipse, ipsa, ipsum",-self (intensive pron. and adj.),5,24,,Pronoun
+"lux, lucis",(f.) light,5,24,,Noun
+"miles, militis",(m.) soldier,5,24,,Noun
+"mitis, mite","mild, meek",5,24,,Adjective
+"mons, montis, montium","(m.) mountain, hill",5,24,,Noun
+octo,eight,5,24,,Adjective
+octoginta,eighty,5,24,,Adjective
+"Olivetum, oliveti",(n.) Olivet – a hill east of Jerusalem,5,24,,Noun
+"pauci, -ae, -a","few, a few",5,24,,Adjective
+"plango, plangere, planxi, planctus 3","to bewail, mourn",5,24,3,Verb
+"pono, ponere, posui, positus 3","to put, place, set",5,24,3,Verb
+"porto, portare, portavi, portatus 1",to carry,5,24,1,Verb
+"praecipio, praecipere, praecepi, praeceptus 3","to command, instruct, teach",5,24,3,Verb
+quidem,"indeed, at any rate",5,24,,Adverb
+simul,"together, at the same time",5,24,,Adverb
+"vado, vadere, ---, --- 3","to go, walk, hurry",5,24,3,Verb
+"veritas, veritatis",(f.) truth,5,24,,Noun
+"coquō, coquere, coxī, coctus",to cook,5,25,,Verb
+"lambō, lambere, lambī, lambitus","to lick, (of rivers) to wash",5,25,,Verb
+"taceō, tacēre, tacuī, tacitus","to be silent, say nothing, pass over",5,25,,Verb
+ave! avete!,hail! hello! goodbye! greetings!,5,25,,Other
+circa,"acc: around, approximately, about, towards",5,25,,Preposition
+"curro, currere, cucurri, cursus 3","to run, hasten, race",5,25,3,Verb
+"defendo, defendere, defendi, defensus 3",to defend,5,25,3,Verb
+"diabolus, diaboli",(m.) devil,5,25,,Noun
+"dives, (gen. divitis)","rich, wealthy",5,25,,Adjective
+"dolor, doloris","(m.) sorrow, pain",5,25,,Noun
+"effusio, effusionis",(f.) outpouring,5,25,,Noun
+extra,"acc: beyond, outside",5,25,,Preposition
+"filia, filiae",(f.) daughter,5,25,,Noun
+"fleo, flere, flevi, fletus 2","to weep, lament",5,25,2,Verb
+"fugio, fugere, fugi, fugitus 3",to flee (from),5,25,3,Verb
+"honor, honoris",(m.) honor,5,25,,Noun
+"imperator, imperatoris",(m.) emperor,5,25,,Noun
+"necessarius, -a, -um","needful, fateful, needed (+ dat.)",5,25,,Adjective
+"oblatio, oblationis ",(f.) offering,5,25,,Noun
+"patria, patriae","(f.) native land, country, fatherland",5,25,,Noun
+"pauper, pauperis","poor, not wealthy",5,25,,Adjective
+perpetuo,"uninterruptedly, perpetually",5,25,,Adverb
+"posco, poscere, poposci, --- 3","to ask, beseech",5,25,3,Verb
+salve! salvete!,hail! farewell! hello! goodbye! greetings!,5,25,,Other
+sive (seu),or if,5,25,,Conjunction
+"solemnis, solemne","annual, solemn, customary",5,25,,Adjective
+"timeo, timere, timui, --- 2","to fear, be afraid (of)",5,25,2,Verb
+"unitas, unitatis",(f.) unity,5,25,,Noun
+"venia, veniae","(f.) indulgence, kindness",5,25,,Noun
+"dēlectō, dēlectāre, dēlectāvī, dēlectātus ","to attract, delight, (pass) take delight in",5,26,,Verb
+"lātrō, lātrāre, lātrāvī, lātrātus","to bark, rumble, roar",5,26,,Verb
+"nescio, nescire, nescivi (nescii), nescitus 4","to not to know, be ignorant",5,26,4,Verb
+"taedet, taedēre, taeduit/(taesum est) (impersonal: only 3rd sing.)",to be disgusted at,5,26,,Verb
+"acquistio, acquistionis","(f.) purschase, acquistion",5,26,,Noun
+an,"introduces the second of two indirect questions; or, can it be that?",5,26,,Adverb
+"consuetudo, consuetudinis",(f.) custom,5,26,,Noun
+"debitor, debitoris",(m.) debtor,5,26,,Noun
+"doctor, doctoris",(m.) teacher,5,26,,Noun
+"dogma, dogmatis","(n.) decision, dogma",5,26,,Noun
+"fortis, forte",strong,5,26,,Adjective
+"indulgentia, indulgentiae","(f.) forgiveness, pardron, concession",5,26,,Noun
+"iter, itineris",(n.) journey,5,26,,Noun
+"laboro, laborare, laboravi, laboratus 1","to work, labor",5,26,1,Verb
+"lucifer, luciferi","(m.) daystar, morning star",5,26,,Noun
+"martyr, martyris","(m.) witness, martyr",5,26,,Noun
+numquid,introduces a question expecting a NEGATIVE reply,5,26,,Other
+"patronus, patroni","(m.) defender, advocate",5,26,,Noun
+"peregrinas, peregrinantis","traveling, subst. traveler, pilgrim",5,26,,Adjective
+"praestolor, praestolari, ---, parestolatus sum 1",to wait for (+ dat./acc.),5,26,1,Verb
+quid,why? how? wherefore? ,5,26,,Adverb
+"quis, quid","who? what? someone, something, anyone, anything = after: si, nisi, numquid, ne",5,26,,Pronoun
+quomodo,in what manner? how?,5,26,,Adverb
+"spiritualis, spirituale","spiritual, of the spirit",5,26,,Adjective
+"spiro, spirare, spiravi, spiratus 1",to breath,5,26,1,Verb
+"triumphus, triumphi",(m.) triumph,5,26,,Noun
+"dēmōnstrō, dēmōnstrāre, dēmōnstrāvī, dēmōnstrātus ","to prove, show, describe, explain",5,27,,Verb
+"emo, emere, emi, emptus 3",to buy,5,27,3,Verb
+"legō, legere, lēgī, lēctus",to read,5,27,4,Verb
+"temptō, temptāre, temptāvī, temptātus","to try, put to the test",5,27,,Verb
+"ait, aiunt","he says, they say (defective verb)",5,27,,Verb
+"facies, faciei","(f.) face, appearance, view",5,27,,Noun
+"fulgeo, fugere, fulsi, --- 2","to shine, glow",5,27,2,Verb
+"genitus, -a, -um","begotten, engendered",5,27,,Adjective
+"gens, gentis, gentium","(f.) family, nation, race, Gentiles",5,27,,Noun
+"ira, irae","(f.) anger, wrath",5,27,,Noun
+"labor, laboris","(m.) work, labor",5,27,,Noun
+"lavo, lavare, lavi, lautus (lotus) 1","to wash, pass. be washed, bathe",5,27,1,Verb
+magis,more (adv.),5,27,,Adverb
+"mereo, merere, merui, meritus 2","to be worthy, deserve",5,27,2,Verb
+nondum,not yet (adv.),5,27,,Adverb
+"odor, odoris","(m.) aroma, odor, smell",5,27,,Noun
+"pasco, pascere, pavi, pastus 3",to feed,5,27,3,Verb
+"Pontius Pilatus, Pontii Pilati","(m.) Pontius Pilatus, Pilate",5,27,,Noun
+"pretium, pretii","(n.) price, ransom, value",5,27,,Noun
+quam,"how, how much, as…as possible (adv.), than (coord. conj.)",5,27,,Adverb
+quo,"(to) where, somewhere",5,27,,Adverb
+"salutare, salutaris, salutarium",(n.) salvation,5,27,,Noun
+"signum, signi","(n.) sign, miracle, mark",5,27,,Noun
+"statuo, statuere, statui, statutus 3","to establish, appoint, determine",5,27,3,Verb
+"suavis, suave","sweet, gentle, soft, tender",5,27,,Adjective
+"synagoga, synagogae","(f.) congregation, synagogue",5,27,,Noun
+tantum,"only, exclusively, just, alone, solely",5,27,,Adverb
+"tempus, temporis",(n.) time,5,27,,Noun
+unde,from where,5,27,,Adverb
+"virtus, virtutis","(f.) excellence, virtue, power, strenth, miracles",5,27,,Noun
+"vox, vocis","(f.) sound, voice, vote",5,27,,Noun
+"dēscendō, dēscendere, dēscendī, dēscēnsus","to go down, come down",5,28,,Verb
+"licet, licēre, licuit",(impersonal: only 3rd sing.),5,28,,Verb
+"terreō, terrēre, terruī, territus","to frighten, terrify, scare",5,28,,Verb
+"alius, alia, aliud","other, another, else",5,28,,Adjective
+"alter, altera, alterum","the other (of two), the second",5,28,,Adjective
+amplius,(any) more (comp. adv.),5,28,,Adverb
+"amplus, -a, -um","abundant, ample",5,28,,Adjective
+"ardeo, ardere, arsi, arsus 2","to burn, glow",5,28,2,Verb
+contra,"acc: against, opposite (to)",5,28,,Preposition
+"curvo, curvare, curvavi, curvatus 1","to bend, humble",5,28,1,Verb
+"doleo, dolere, dolui, dolitus 2","to grieve, suffer, feel pain",5,28,2,Verb
+"fundo, fundare, fundavi, fundatus 1","to establish, found",5,28,1,Verb
+"gravis, grave","heavy, serious, grievous",5,28,,Adjective
+invicem,"in turn (adv.), one another",5,28,,Adverb
+"lingua, linguae","(f.) tongue, language",5,28,,Noun
+"magnifico, magnificare, magnificavi, magnificatus 1","to extol, praise, glorify",5,28,1,Verb
+"moveo, movere, movi, motus 2","to move, affect, actuate",5,28,2,Verb
+"nullus, -a, -um","not any, no",5,28,,Adjective
+"perfectus, -a, -um",perfect,5,28,,Adjective
+"praefatio, praefationis",(f.) preface,5,28,,Noun
+"protectio, protectionis",(f.) protection,5,28,,Noun
+"quies, quietis","(f.) peace, rest, quiet",5,28,,Noun
+"solus, -a, -um","only, alone, solely",5,28,,Adjective
+sui,"oneself (i.e. himself, herself, itself, themselves)",5,28,,Adjective
+"suus, -a, -um",one’s own (i.e. his/her/its/their own),5,28,,Adjective
+"tentatio, tentationis","(f.) temptation, trial",5,28,,Noun
+"testis, testis, testium",(m.) witness,5,28,,Noun
+"totus, -a, -um","all, the whole",5,28,,Adjective
+"tristis, triste","sad, sorrowful, gloomy",5,28,,Adjective
+"umbra, umbrae","(f.) shadow, shade",5,28,,Noun
+"verero, venerare, veneravi, vereratus 1","to worship, venerate",5,28,1,Verb
+"dēvertō, dēvertere, dēvertī, dēversus","to turn aside, to stay with, digress",5,29,,Verb
+"gero, gerere, gessi, gestus 3","to bear, manage, conduct",5,29,3,Verb
+"lūceō, lūcēre, lūxī, -------",to shine,5,29,,Verb
+"tremō, tremere, tremuī, ------- ","to quiver, shiver, tremble",5,29,4,Verb
+"aliqui, aliqua, aliquod","some, any (indef. pron. adj.)",5,29,,Pronoun
+"aliquis, aliquid","someone, something, anyone, anything (indef. pron.)",5,29,,Pronoun
+"cautio, cautionis","(f.) caution, bill, bail",5,29,,Noun
+"conclusio, conclusionis",(f.) conclusion,5,29,,Noun
+"corona, coronare, coronavi, coronatus 1",to crown,5,29,1,Verb
+"cresco, crescere, crevi, cretus 2","to grow, increase",5,29,2,Verb
+"curia, curiae","(f.) court, curia",5,29,,Noun
+"figura, figurae","(f.) figure, image, fashion",5,29,,Noun
+"hospes, hospitis","(m. and f.) host, guest",5,29,,Noun
+"humilis, humile","lowly, humble",5,29,,Adjective
+"iudicium, iudicii",(n.) judgement,5,29,,Noun
+"lampas, lampadis","(f.) lamp, torch, flame (acc: lampada)",5,29,,Noun
+licet,although (subord. conj.),5,29,,Conjunction
+"Magdalena, Magdelenae",(f.) Magdalen,5,29,,Noun
+"monstro, monstrare, monstravi, monstratus 1","to show, command",5,29,1,Verb
+"omissio, omissionis",(f.) omission,5,29,,Noun
+"pretiosus, -a, -um",precious,5,29,,Adjective
+priusquam,before (subord. conj.),5,29,,Conjunction
+"psalmista, psalmistae",(m.) psalmist,5,29,,Noun
+"sanctificatio, sanctificationis","(f.) holiness, holy mystery",5,29,,Noun
+"struo, struere, struxi, structus 3",to build,5,29,3,Verb
+"sumo, sumere, sumpsi, sumtus 3","to take, obtain",5,29,3,Verb
+"supplico, supplicare, supplicavi, supplicates 1",to (humbly) beseech,5,29,1,Verb
+"suscito, suscitare, suscitavi, suscitatus 1","to awaken, raise up",5,29,1,Verb
+"timor, timoris",(m.) fear,5,29,,Noun
+"timoratus, -a, -um","God-fearing, devout, reverent",5,29,,Adjective
+utique,"certainly, by all means, at any rate (adv.)",5,29,,Adverb
+"vespertinus, -a, -um","(of) evening, western",5,29,,Adjective
+"dēvorō, dēvorāre, dēvorāvī, dēvorātus",to devour,5,30,,Verb
+"lūdō, lūdere, lūsī, lūsus",to play,5,30,4,Verb
+"traho, trahere,traxi, tractus 3","to draw, drag, lead",5,30,3,Verb
+"verberō, verberāre, verberāvī, verberātus","to lash, beat, flog",5,30,,Verb
+"amicus, amici",(m.) friend,5,30,,Noun
+"cogito, cogitare, cogitavi, cogitatus 1","to think, plan",5,30,1,Verb
+"commendo, commendare, commendavi, commendatus 1",to entrust,5,30,1,Verb
+"difficilis, difficile",difficult,5,30,,Adjective
+"divido, dividere, divisi, divisus 3","to part,divide",5,30,3,Verb
+"divinitas, divinitatis",(f.) divinity,5,30,,Noun
+"domina, dominae","(f.) mistress, lady",5,30,,Noun
+"existimo, existimare, existimavi, existimatus 1","to think, judge",5,30,1,Verb
+"facilis, facile",easy,5,30,,Adjective
+"hostis, hostis, hostium","(m. and f.) enemy, host",5,30,,Noun
+"illucesco, illucescere, illuxi, --- 3","to shine (upon), become light",5,30,3,Verb
+"inaestimabilis, inaestimabile",to priceless,5,30,1,Verb
+"ineffabilis, ineffabile","inexpressible, ineffable",5,30,,Adjective
+"inimicus, inimici",(m.) enemy,5,30,,Noun
+"lignum, ligni","(n.) wood, tree",5,30,,Noun
+"liquo, liquare, liquavi, liquatus 1",to melt,5,30,1,Verb
+"monumentum, monumenti","(n.) tomb, monument",5,30,,Noun
+"nego, negare, negavi, negates 1","to deny, say… not, abnegate",5,30,1,Verb
+"nemo (nullius, nemini, neminem, nullo/nulla)","nobody, no, none, neither",5,30,,Pronoun
+noli/nolite,"to be unwilling, do not… (imperative + inf.)",5,30,,Verb
+"parens, parentis",(m. and f.) parent,5,30,,Noun
+"persevero, perseverare, perseveravi, perseveratus 1",to continue,5,30,1,Verb
+"premo, premere, pressi, presus 3","to press (upon), oppress",5,30,3,Verb
+"puto, putare, putavi, putatus 1","to think, reckon, suppose, guess",5,30,1,Verb
+"quisquam, quaequam, quidquam","anyone, anything (used with negative or implied neg.)",5,30,,Pronoun
+"sedes, sedis","(f.) place, seat",5,30,,Noun
+"socio, sociare, sociavi, sociatus 1","to share in, ally",5,30,1,Verb
+"somnus, somni",(m.) sleep,5,30,,Noun
+vel,"or, even, actually, for example",5,30,,Adverb
+"veto, vetare, vetui (vetavi), vetitus (vetatus) 1",to forbid,5,30,1,Verb
+"vicinus, -a, -um",neighboring,5,30,,Adjective
+"vicinus, vicini",(m.) neighbor,5,30,,Noun
+absque,"apart from, but, except, other than, without",5,10,,Preposition
+ac,and,5,11,,Conjunction
+adusque,"until, till",5,12,,Conjunction
+aegre,"hardly, not easily, with difficulty",5,13,,Adverb
+alias,another time,5,14,,Adverb
+alibi,elsewhere,5,15,,Adverb
+aliqua,"anyway, somehow",5,16,,Adverb
+antehac,"ahead, formerly, previously",5,17,,Adverb
+antigerio,"quite, very, very much",5,18,,Adverb
+apprime,"quite, very, very much",5,19,,Adverb
+at,"but, however, nevertheless, yet",5,20,,Conjunction
+ceterum,"as for the rest, besides, for the rest, moreover, what's more",5,21,,Adverb
+cras,tomorrow,5,22,,Adverb
+cur,why,5,23,,Adverb
+eo,"that way, there, thither, yonder",5,24,,Adverb
+haud dubie,"no doubt, undoubtedly",5,25,,Adverb
+here - heri,yesterday,5,26,,Adverb
+huc,"here, hither, this way",5,27,,Adverb
+hui,"now, well, well then",5,28,,Adverb
+iam,"already, by now, yet",5,29,,Adverb
+illuc,"that way, there, thither, yonder",5,30,,Adverb
+mane,in the morning,5,10,,Adverb
+mox,soon,5,11,,Adverb
+nunquam,never,5,12,,Adverb
+paene,"almost, nearly",5,13,,Adverb
+perubique,"all about, everywhere",5,14,,Adverb
+prope,"almost, nearly",5,15,,Adverb
+quaqua,wherever,5,16,,Adverb
+quasi,"as if, as though, in a way",5,17,,Conjunction
+raro,seldom,5,18,,Adverb
+repente,"abruptly, all of a sudden, suddenly",5,19,,Adverb
+serus,"late, tardy",5,20,,Adverb
+supera,"above, over",5,21,,preposition
+tibi,"thee, to thee, to you",5,22,,Pronoun
+abaetere,"to depart, go away, leave",5,31,2,Verb
+abavus,"great-grandfather, forefather",5,32,,Noun
+abbas,abbot,5,33,,Noun
+abbatia,abbey,5,34,,Noun
+abbatissa,abbess,5,35,,Noun
+"abbrevio, abbreviare, abbreviavi, abbreviatus","to abbreviate, abridge, curtail, shorten",5,36,4,Verb
+"abdico, abdicare, abdicavi, abdicatus","to abdicate, resign",5,37,4,Verb
+abdicatio,abdication,5,38,,Noun
+abdomen,"abdomen, belly, lower part of the body",5,39,,Noun
+abhinc,... ago,5,40,,Adverb
+abies,"fir, lance, spear, ship, vessel",5,41,,Noun
+abigere,"to chase away, drive away, expel, abstract, steal",5,42,2,Verb
+abitere,"to depart, go away, leave",5,43,2,Verb
+abiungere,"to divide, separate",5,44,2,Verb
+"abiuro, abiurare, abiuravi, abiuratus","to abjure, abnegate",5,45,4,Verb
+"ablego, ablegare, ablegavi, ablegatus","to dismiss, turn away",5,46,4,Verb
+"abloco, ablocare, ablocavi, ablocatus","to invite tenders for, put out to tender, let, rent out",5,47,4,Verb
+"abnato, abnatare, abnatavi, abnatatus",to swim away,5,48,4,Verb
+abnepos,great grandchild,5,49,,Noun
+abolere,"to abolish, abrogate",5,50,2,Verb
+abolescere,to disappear,5,31,2,Verb
+abominare,"to abhor, abominate, loathe",5,32,1,Verb
+aboriri,to disappear,5,33,4,Verb
+abrumpere,"to divide, separate, break, break off",5,34,2,Verb
+abruptum,"abyss, chasm, gulf, precipice",5,35,,Noun
+abscondere,"to conceal, hide",5,36,2,Verb
+absens,absent,5,37,,Verb
+absimilis,different,5,38,,Adjective
+absolvere,"to absolve, acquit",5,39,2,Verb
+abyssus,"abyss, chasm, gulf, precipice",5,40,,Noun
+accensere,to add,5,41,2,Verb
+"accidō, accidere, accidī (only used in book in 3rd singular) ","to become, come about, grow, happen, occur",5,42,4,Verb
+accipere,"to accept, receive, take, take in",5,43,2,Verb
+"accuso, accusare, accusavi, accusatus",to accuse,5,44,4,Verb
+Achaemenius,Persian,5,45,,Noun
+Achaia,"Achaea, Achaia, Greece",5,46,,Noun
+Achaias,Greek woman,5,47,,Noun
+Achivus,Greek,5,48,,Adjective
+actuariola,"boat, ship's boat, shallop, sloop",5,49,,Noun
+actum,"achievement, act, action, accomplishment",5,50,,Noun
+addubitare,to doubt,5,31,1,Verb
+adducere,"to bring, fetch",5,32,2,Verb
+adesurire,to get hungry,5,33,4,Verb
+adire,"to advance, approach, come on",5,34,4,Verb
+adiutare,"to abet, aid, assist, help, accomodate",5,35,1,Verb
+adjectivum,adjective,5,36,,Noun
+adoratio,"adoration, worship",5,37,,Noun
+adorator,"adorer, worshipper",5,38,,Noun
+adorea - adoria,"triumph, victory",5,39,,Noun
+adulter,"adulterous, adulterer",5,40,,Noun
+adultera,adulteress,5,41,,Noun
+adunare,"to join, unite",5,42,1,Verb
+adunatio,"combination, joining, junction, union",5,43,,Noun
+advena,"alien, foreign, foreigner, strange",5,44,,Adjective
+adventicius,"alien, foreign",5,45,,Adjective
+adverbium,adverb,5,46,,Noun
+adversarius,"adversary, opponent",5,47,,Noun
+advocatus,"advocate, barrister, counsel, intercessor, lawyer, solicitor",5,48,,Noun
+aedes,house,5,49,,Noun
+aedificatio - aedificium,"building, construction",5,50,,Noun
+"aedificio, aedificare, aedificavi, aedificatus",to build,5,31,1,Verb
+aeger,"faint, light, weak, ill, sick, unwell",5,32,,Adjective
+aegrimonia,"grief, sadness, sorrow, gloom, dejection",5,33,,Noun
+aegrotus,"ill, sick, unwell",5,34,,Adjective
+aeneas,Aeneas,5,35,,Noun
+aeneus,"bronze, copper",5,36,,Noun
+aeon,aeon,5,37,,Noun
+aequabilitas,"draw, equality",5,38,,Noun
+aequilibrium,equilibrium,5,39,,Noun
+aequor,sea,5,40,,Noun
+aequoreus,"maritime, sea, sea-, of the sea",5,41,,Adjective
+aequus,"even, flat, level, smooth, equal",5,42,,Adjective
+aer,"air, cloud",5,43,,Noun
+aerarius,copper,5,44,,Noun
+aestas,summer,5,45,,Noun
+aestimare,"to appraise, estimate, rate",5,46,1,Verb
+aetaluta,"love, sexual love",5,47,,Noun
+aetas,"age, generation",5,48,,Noun
+aeternalis,eternal,5,49,,Adjective
+aeternitas,eternity,5,50,,Noun
+aether,"air, ether, heaven, sky",5,31,,Noun
+aetherius,"celestial, heavenly",5,32,,Adjective
+aethra,"heaven, sky",5,33,,Noun
+aevitas,eternity,5,34,,Noun
+aevum,"age, eternity",5,35,,Noun
+Afer,African,5,36,,Adjective
+agamus,"single, unmarried",5,37,,Adjective
+agape,"agape, affection, love",5,38,,Noun
+agna - agnellina - agnina,lamb,5,39,,Noun
+agninus,"lamb, of lamb",5,40,,Adjective
+agon,"competition, contest",5,41,,Noun
+agoris,farmer,5,42,,Noun
+agricultio - agricultura,"agriculture, farming, tillage",5,43,,Noun
+aheneus,"bronze, copper",5,44,,Noun
+albus,"blank, white",5,45,,Adjective
+alea,die,5,46,,Noun
+ales,"indication, omen, portent, precursor, presage, sign, bird",5,47,,Noun
+alienigenus,"alien, foreign",5,48,,Adjective
+allophylus,"alien, foreign, strange",5,49,,Adjective
+altaria,altar,5,50,,Noun
+altitudo,height,5,31,,Noun
+altum,"height, depth",5,32,,Noun
+amandare,"to dismiss, turn away",5,33,1,Verb
+amare,to love,5,34,1,Verb
+amator,lover,5,35,,Noun
+ambactus,"servant, attendant, serf, villain",5,36,,Noun
+ambiguus,ambiguous,5,37,,Adjective
+ambitio,ambition,5,38,,Noun
+amica,friend,5,39,,Noun
+amicitia,friendship,5,40,,Noun
+amita,aunt,5,41,,Noun
+amnis,"current, flow, stream",5,42,,Noun
+amor,"affection, love, sexual love",5,43,,Noun
+amphibolus,ambiguous,5,44,,Adjective
+amphitheatrum,amphitheatre,5,45,,Noun
+anathema,"anathema, ban, excommunication",5,46,,Noun
+ancora,anchor,5,47,,Noun
+ancula,"maid, servant",5,48,,Noun
+anculus,"servant, attendant",5,49,,Noun
+angela,"angel, female angel",5,50,,Noun
+angelus,angel,5,31,,Noun
+anguis,"serpent, snake",5,32,,Noun
+angulus,"angle, corner",5,33,,Noun
+angustus,"narrow, close, cramped",5,34,,Adjective
+anniversarius,"annual, yearly",5,35,,Adjective
+annuus,"annual, yearly",5,36,,Adjective
+antagonista,"adversary, opponent",5,37,,Noun
+antarcticus,"south, southern",5,38,,Adjective
+antecedere,to precede,5,39,2,Verb
+anteire,to precede,5,40,4,Verb
+antelogium,prologue,5,41,,Noun
+anteludium,"overture, prelude",5,42,,Noun
+antichristus,Antichrist,5,43,,Noun
+antistes,bishop,5,44,,Noun
+antitheus,devil,5,45,,Noun
+antrum,"cave, grotto, cavity, cavern, den",5,46,,Noun
+anulus,ring,5,47,,Noun
+anus,"anus, arse, ass, old, gammer, old woman",5,48,,Noun
+apator,fatherless,5,49,,Adjective
+apographon,copy,5,50,,Noun
+apoplexia,"fit, apoplectic fit, seizure, stroke, stroke of apoplexy",5,31,,Noun
+aporia - aporiatio,"bashfulness, shyness, timidity",5,32,,Noun
+appotus,"drunk, intoxicated",5,33,,Adjective
+Aprilis,April,5,34,,Noun
+aquae,spa,5,35,,Noun
+aquaeductus,aqueduct,5,36,,Noun
+aqualiculus,"stomach, abdomen, belly, tummy",5,37,,Noun
+aqualis,"aquatic, water, water-, of water, jug, pitcher, bucket, pail",5,38,,Adjective
+aquarium,"bar, pub",5,39,,Noun
+aquarius,"aquatic, water, water-, of water",5,40,,Adjective
+aquila,eagle,5,41,,Noun
+aquosus,abounding in water,5,42,,Adjective
+ara,altar,5,43,,Noun
+Arabicus - Arabius,"Arabian, Arabic",5,44,,Adjective
+arabilis,arable,5,45,,Adjective
+arbitrarius,arbitrary,5,46,,Adjective
+arca,"box, chest, coffin",5,47,,Noun
+archetypus,"aboriginal, original",5,48,,Adjective
+archiepiscopus,archbishop,5,49,,Noun
+archimandrita,archimandrite,5,50,,Noun
+arcus,"arch, arc, bow",5,31,,Noun
+arduitas,"abruptness, steepness",5,32,,Noun
+arduus,"high, lofty, tall, abrupt, steep",5,33,,Adjective
+arena,"arena, desert, beach, sand",5,34,,Noun
+argenteus,silver,5,35,,Noun
+argentum,silver,5,36,,Noun
+argumentum,"attempt, test",5,37,,Noun
+arista,ear,5,38,,Noun
+arma,weapon,5,39,,Noun
+armus,"arm, shoulderblade, upper arm, upper-arm",5,40,,Noun
+arteria,artery,5,41,,Noun
+articulus,article,5,42,,Noun
+artifex,"artist, expert, specialist",5,43,,Noun
+artus,"joint, narrow, close, cramped",5,44,,Noun
+arvina,"fat, grease, bacon",5,45,,Noun
+arvum,"field, farmland",5,46,,Noun
+arx,castle,5,47,,Noun
+asininus - asinarius,"ass's, donkey, donkey-, of an ass",5,48,,Adjective
+asinus,"ass, donkey",5,49,,Noun
+aspectamen,"appearance, aspect, look, sight, view",5,50,,Noun
+assessor,"aid, assistant, helper",5,31,,Noun
+aster,"heavenly body, star",5,32,,Noun
+asticus,urban,5,33,,Adjective
+astralis,"sideral, star, star-, of a star",5,34,,Adjective
+astrologia,"astrology, astronomy",5,35,,Noun
+astrologicus,"astronomic, astronomical, astronomer",5,36,,Adjective
+astrologus,"astrologer, astronomer",5,37,,Noun
+astronomia,astronomy,5,38,,Noun
+astrum,"heavenly body, star",5,39,,Noun
+ater,"dark, dim, black",5,40,,Adjective
+Atheniensis,Athenian,5,41,,Adjective
+atheos,atheist,5,42,,Noun
+athleta,athlete,5,43,,Noun
+athletice,athletic,5,44,,Adjective
+atramentum,ink,5,45,,Noun
+atritas,blackness,5,46,,Noun
+atrium,"abode, accommodation, dwelling, residence, living-room, sitting-room, palace, reception room",5,47,,Noun
+atrox,"abhorrent, abominable, alien, awful, hideous, horrible, gruesome, cruel",5,48,,Adjective
+Attica,Attica,5,49,,Noun
+audiens,listener,5,50,,Noun
+aurarius,"gold, golden",5,31,,Adjective
+aureus,"lovely, gold, golden, gold-coloured",5,32,,Adjective
+aurichalcum,brass,5,33,,Noun
+auricomus,golden,5,34,,Adjective
+aurifex,goldsmith,5,35,,Noun
+aurulentus,"gold-coloured, golden",5,36,,Adjective
+auscultare,to listen,5,37,1,Verb
+Ausonius,Westener,5,38,,Adjective
+auster,"south wind, storm, tempest",5,39,,Noun
+autochton,native,5,40,,Adjective
+autumnus - autumnum,"autumn, fall",5,41,,Noun
+auxiliator,"aid, assistant, helper",5,42,,Noun
+auxilium,"aid, help",5,43,,Noun
+avaritia - avarities,"avarice, miserliness, stinginess",5,44,,Noun
+aversabilis,"abhorrent, abominable, alien, awful, hideous, horrible, gruesome",5,45,,Adjective
+avia,grandmother,5,46,,Noun
+avis,"indication, omen, portent, precursor, presage, sign",5,47,,Noun
+avus,"grandfather, great-grandfather, forefather",5,48,,Noun
+axioma,axiom,5,49,,Noun
+axis,"axis, axle, spindle, heaven, sky",5,50,,Noun
+baceolus,fool,5,31,,Noun
+ballio,good-for-nothing,5,32,,Adjective
+balneum,bath,5,33,,Noun
+baptisterium,"baptistery, pool, swimming-bath, swimming-pool",5,34,,Noun
+barba,beard,5,35,,Noun
+barbaria - barbaries,"foreign country, want of civilization",5,36,,Noun
+barbarismus,barbarism,5,37,,Noun
+basiare,to kiss,5,38,1,Verb
+basiatio - basium,kiss,5,39,,Noun
+basilicus,"lovely, regal, royal",5,40,,Adjective
+basis,"element, foundation, pedestal, supporting base",5,41,,Noun
+battuere,"to fight, struggle, strive, beat, hit, strike, make love",5,42,2,Verb
+bellare - bellari,"to make war, wage war",5,43,4,Verb
+bellator,"martial, warlike, warrior",5,44,,Adjective
+bellatorius,military,5,45,,Adjective
+bellicosus - bellatrix - bellax,"martial, warlike",5,46,,Adjective
+bellicus,military,5,47,,Noun
+belligerare,"to make war, wage war",5,48,1,Verb
+belligerator,warrior,5,49,,Noun
+bellum,war,5,50,,Noun
+bellus,"pretty, charming, lovely",5,31,,Adjective
+bibilis,drinkable,5,32,,Adjective
+bifurcum,cross,5,33,,Noun
+bipes,two-footed,5,34,,Adjective
+bis,twice,5,35,,Adjective
+blasphemare,"to blaspheme, cuss, curse, swear",5,36,1,Verb
+blasphematio - blasphemia,blasphemy,5,37,,Noun
+blasphemus,blasphemer,5,38,,Noun
+blennus,"addled, foolish, stupid",5,39,,Adjective
+borealis,northern,5,40,,Adjective
+bos,"bovine, bovine animal",5,41,,Adjective
+bovillus,"bovine, cow, cow-",5,42,,Adjective
+bovinus,"bovine, cow, cow-",5,43,,Adjective
+bracatus,"alien, foreign, trousers wearing",5,44,,Adjective
+bracchialis,"arm, arm-",5,45,,Adjective
+breviarium,"abridgement, abstract, resumae, summary",5,46,,Noun
+brevis,"short, low, brief, shallow, superficial",5,47,,Adjective
+brumalis,"winter, winter-, of the winter",5,48,,Adjective
+bubulus,"bovine, cow, cow-",5,49,,Adjective
+bucca,"mouth, jaw, jawbone",5,50,,Noun
+butyrum,butter,5,31,,Noun
+caballinus,"equestrian, horse, horse-, of a horse",5,32,,Adjective
+caballus,horse,5,33,,Noun
+cadaver,"cadaver, corpse",5,34,,Noun
+caecitudo,blindness,5,35,,Noun
+caecus,blind,5,36,,Adjective
+caelebs,"single, unmarried",5,37,,Adjective
+caeles,"celestial, heavenly",5,38,,Adjective
+caelestis,"divine, celestial, heavenly",5,39,,Adjective
+caelicus,"celestial, heavenly",5,40,,Adjective
+caenum,"mud, dirt, slime",5,41,,Noun
+caeremonia,"ceremony, solemnity, respectability, venerability, deference, devotion, respect, holy deed, holiness",5,42,,Noun
+caeruleus,"dark blue, dark, dim, green",5,43,,Adjective
+calathus,basket,5,44,,Noun
+calceus,"boot, shoe",5,45,,Noun
+calculare,"to account, calculate, count, figure, work out",5,46,1,Verb
+caldor,heat,5,47,,Noun
+caldus,warm,5,48,,Adjective
+calidus,warm,5,49,,Adjective
+caligatio,"darkness, murk",5,50,,Noun
+calo,"servant, attendant",5,31,,Noun
+calor,heat,5,32,,Noun
+calumnia,"backbiting, scandal, slander",5,33,,Noun
+caminus,"hearth, firebox, furnace, kiln, oven, stove, fire on the hearth",5,34,,Noun
+campus,plain,5,35,,Noun
+candidatus,candidate,5,36,,Noun
+candidus,"blank, white",5,37,,Adjective
+canens,grey,5,38,,Adjective
+canterinus,"equestrian, horse, horse-, of a horse",5,39,,Adjective
+cantrix,"singer, female singer",5,40,,Noun
+canturire,to sing,5,41,4,Verb
+cantus,"singing, song, music",5,42,,Noun
+canus,"blank, white, grey",5,43,,Adjective
+capacitas,"room, space, ability, capability, fitness, suitability",5,44,,Noun
+capillago,hair,5,45,,Noun
+capillus,hair,5,46,,Noun
+Capitolium,Capitol,5,47,,Noun
+capsa,box,5,48,,Noun
+captiosus,"clever, cunning, sly, smart",5,49,,Adjective
+capulus,"cemetery, God's acre, graveyard, coffin",5,50,,Noun
+cardinalis,"fine, great",5,31,,Adjective
+caries,rottenness,5,32,,Noun
+cariosus,"addled, bad, rotten",5,33,,Adjective
+carmen,"singing, song, poem",5,34,,Noun
+carnatus,"bold, corpulent, fat, thick",5,35,,Adjective
+carpere,"to pick, pluck",5,36,2,Verb
+Carthago,Carthage,5,37,,Noun
+casa,"cottage, cabin, hut, shack",5,38,,Noun
+caseus,cheese,5,39,,Noun
+cassis,helmet,5,40,,Noun
+castellum,fortification,5,41,,Noun
+castificare,"to chasten, expurgate, purify, bowdlerize",5,42,1,Verb
+castimonia,"chastity, purity",5,43,,Noun
+castitas,"chastity, purity",5,44,,Noun
+castratus,eunuch,5,45,,Noun
+castrum,fortification,5,46,,Noun
+castus,"pious, clean, pure, chaste",5,47,,Adjective
+casualis,"by accident, by chance",5,48,,Adjective
+casus,"accident, fall, accidence, chance, hazard, affair, case, matter, aberration, false step",5,49,,Noun
+cataclysmus,"deluge, flood",5,50,,Noun
+catastropha,catastrophe,5,31,,Noun
+catax,lame,5,32,,Noun
+catechesis,education,5,33,,Noun
+catechismus,catechism,5,34,,Noun
+categoria,"accusal, accusation",5,35,,Noun
+catena,chain,5,36,,Noun
+caterva,"troop, troupe",5,37,,Noun
+cathedra,"armchair, pulpit",5,38,,Noun
+caudicarius - caudiceus - caudicalis,wooden,5,39,,Adjective
+causa,"affair, business, business deal, case, matter, cause, reason, account, concern, action, lawsuit",5,40,,Noun
+cautim,"carefully, gently, lightly",5,41,,Adjective
+cautus,"certain, sure, careful, cautious",5,42,,Adjective
+caverna,"cave, grotto, cavern, den",5,43,,Noun
+celare,"to conceal, hide",5,44,1,Verb
+cellulanus,hermit,5,45,,Noun
+celsus,"high, lofty, tall, northern",5,46,,Adjective
+cenobita,monk,5,47,,Noun
+cenobium,monastery,5,48,,Noun
+"cēnseō, cēnsēre, cēnsuī, cēnsus","to decide, judge, think, appraise, estimate, rate",5,49,4,Verb
+centum,"hundred, one hundred",5,50,,Adjective
+centum milia,hundred thousand,5,31,,Adjective
+cera,wax,5,32,,Noun
+cernere,to sift,5,33,2,Verb
+certitudo,certainty,5,34,,Noun
+certo - certim,certainly,5,35,,Adjective
+ceruchus,"cord, rope, string",5,36,,Noun
+cervix,"force, strength, vigour, neck, courage, back of the neck, nape",5,37,,Noun
+ceryx,herald,5,38,,Noun
+ceterus,"additional, remaining, rest of",5,39,,Adjective
+chalceus,copper,5,40,,Noun
+Chaldaei,Chaldean,5,41,,Adjective
+charta,"letter, paper",5,42,,Noun
+chasma,atmospheric phenomenon,5,43,,Noun
+chrestus,slave,5,44,,Noun
+chrisma,administration of the last sacraments,5,45,,Noun
+Christianismus,Christianity,5,46,,Noun
+Christianizare,to become a Christian,5,47,1,Verb
+chryseus,"gold, golden",5,48,,Adjective
+chrysizon,"gold-coloured, golden",5,49,,Adjective
+chrysolithus,topaz,5,50,,Noun
+chrysos,gold,5,31,,Noun
+Cicero,Cicero,5,32,,Noun
+cimeterium,"cemetery, God's acre, graveyard",5,33,,Noun
+classis,class,5,34,,Noun
+clepta,thief,5,35,,Noun
+clericus,clergyman,5,36,,Noun
+cliens,"protegae, servant, attendant, serf, villain",5,37,,Noun
+clienta,protégé,5,38,,Noun
+clima,climate,5,39,,Noun
+clinamen,"acclivity, hillside, slope",5,40,,Noun
+clinicus,"doctor, physician",5,41,,Noun
+clinopale,coition,5,42,,Noun
+coercere,"to compel, force",5,43,2,Verb
+coetus,coition,5,44,,Noun
+coire,"to assemble, congregate, gather, meet, associate, join, pool",5,45,4,Verb
+coitus,coition,5,46,,Noun
+coleus,"bag, sack",5,47,,Noun
+collaborare,"to cooperate, co-operate",5,48,1,Verb
+collega,colleague,5,49,,Noun
+collis,hill,5,50,,Noun
+colluctari,"to struggle, wrestle",5,31,4,Verb
+colluctator,"adversary, enemy",5,32,,Noun
+collum,"neck, back of the neck, nape",5,33,,Noun
+"colō, colere, coluī, cultus","to cultivate, grow, abide, dwell, live",5,34,4,Verb
+colonia,"colony, settlement",5,35,,Noun
+colonus,"agrarian, farmer",5,36,,Noun
+color,"colour, dye",5,37,,Noun
+Colossus,Colossus,5,38,,Noun
+columba,"dove, pigeon",5,39,,Noun
+columbula,"dove, female pigeon",5,40,,Noun
+combinare,"to couple, match, pair, unite",5,41,1,Verb
+comparare,to compare,5,42,1,Verb
+compati,"to have compassion on, pity",5,43,4,Verb
+converti,convert,5,44,,Noun
+copula,"belt, zone, girdle",5,45,,Noun
+copulare,"to connect, join",5,46,1,Verb
+coquus,"cook, male cook",5,47,,Noun
+corbis,basket,5,48,,Noun
+corium,leather,5,49,,Noun
+"corporalis, corporeus","bodily, body, body-, corporal, corporeal, of the body, physical",5,50,,Adjective
+costa,"side, rib, abdomen, belly, tummy",5,31,,Noun
+coturnix,quail,5,32,,Noun
+crassus,"bold, corpulent, fat, thick, fatty, greasy",5,33,,Adjective
+crater,"abyss, chasm, gulf, precipice, basin, reservoir, ravine",5,34,,Noun
+creare,to create,5,35,1,Verb
+cremare,to burn down,5,36,1,Verb
+crus,"leg, paw",5,37,,Noun
+culina,kitchen,5,38,,Noun
+culmen,"summit, surface, top",5,39,,Noun
+cultor,"agrarian, farmer, friend",5,40,,Noun
+culus,"anus, arse, ass",5,41,,Noun
+cumba,boat,5,42,,Noun
+cunnus,"slut, trollop",5,43,,Noun
+cursor,"runner, courier",5,44,,Noun
+cutis,skin,5,45,,Noun
+cyathus,goblet,5,46,,Noun
+cymba,boat,5,47,,Noun
+decem,ten,5,48,,Adjective
+decies centena milia,million,5,49,,Adjective
+decimus,tenth,5,50,,Adjective
+delubrum,"sanctuary, sanctum, temple",5,31,,Noun
+dens,tooth,5,32,,Noun
+desperare,to despair,5,33,1,Verb
+desperatio,despair,5,34,,Noun
+deus,god,5,35,,Noun
+dictator,dictator,5,36,,Noun
+dimicare,"to fight, struggle, strive",5,37,1,Verb
+dius,divine,5,38,,Adjective
+divus,"divine, god",5,39,,Noun
+draco,dragon,5,40,,Noun
+duae,two,5,41,,Adjective
+dubitare,to doubt,5,42,1,Verb
+dubium,doubt,5,43,,Noun
+duo,two,5,44,,Adjective
+duodecim,twelve,5,45,,Adjective
+duodeviginti,eighteen,5,46,,Adjective
+durus,hard,5,47,,Adjective
+dux,"boss, chief, leader",5,48,,Noun
+elementa,element,5,49,,Noun
+epistola,letter,5,50,,Noun
+equus,horse,5,31,,Noun
+"errō, errāre, errāvī, errātus ","to err, make a mistake",5,32,4,Verb
+error,"aberration, error, mistake",5,33,,Noun
+exercitus,army,5,34,,Noun
+exigere,"to demand, postulate, require",5,35,2,Verb
+fabrica,workplace,5,36,,Noun
+facere,"to achieve, act, carry out, do, make, perform",5,37,2,Verb
+factum,"accomplishment, achievement, act, action",5,38,,Noun
+falsus,false,5,39,,Adjective
+fames,"famine, hunger",5,40,,Noun
+fanum,"sanctuary, sanctum, temple",5,41,,Noun
+faventia,favour,5,42,,Noun
+"faveō, favēre, fāvī, ------- ",to favour,5,43,4,Verb
+favor,favour,5,44,,Noun
+febris,"ague, fever",5,45,,Noun
+Februarius,February,5,46,,Noun
+fecundus,"fertile, fruitful",5,47,,Adjective
+femina,woman,5,48,,Noun
+femineus - femininus,"female, feminine",5,49,,Adjective
+fenestra,window,5,50,,Noun
+fera,"animal, beast",5,31,,Noun
+fere,"almost, nearly",5,32,,Adjective
+ferrum,iron,5,33,,Noun
+fessus,tired,5,34,,Adjective
+fibra,fibre,5,35,,Noun
+ficus,"fig-tree, fig",5,36,,Noun
+filum,thread,5,37,,Noun
+flumen,river,5,38,,Noun
+fluvius,river,5,39,,Noun
+folium,"leaf, sheet",5,40,,Noun
+forma,"form, shape",5,41,,Noun
+fortuna,fortune,5,42,,Noun
+forum,"fair, market",5,43,,Noun
+fossa,"hole, ditch, pit",5,44,,Noun
+fragmentum,"fragment, lump, piece",5,45,,Noun
+frigus,cold,5,46,,Adjective
+frons,forehead,5,47,,Noun
+funus,death,5,48,,Noun
+fur,"thief, female thief",5,49,,Noun
+gens,"family, nation, breed, race",5,50,,Noun
+geographia,geography,5,31,,Noun
+Graecia,Greece,5,32,,Noun
+Graecus,Greek,5,33,,Adjective
+grammaticus,linguistic,5,34,,Adjective
+grandis,"big, great, large",5,35,,Adjective
+gravis,"important, serious, pregnant, with young, burdensome, heavy, onerous",5,36,,Adjective
+gustos,guard,5,37,,Noun
+gustus,taste,5,38,,Noun
+guttur,throat,5,39,,Noun
+"habitō, habitāre, habitāvī, habitātus","to abide, dwell, live",5,40,4,Verb
+Hadria,"Adriatic, Adriatic Sea",5,41,,Noun
+halos,halo,5,42,,Noun
+hedychrum,perfume,5,43,,Noun
+hepar,liver,5,44,,Noun
+herba,"grass, herb",5,45,,Noun
+heres,heir,5,46,,Noun
+heroicus,of a demigod,5,47,,Adjective
+heroine - herois,"demigodess, heroin, heroine",5,48,,Noun
+heros,"demigod, hero",5,49,,Noun
+hibernum,winter,5,50,,Noun
+hiemalis,"winter, winter-, of the winter",5,31,,Adjective
+hiems,winter,5,32,,Noun
+hortus,"park, garden",5,33,,Noun
+hospes,"foreigner, stranger, guest",5,34,,Noun
+hospita,"stranger, female stranger, hostess",5,35,,Noun
+hospitalis,hospitable,5,36,,Adjective
+hospitalitas,hospitality,5,37,,Noun
+hospitator,guest,5,38,,Noun
+hospitium,friendship,5,39,,Noun
+hospitus,"alien, foreign, strange, hospitable",5,40,,Adjective
+hosticus,"adverse, hostile",5,41,,Adjective
+hostifer - hostilis,"adverse, hostile",5,42,,Adjective
+humus,"ground, soil, earth, land",5,43,,Noun
+"iaceō, iacēre, iacuī, -------","to lie, lie prostrate, lie dead",5,44,4,Verb
+ianua,door,5,45,,Noun
+Ianuarius,January,5,46,,Noun
+Ianus,Janus,5,47,,Noun
+Ilion - Ilium,Troy,5,48,,Noun
+imago,"image, picture",5,49,,Noun
+inanis,"empty, void",5,50,,Adjective
+incendium,fire,5,31,,Noun
+incertus,uncertain,5,32,,Adjective
+incestus,lewd,5,33,,Adjective
+indigena,"aboriginal, native",5,34,,Noun
+insula,island,5,35,,Noun
+ire,to go,5,36,4,Verb
+Italia,Italy,5,37,,Noun
+iugum,yoke,5,38,,Noun
+Iulius,July,5,39,,Noun
+Iunius,June,5,40,,Noun
+ius,oath,5,41,,Noun
+labium - labia,lip,5,42,,Noun
+labor,"job, work, chore",5,43,,Noun
+labrum,"bath, lip, border, brim, brink, edge, edging, fringe, rand, rim",5,44,,Noun
+lac,milk,5,45,,Noun
+lacertus,arm,5,46,,Noun
+lacus,"lake, loch",5,47,,Noun
+lanius,butcher,5,48,,Noun
+lanterna,lantern,5,49,,Noun
+lapis,"marble, stone",5,50,,Noun
+lassus,tired,5,31,,Adjective
+later,brick,5,32,,Noun
+latus,"side, broad, extensive, spacious, vast, wide",5,33,,Adjective
+laurus,laurel,5,34,,Noun
+legio,"army, legion",5,35,,Noun
+lenis,soft,5,36,,Adjective
+leo,lion,5,37,,Noun
+letum,death,5,38,,Noun
+levir,brother-in-law,5,39,,Noun
+libido,"lust, sexual pleasure",5,40,,Noun
+licentia,"permission, leave",5,41,,Noun
+limbus,"bank, border, edge, shore, brim, brink, edging, fringe, rand, rim",5,42,,Noun
+limes,"boundary, frontier, limit",5,43,,Noun
+limus,"mud, dirt, slime",5,44,,Noun
+linea,line,5,45,,Noun
+littera,letter,5,46,,Noun
+longus,long,5,47,,Adjective
+loqui,"speak, talk",5,48,,Noun
+lucrum,"gain, profit",5,49,,Noun
+luna,moon,5,50,,Noun
+lunaris,lunar,5,31,,Adjective
+lupus,wolf,5,32,,Noun
+lustrum,"forest, woods, brothel, marsh, swamp, bawdy, house of ill fame, whorehouse",5,33,,Noun
+lutum,"mud, dirt, slime",5,34,,Noun
+Lyaeus,Bacchus,5,35,,Noun
+maccus,"buffoon, jester, clown",5,36,,Noun
+machina,"work of art, tool, engine, machine, ruse, trick",5,37,,Noun
+machinatio,tool,5,38,,Noun
+macula,"blot, spot",5,39,,Noun
+maestitia,"grief, sadness, sorrow, gloom, dejection",5,40,,Noun
+maga,witch,5,41,,Noun
+magicus,magic,5,42,,Noun
+magirus,"cook, male cook",5,43,,Noun
+magus,"magic, enchanter, magician, sorcerer, warlock, wizard",5,44,,Noun
+maialis,"hog, pig, swine",5,45,,Noun
+malleus,hammer,5,46,,Noun
+mamma,"udder, breast, teat",5,47,,Noun
+"maneō, manēre, mānsī, mānsus","to abide, remain, stay, stay over",5,48,4,Verb
+mantellum,"cloak, mantle",5,49,,Noun
+marcus,hammer,5,50,,Noun
+margarita,pearl,5,31,,Noun
+maritimus,"maritime, sea, sea-, of the sea",5,32,,Noun
+marmor,marble,5,33,,Noun
+Martius,March,5,34,,Noun
+martyria,"martyr, female martyr",5,35,,Noun
+mas,male,5,36,,Adjective
+massa,"accumulation, crowd, heap, mass, multitude, pile",5,37,,Noun
+mater,mother,5,38,,Noun
+materia,matter,5,39,,Noun
+mathematica,"astrology, mathematics",5,40,,Noun
+mathematicus,"astrologer, mathematician",5,41,,Noun
+matrix,"stem, trunk, tree-trunk, account book, record, register",5,42,,Noun
+maturus,"mature, ripe",5,43,,Adjective
+medicus,"doctor, physician",5,44,,Noun
+medius,"average, mean, middle",5,45,,Noun
+melior,better,5,46,,Adjective
+memoranculum,monument,5,47,,Noun
+mensis,month,5,48,,Noun
+mentiri,"to lie, tell a lie",5,49,4,Verb
+merces,"salary, wage, wages",5,50,,Noun
+merda,"dung, excrement",5,31,,Noun
+meretricium,prostitution,5,32,,Noun
+meretrix,prostitute,5,33,,Noun
+Messias,Messiah,5,34,,Noun
+metallum,"ore, metal, mine",5,35,,Noun
+metropolis,metropolis,5,36,,Noun
+migrare,"to migrate, roam, wander, wander about",5,37,1,Verb
+mille,"thousand, one thousand",5,38,,Adjective
+mimus - mima,actor - actress,5,39,,Noun
+Minerva,Minerva,5,40,,Noun
+ministrare,to serve,5,41,1,Verb
+minus,"fewer, less",5,42,,Adjective
+mirari,"to marvel, marvel at, wonder",5,43,4,Verb
+miscere,"to blend, mingle, mix, shuffle",5,44,2,Verb
+mnemosynon,monument,5,45,,Noun
+modo,"exclusively, just, only, alone, solely",5,46,,Adjective
+moechus -moecha,adulterer - adulteress,5,47,,Noun
+molybdus,lead,5,48,,Noun
+monachus,monk,5,49,,Noun
+monasterium,monastery,5,50,,Noun
+monere,"to caution, warn, advise, counsel, notify, announce",5,31,2,Verb
+monogamia,monogamy,5,32,,Noun
+monopolium,monopoly,5,33,,Noun
+mordere,to bite,5,34,2,Verb
+mortificare,"to kill, liquidate, slay",5,35,1,Verb
+mos,"custom, habit, way, mores",5,36,,Noun
+Mulciber,Vulcan,5,37,,Noun
+multitudo,"accumulation, crowd, heap, mass, multitude, pile",5,38,,Noun
+"mundo, mundare, …",to clean,5,39,4,Verb
+murra,myrrh,5,40,,Noun
+murus,wall,5,41,,Noun
+musculus,muscle,5,42,,Noun
+myrrha,myrrh,5,43,,Noun
+naris,"nose, nostril",5,44,,Noun
+narrare,"to narrate, relate, tell",5,45,1,Verb
+nasus,nose,5,46,,Noun
+natio,"nation, birth, breed, race",5,47,,Noun
+nauta,sailor,5,48,,Noun
+navia,boat,5,49,,Noun
+navis,"ship, vessel",5,50,,Noun
+nebula,cloud,5,31,,Noun
+"necō, necāre, necāvī, necātus","to kill, liquidate, slay",5,32,4,Verb
+nefas,sinful,5,33,,Adjective
+negotium,"business, commerce, trade, transaction",5,34,,Noun
+nervus,"muscle, nerve, sinew, string, tendon",5,35,,Noun
+niger,black,5,36,,Adjective
+noctu,"at night, by night, during the night",5,37,,Adjective
+nonaginta,ninety,5,38,,Adjective
+nonnus,"nun, monk",5,39,,Noun
+nonus,ninth,5,40,,Adjective
+novem,nine,5,41,,Adjective
+nubes,cloud,5,42,,Noun
+nullus,"neither, no, nobody, no-one, none",5,43,,Noun
+nuntius,"errand, message",5,44,,Noun
+obedire,to obey,5,45,4,Verb
+obitus,death,5,46,,Noun
+obscurus,"dark, dim",5,47,,Adjective
+occasio,"chance, event, occurence, opportunity",5,48,,Noun
+occidaneus,western,5,49,,Adjective
+occidens - occasus,"west, West",5,50,,Noun
+occidentalis,western,5,31,,Adjective
+occidere,"to kill, liquidate, slay",5,32,2,Verb
+Oceanus,Oceanus,5,33,,Noun
+octavus,eighth,5,34,,Adjective
+odisse,hate,5,35,,Noun
+officium,"function, job, office, post",5,36,,Noun
+olea,"olive-tree, olive",5,37,,Noun
+oleum,oil,5,38,,Noun
+oliva,"olive-tree, olive",5,39,,Noun
+olla,"jug, pot, box, container, vessel",5,40,,Noun
+olus,vegetable,5,41,,Noun
+omen,"indication, omen, portent, precursor, presage, sign",5,42,,Noun
+onus,"weight, burden, charge, load",5,43,,Noun
+opera,effort,5,44,,Noun
+operire,to cover,5,45,4,Verb
+opilio,shepherd,5,46,,Noun
+opinari,"to account, deem, opine, think",5,47,4,Verb
+oppidum,"city, town",5,48,,Noun
+opplere,"to fill, fill in, fill up",5,49,2,Verb
+oppugnare,"to assault, attack",5,50,1,Verb
+ops,"aid, help, force, strength, vigour, ability",5,31,,Noun
+optare,"to desire, wish, choose, elect, pick out",5,32,1,Verb
+ora,"bank, border, edge, shore, boundary, frontier, limit, coast, seaside, brim, brink, edging, fringe, rand, rim",5,33,,Noun
+orare,"to speak, talk, pray",5,34,1,Verb
+orbis,circle,5,35,,Noun
+Orcus,death,5,36,,Noun
+orichalcum,brass,5,37,,Noun
+origo,"lineage, origin",5,38,,Noun
+palatium,palace,5,39,,Noun
+paradisus,paradise,5,40,,Noun
+"pareo, parere, …",to obey (+dat),5,41,4,Verb
+passus,"pace, step, stride",5,42,,Noun
+patiri,"to abide, bear, endure, put up with, suffer",5,43,4,Verb
+patruus,uncle,5,44,,Noun
+pecunia,money,5,45,,Noun
+peior,worse,5,46,,Adjective
+pellere,"to beat, hit, strike",5,47,2,Verb
+pellis,skin,5,48,,Noun
+pelvis,"basin, bowl, pelvis",5,49,,Noun
+pentecoste,"Pentecost, Whitsunday",5,50,,Noun
+periculum,"danger, peril",5,31,,Noun
+persona,person,5,32,,Noun
+persuadere,to persuade,5,33,2,Verb
+pervertere,to ruin,5,34,2,Verb
+petilus,"gaunt, lean, meager, skimpy, skinny, thin, slender",5,35,,Noun
+petra,rock,5,36,,Noun
+phaulius,"bad, miserable, nasty, poor",5,37,,Adjective
+philema,kiss,5,38,,Noun
+phui,shame,5,39,,Noun
+phylaca,"gaol, prison",5,40,,Noun
+phylacterium,"amulet, charm, talisman",5,41,,Noun
+physica,physics,5,42,,Noun
+piger,lazy,5,43,,Adjective
+pila,ball,5,44,,Noun
+pingere,to paint,5,45,2,Verb
+piscis,fish,5,46,,Noun
+placidus,peaceful,5,47,,Noun
+planta,plant,5,48,,Noun
+plebs,"folk, nation, people",5,49,,Noun
+plicare,to fold,5,50,1,Verb
+plumbum,"pencil, lead",5,31,,Noun
+pluvia,rain,5,32,,Noun
+podex,"anus, arse, ass",5,33,,Noun
+Poenicus,Carthaginian,5,34,,Noun
+Poenus,Carthaginian,5,35,,Noun
+poeta,poet,5,36,,Noun
+polliceri,promise,5,37,,Noun
+pomum,"fruit-tree, fruit, apple",5,38,,Noun
+pomus,fruit-tree,5,39,,Noun
+pondus,weight,5,40,,Noun
+pons,bridge,5,41,,Noun
+pontus,sea,5,42,,Noun
+Pontus Axenus,"Black Sea, Euxine Sea",5,43,,Noun
+poples,knee,5,44,,Noun
+porca,sow,5,45,,Noun
+porcarius,"pig, pig-, of a pig",5,46,,Noun
+porcina,pork,5,47,,Noun
+porcus,"hog, pig, swine",5,48,,Noun
+porta,"gate, gateway, portal",5,49,,Noun
+portio,share,5,50,,Noun
+portus,"harbour, port",5,31,,Noun
+possibilitas,possibility,5,32,,Noun
+possidere,"to own, possess",5,33,2,Verb
+potissimum,"above all, especially, chiefly, in particular, mainly, principally",5,34,,Noun
+potui,"to be able, be able to",5,35,4,Verb
+praebia,"amulet, charm, talisman",5,36,,Noun
+praenomen,first name,5,37,,Noun
+precare,to pray,5,38,1,Verb
+proelium,"action, battle, scuffle, struggle, fight",5,39,,Noun
+profligare,to conquer,5,40,1,Verb
+profugere,"to flee, run away",5,41,2,Verb
+prohibere,"to forestall, prevent",5,42,2,Verb
+prohibire,"to forbid, prohibit",5,43,4,Verb
+proles,"child, offspring, young, successor",5,44,,Noun
+"prōmittō, prōmittere, prōmīsī, prōmissus",to promise,5,45,4,Verb
+propagare,to spread,5,46,1,Verb
+prostituere,to prostitute,5,47,2,Verb
+provincia,province,5,48,,Noun
+proximare,"to advance, come close, come closer, come on",5,49,1,Verb
+puella,"girl, lass, wench",5,50,,Noun
+puelus,bath,5,31,,Noun
+puera,"girl, lass, wench",5,32,,Noun
+pugna,"action, battle, scuffle, struggle, fight, competition, contest",5,33,,Noun
+"pugnō, pugnāre, pugnāvī, pugnātus","to fight, struggle, strive",5,34,4,Verb
+pugnus,fist,5,35,,Noun
+pulpa,meat,5,36,,Noun
+pulsare,"to beat, hit, strike",5,37,1,Verb
+Punicus,Carthaginian,5,38,,Noun
+purus,"clean, pure",5,39,,Adjective
+putus,"clean, pure",5,40,,Adjective
+quadraginta,forty,5,41,,Adjective
+quaerere,to ask,5,42,2,Verb
+quartus,fourth,5,43,,Adjective
+quattuordecim,fourteen,5,44,,Adjective
+quindecim,fifteen,5,45,,Adjective
+quinquaginta,fifty,5,46,,Adjective
+quinque,five,5,47,,Adjective
+quintus,fifth,5,48,,Adjective
+quisquis,"any, whichever, whoever",5,49,,Adjective
+ramus,"bough, branch",5,50,,Noun
+rarus,rare,5,31,,Adjective
+ravus,grey,5,32,,Adjective
+re-,"back, re-",5,33,,Adjective
+rectus,"direct, straight",5,34,,Adjective
+red-,"back, re-",5,35,,Adjective
+refugere,to flee back,5,36,2,Verb
+regalis,"regal, royal",5,37,,Adjective
+regere,"to control, govern, restrain, rule",5,38,2,Verb
+regificus,"regal, royal",5,39,,Adjective
+regillus,"regal, royal",5,40,,Adjective
+"regimen, regimentum","administration, government",5,41,,Noun
+regio,"district, region",5,42,,Noun
+regius,"regal, royal",5,43,,Adjective
+relegare,"to do away with, dispense with, get rid of, remove, dismiss, turn away",5,44,1,Verb
+religio,"religion, superstition",5,45,,Noun
+renovare,to renew,5,46,1,Verb
+reparare,"to earn back, regain, win back, renew, fix, repair",5,47,1,Verb
+reperire,"to discover, uncover, find",5,48,4,Verb
+requiescere,"to repose, rest",5,49,2,Verb
+requirere,"to need, require",5,50,2,Verb
+reri,to think,5,31,4,Verb
+resistere,"to resist, withstand",5,32,2,Verb
+respublica,state,5,33,,Noun
+rota,wheel,5,34,,Noun
+rumpere,to break,5,35,2,Verb
+rus,"country, countryside",5,36,,Noun
+russus,"ablush, blushing, red",5,37,,Adjective
+rusticus,rural,5,38,,Adjective
+sacerdotalis,priestly,5,39,,Adjective
+sacratus,"holy, sacred",5,40,,Adjective
+sacricola,priest,5,41,,Noun
+sacrum,"holy object, sacred object",5,42,,Noun
+sagitta,arrow,5,43,,Noun
+sal,salt,5,44,,Noun
+salire,"to jump, leap, spring",5,45,4,Verb
+"salūtō, salūtāre, salūtāvī, salūtātus","to greet, salute",5,46,4,Verb
+sambucus,elder,5,47,,Noun
+sancire,to sanctify,5,48,4,Verb
+sanctescere,to become holy,5,49,2,Verb
+sanctificare,to sanctify,5,50,1,Verb
+sanctimonialis,"nun, pious",5,31,,Adjective
+sanctus,"divine, pious, holy, sacred",5,32,,Adjective
+sandalium,sandal,5,33,,Noun
+sanitas,health,5,34,,Noun
+sanus,"healthy, well",5,35,,Noun
+sapiens,"sagacious, sage, wise",5,36,,Adjective
+sapo,soap,5,37,,Noun
+Satanas,Satan,5,38,,Noun
+saurion,mustard,5,39,,Noun
+saxum,rock,5,40,,Noun
+scaena,scene,5,41,,Noun
+scalpere,"to cut, slice",5,42,2,Verb
+scandalum,"commotion, scandal",5,43,,Noun
+scapha,boat,5,44,,Noun
+sceptrum,sceptre,5,45,,Noun
+schola,school,5,46,,Noun
+scrofa,sow,5,47,,Noun
+secare,"to cut, slice",5,48,1,Verb
+sedecim,sixteen,5,49,,Adjective
+segregare,"to divide, separate",5,50,1,Verb
+seiungere,"to divide, separate",5,31,2,Verb
+semen,seed,5,32,,Noun
+semideus,"of a demigod, demigod",5,33,,Adjective
+septendecim,seventeen,5,34,,Adjective
+septimus,seventh,5,35,,Adjective
+septuaginta,seventy,5,36,,Adjective
+serpens,"dragon, serpent, snake",5,37,,Noun
+serva,"bondwoman, slave, female slave",5,38,,Noun
+servire,to serve,5,39,4,Verb
+servus,slave,5,40,,Noun
+severus,"severe, strict",5,41,,Adjective
+sex,six,5,42,,Adjective
+sexaginta,sixty,5,43,,Adjective
+sextus,sixth,5,44,,Adjective
+sexus,sex,5,45,,Noun
+Sicilia,Sicily,5,46,,Noun
+sidus,star,5,47,,Noun
+silens,silent,5,48,,Adjective
+silva,"forest, woods",5,49,,Noun
+socer,father-in-law,5,50,,Noun
+socrus,mother-in-law,5,31,,Noun
+sol,sun,5,32,,Noun
+solaris,"solair, sun, sun-, of the sun",5,33,,Adjective
+solidus,"firm, solid",5,34,,Adjective
+sophia,wisdom,5,35,,Noun
+sophus,"sagacious, sage, wise",5,36,,Adjective
+sopor,sleep,5,37,,Noun
+"spectō, spectāre, spectāvī, spectātus","to consider, deem, look, regard, view, watch",5,38,4,Verb
+sperare,to hope,5,39,1,Verb
+squama,scale,5,40,,Noun
+statua,statue,5,41,,Noun
+stella,star,5,42,,Noun
+sterilis,"barren, infertile, sterile, unfruitful",5,43,,Adjective
+stigma,brand,5,44,,Noun
+stimulare,"to abet, rouse, stimulate, stir up",5,45,1,Verb
+studium,study,5,46,,Noun
+stultus,"foolish, addled, stupid",5,47,,Adjective
+Styx,Styx,5,48,,Noun
+subnotatio,signature,5,49,,Noun
+successus,"achievement, success",5,50,,Noun
+sulphur,"brimstone, sulphur",5,31,,Noun
+superare,"to exceed, surpass",5,32,1,Verb
+supereffluere,to overflow,5,33,2,Verb
+superstitio,superstition,5,34,,Noun
+sura,calf,5,35,,Noun
+Syracusae,Syracuse,5,36,,Noun
+Syria,Syria,5,37,,Noun
+tabula,"board, plank",5,38,,Noun
+tata,"dad, daddy",5,39,,Noun
+taurus,bull,5,40,,Noun
+taxare,"to appraise, estimate, rate",5,41,1,Verb
+tegere,to cover,5,42,2,Verb
+tela,"spiderweb, fabric, textile",5,43,,Noun
+tempestus,weather,5,44,,Noun
+tenebricosus,"dark, dim",5,45,,Adjective
+"teneō, tenēre, tenuī, tentus","to hang onto, hold, retain",5,46,4,Verb
+textura,"fabric, textile",5,47,,Noun
+textus,"fabric, textile, lyric, text",5,48,,Noun
+thalassicus,"maritime, sea, sea-, of the sea",5,49,,Adjective
+theatrum,theatre,5,50,,Noun
+theologia,theology,5,31,,Noun
+theologus,theologian,5,32,,Noun
+thesis,"essay, thesis",5,33,,Noun
+thorax,chest,5,34,,Noun
+Tiber,Tiber,5,35,,Noun
+timere,"to be afraid of, fear",5,36,2,Verb
+titulus,"degree, heading, title",5,37,,Noun
+tolerare,"to abide, endure, put up with, tolerate",5,38,1,Verb
+tonus,tone,5,39,,Noun
+trebax,"clever, cunning, sly, smart",5,40,,Adjective
+tredecim,thirteen,5,41,,Adjective
+tremor,"earthquake, quiver, quivering, vibration",5,42,,Noun
+tres,three,5,43,,Adjective
+tria,three,5,44,,Adjective
+triangularis,triangular,5,45,,Adjective
+triangulus,triangular,5,46,,Adjective
+tribunus,tribune,5,47,,Noun
+triginta,thirty,5,48,,Adjective
+trigonium,triangle,5,49,,Noun
+Trinacria,Sicily,5,50,,Noun
+triticum,wheat,5,31,,Noun
+triumphare,to triumph,5,32,1,Verb
+tropaeum,monument,5,33,,Noun
+Tros,Trojan,5,34,,Noun
+tryblium,"course, dish, plate, platter",5,35,,Noun
+tumba,"grave, tomb",5,36,,Noun
+tunica,tunic,5,37,,Noun
+turibulum,"censer, incensory, thurible",5,38,,Noun
+turpis,"nasty, ugly",5,39,,Adjective
+turris,"castle, palace",5,40,,Noun
+typhus,pride,5,41,,Noun
+tyrannicus,despotic,5,42,,Adjective
+tyrannis,tyranny,5,43,,Noun
+tyrannus,tyrant,5,44,,Noun
+uber,"udder, breast, teat",5,45,,Noun
+ulcus,"ulcer, sore",5,46,,Noun
+undecim,eleven,5,47,,Adjective
+undeviginti,nineteen,5,48,,Adjective
+upilio,shepherd,5,49,,Noun
+urbs,"city, town",5,50,,Noun
+urina,"water, urine",5,31,,Noun
+ursus,bear,5,32,,Noun
+uterus,"grub, larva",5,33,,Noun
+utriculus,"uterus, womb",5,34,,Noun
+uxor,wife,5,35,,Noun
+vacca,cow,5,36,,Noun
+vacuus,"empty, void",5,37,,Adjective
+vafer,"clever, cunning, sly, smart",5,38,,Adjective
+vagari,"to roam, wander",5,39,4,Verb
+vallis,valley,5,40,,Noun
+vanus,"abortive, futile, useless, vain, fruitless",5,41,,Adjective
+vas,"barrel, vase, vessel",5,42,,Noun
+vectigal,tax,5,43,,Noun
+vehere,"to go, ride, travel",5,44,2,Verb
+vendere,"to dispose of, sell, vend",5,45,2,Verb
+venenum,poison,5,46,,Noun
+venter,"stomach, abdomen, belly, tummy",5,47,,Noun
+vesperalis,western,5,48,,Adjective
+vetustus,old,5,49,,Adjective
+viginti,twenty,5,50,,Adjective
+"vītō, vītāre, vītāvī, vītātus","to avoid, elude, evade",5,31,4,Verb
+volare,"to fly, race, run",5,32,1,Verb
+Vulcanus,Vulcan,5,33,,Noun
+Zabulus,Satan,5,34,,Noun
+zamia,loss,5,35,,Noun
+zaplutus,"immensely rich, rolling in money",5,36,,Adjective
+zona,"belt, zone, girdle",5,37,,Noun
+abdere,"to abstract, take away, conceal, hide",5,51,2,Verb
+abecedarius,"abecedarian, alphabetical",5,52,,Adjective
+abiectus,"commonplace, dismal, trite",5,53,,Adjective
+ablativus,ablative,5,54,,Adjective
+abnegare,"to abnegate, deny oneself",5,55,1,Verb
+abnuere,"to shake one's head, abnegate, deny",5,56,2,Verb
+abnutare,to shake one's head,5,57,1,Verb
+abolitio,"abolishment, abolition, abrogation, act of grace, amnesty",5,58,,Noun
+abomiamentum,abomination,5,59,,Noun
+abominabilis,"dismal, dreary, ghastly, hideous, horrible, nasty, abhorrent, abominable, alien, awful, gruesome",5,60,,Adjective
+abominatio,"abhorrence, abomination, horror",5,51,,Noun
+aborisci,to disappear,5,52,4,Verb
+abrenuntiare,"to abjure, abnegate",5,53,1,Verb
+abrenuntiatio,abjuration,5,54,,Noun
+abrogatio,"abolishment, abolition, abrogation",5,55,,Noun
+abrupte,abruptly,5,56,,Adverb
+abscedere,"to absent onself, depart, go away, leave, disappear",5,57,2,Verb
+absconse,"clandestinely, secretly",5,58,,Adverb
+absolutio,"absolution, acquittal",5,59,,Noun
+absolutus,absolute,5,60,,Adjective
+abstinere,to abstain,5,51,2,Verb
+absurdus,absurd,5,52,,Adjective
+acacia,acacia,5,53,,Noun
+Academia,Academy,5,54,,Noun
+acatium,little boat,5,55,,Noun
+accelerare,"to accelerate, speed up",5,56,1,Verb
+accentus,"accent, stress, sound",5,57,,Noun
+acceptatio,"acceptance, acceptation, admission",5,58,,Noun
+acceptator,acceptor,5,59,,Noun
+accidens,accident,5,60,,Noun
+accipitrina,prey,5,51,,Noun
+acclamare,"to acclaim, applaud",5,52,1,Verb
+acclamatio,"acclaim, acclamation, approval",5,53,,Noun
+accognoscere,to recognize,5,54,2,Verb
+accommodare,to add,5,55,1,Verb
+accrescere,"to accrue, grow, increase",5,56,2,Verb
+accretio,"accession, accretion, growth, enlargement, increase",5,57,,Noun
+accusatio,"accusal, accusation",5,58,,Noun
+accusativus,"accusative, accusative case",5,59,,Noun
+accusator,accuser,5,60,,Noun
+acerbitas,"acerbity, bitterness, severity, rigour, sterness",5,51,,Noun
+acerbus,"acerbic, acid, acrid, harsh, sour, tart, astringent, constringent, bitter, cruel, unripe, green, severe, strict",5,52,,Adjective
+acetum,vinegar,5,53,,Noun
+acidus,"acid, bleak, dismal, dreary, horrible, ghastly, grisly, nasty",5,54,,Adjective
+acies,"acerbity, acrimony, acuity, sharpness",5,55,,Adjective
+acinus,"berry, grape",5,56,,Noun
+acritas,"acerbity, acrimony, acuity, sharpness",5,57,,Adjective
+acroama,"reciter, concert, soloist",5,58,,Noun
+acror,"acerbity, acrimony, acuity, sharpness",5,59,,Noun
+acta,"coast, seaside, shore, beach",5,60,,Noun
+Actiacus,of Actium,5,51,,Adjective
+actio,"achievement, act, action",5,52,,Noun
+Actium,Actium,5,53,,Noun
+actor,actor,5,54,,Noun
+aculeus,"sting, prickle",5,55,,Noun
+acumen,"acerbity, acrimony, acuity, sharpness, witticism",5,56,,Noun
+acurere,to sharpen,5,57,2,Verb
+acus,needle,5,58,,Noun
+acutus,"abrasive, acerbic, acid, acrid, acrimonious, acute, lurid, sharp, dangerous",5,59,,Adjective
+adagium,"adage, proverb",5,60,,Noun
+adamas,steel,5,51,,Noun
+adimere,"to abstract, take away",5,52,2,Verb
+admirabilis,"admirable, paradoxical",5,53,,Adjective
+admirabilitas,admiration,5,54,,Noun
+admirari,to admire,5,55,4,Verb
+admiratio,admiration,5,56,,Noun
+admirator,admirer,5,57,,Noun
+admodum,"quite, very, very much",5,58,,Adverb
+admonere,"to admonish, scold, caution, warn",5,59,2,Verb
+admonitus,"admonition, exhortation",5,60,,Noun
+admulcere,"to caress, chuck, fondle, stroke",5,51,2,Verb
+adolescens,adolescent,5,52,,Adjective
+adolescere,"to accrue, grow",5,53,2,Verb
+adorabilis,adorable,5,54,,Adjective
+"adsum, adesse, adfuī, -------","to attend, be present, witness",5,55,4,Verb
+adulare,"to caress, chuck, fondle, stroke",5,56,1,Verb
+advocare,"to appeal to, invoke",5,57,1,Verb
+aegrere,to be ailing,5,58,2,Verb
+aegrescere,"to be taken ill, fall ill",5,59,2,Verb
+aegrotare,to be ailing,5,60,1,Verb
+aelinos,elegy,5,51,,Noun
+aenigma,"enigmatic character, mysteriousness, enigma, puzzle, riddle",5,52,,Noun
+aeolus,Aeolus,5,53,,Noun
+aeruscare,to beg,5,54,1,Verb
+aeruscator,"beggar, market trader",5,55,,Noun
+aes,"bronze, copper, money, salary, wage, wages",5,56,,Noun
+aesculetum,oak-wood,5,57,,Noun
+aethiops,"Abyssinian, Ethiopian",5,58,,Noun
+affigere,"to affix, attach",5,59,2,Verb
+affluere,"to come flocking in, flow towards, rush towards, stream towards",5,60,2,Verb
+"agnōscō, agnōscere, agnōvī, agnitus","to acknowledge, recognize",5,51,4,Verb
+ah; ai,"ah, oh, ow",5,52,,Adverb
+albare,"to blanch, whiten",5,53,1,Verb
+alienus,"another man's, other people's",5,54,,Adjective
+alogia,"absurdity, nonsense, rubbish",5,55,,Noun
+alsus,cool,5,56,,Adjective
+amarare,to make bitter,5,57,1,Verb
+amarescere,to become bitter,5,58,2,Verb
+amarulentus,"acerbic, bitter",5,59,,Adjective
+amarus,"acerbic, bitter, bleak, dismal, dreary, horrible, ghastly, grisly, nasty",5,60,,Adjective
+ambire,"to circumvent, go around",5,51,4,Verb
+amens,"crazy, insane, mad, nuts",5,52,,Adjective
+amentia,"craziness, insanity, lunacy, madness",5,53,,Noun
+amoliri,"to abduce, turn away",5,54,4,Verb
+amputare,to amputate,5,55,1,Verb
+anatinus,"duck, duck-, duck's, of a duck",5,56,,Adjective
+anculare,to serve,5,57,1,Verb
+angularis - angulatus - angulosus,gaunt,5,58,,Adjective
+annihilare,"to destroy, quash",5,59,1,Verb
+annotare,"to note, make a note, write down",5,60,1,Verb
+annullare,"to destroy, quash",5,51,1,Verb
+antepollere,"to exceed, surpass",5,52,2,Verb
+antestare,"to exceed, surpass",5,53,1,Verb
+antevenire,"to forestall, prevent, exceed, surpass",5,54,4,Verb
+antevertere,"to forestall, prevent",5,55,2,Verb
+anteviare,to precede,5,56,1,Verb
+apolactizare,to despise,5,57,1,Verb
+"appello, appellare, appellavi, appellatus","to accost, address",5,58,4,Verb
+applaudere,"to acclaim, applaud, clap",5,59,2,Verb
+appretiare,"to appraise, estimate, rate",5,60,1,Verb
+approbare,to approve,5,51,1,Verb
+appugnare,"to assault, attack",5,52,1,Verb
+araneus,of a spider,5,53,,Adjective
+arare,to plough,5,54,1,Verb
+arboreus,"arboreal, tree, tree-, of a tree",5,55,,Adjective
+arcano,"clandestinely, secretly",5,56,,Adverb
+arcanus,"abstruse, mysterious, secret",5,57,,Adjective
+arduum,precipice,5,58,,Noun
+arenaceus - arenosus,"sand, sand-, of sand",5,59,,Adjective
+arenarius,"sand, sand-, of sand",5,60,,Adjective
+Ares,Ares,5,51,,Noun
+argilla,"clay, white clay",5,52,,Noun
+Argo,Argus,5,53,,Noun
+aries,"ram, tup",5,54,,Noun
+armare,to arm,5,55,1,Verb
+armarium,"cabinet, closet, cupboard, sideboard",5,56,,Noun
+armilla,bracelet,5,57,,Noun
+arundineus,"cane, cane-",5,58,,Adjective
+arundo,"baton, cane, stick, fishing rod, reed, pen, arrow",5,59,,Noun
+aspirare,"to breathe, blow",5,60,1,Verb
+asportare,"to bring away, carry away",5,51,1,Verb
+assiccare,to dry,5,52,1,Verb
+assidere,"to sit down, defecate",5,53,2,Verb
+assignare,to assign,5,54,1,Verb
+astrangulare,"to choke, strangle",5,55,1,Verb
+astrosus,"crazy, insane, mad, nuts",5,56,,Adjective
+attemptare,"to attempt, test, try",5,57,1,Verb
+austerus,"acerbic, acid, astringent, constringent, harsh, tart, acrid, bitter, severe, strict",5,58,,Adjective
+australis,"south, southern",5,59,,Adjective
+autumare,"to assert, state",5,60,1,Verb
+avarus,"avaricious, miserly, stingy, miser, niggard, skinflint",5,51,,Adjective
+aves,bird,5,52,,Adjective
+avitus,"bird, bird-, bird's, of a bird",5,53,,Adjective
+avolare,to fly away,5,54,1,Verb
+baccar,valerian,5,55,,Adjective
+balbutire,"to stammer, stutter",5,56,4,Verb
+barbarus,"barbaric, barbarian, alien, foreign, foreigner, cruel, uncivilized, Persian",5,57,,Adjective
+bardus,"bard, addled, foolish, stupid",5,58,,Adjective
+barrinus,"elephant, elephant-, elephant's, elephantine, of an elephant",5,59,,Adjective
+belua,monster,5,60,,Noun
+bestia,"animal, beast",5,51,,Noun
+bibitor,"boozer, alcoholic",5,52,,Noun
+bibliopola,bookseller,5,53,,Noun
+bibliotheca,bookcase,5,54,,Noun
+bibliothecarius,librarian,5,55,,Noun
+biblus,paper,5,56,,Noun
+bicolor,"bicolour, bicoloured, of two colours",5,57,,Adjective
+bilis,"bile, gall",5,58,,Noun
+bimus,"biennial, two-year, two-year-old",5,59,,Adjective
+bliteus,tasteless,5,60,,Adjective
+boare,"to cry out, scream, shout",5,51,1,Verb
+bombycinus,"silk, silk-, silken, of silk",5,52,,Adjective
+bovinari,"to howl, roar",5,53,4,Verb
+bracae,"pants, trousers",5,54,,Noun
+breviare,"to abbreviate, abridge, curtail, shorten",5,55,1,Verb
+brutus,"awkward, obtuse, dull, stupid, burdensome, heavy, onerous",5,56,,Adjective
+cacare,to defecate,5,57,1,Verb
+cachinnare,to roar with laughter,5,58,1,Verb
+caecare,to dazzle,5,59,1,Verb
+caedere,"to butcher, slaughter, drop, overthrow",5,60,2,Verb
+calculo,book-keeper,5,51,,Noun
+calere,"to glow, glow with heat",5,52,2,Verb
+caliginosus - caligineus,"dark, dim, fuzzy, misty",5,53,,Adjective
+calva,nut,5,54,,Noun
+calvus,bald,5,55,,Adjective
+canaba,"cabin, hut, shack",5,56,,Noun
+canalis,"canal, channel, barrel, pipe, tube",5,57,,Noun
+canis,dog,5,58,,Noun
+canna,"cane, reed",5,59,,Noun
+canneus,"cane, cane-",5,60,,Adjective
+canor,"melody, tune, sound",5,51,,Noun
+cantharis,"cantharides, Spanish fly, poison",5,52,,Noun
+cantharus,weever,5,53,,Noun
+capax,"ample, bulky, extensive, sizable",5,54,,Adjective
+carbo,charcoal,5,55,,Noun
+carcer,cell,5,56,,Noun
+carere,to card,5,57,2,Verb
+carina,"keel, ship, vessel",5,58,,Noun
+carnifex,"hangman, executioner, torturer",5,59,,Noun
+carnificare,"to behead, decapitate",5,60,1,Verb
+carnificina,torture,5,51,,Noun
+carnivorus,carnivorous,5,52,,Adjective
+carrus,vehicle,5,53,,Noun
+Carthaginiensis,Carthaginian,5,54,,Adjective
+cassare,to thrash,5,55,1,Verb
+cassus,"concave, hollow",5,56,,Adjective
+castra,barracks,5,57,,Noun
+castrare,to castrate,5,58,1,Verb
+catinus,"course, dish, plate, platter",5,59,,Noun
+cauda,"penis, tail",5,60,,Noun
+caudex,"stem, trunk, tree-trunk, block, pad, book, list",5,51,,Noun
+caulae,"cavity, cave",5,52,,Noun
+causidicus,"advocate, barrister, counsel, intercessor, lawyer, solicitor",5,53,,Noun
+cautela,"preservative, caution",5,54,,Noun
+cavea,"beehive, cavity, cave, orbit",5,55,,Noun
+cavus - cavum,"concave, hollow, cavity, cave, hole",5,56,,Noun
+celatim,"clandestinely, secretly",5,57,,Adjective
+cella,"pantry, chamber, room",5,58,,Noun
+cellarium,pantry,5,59,,Noun
+cerebellum,brain,5,60,,Noun
+cerebrosus,"crazy, insane, mad, nuts, lunatic",5,51,,Adjective
+cerebrum,brain,5,52,,Noun
+cerevisia,"ale, beer",5,53,,Noun
+Ceritus,"crazy, insane, mad, nuts",5,54,,Adjective
+cerritulus,"crack-brained, daft, loopy, nuts, weird",5,55,,Adjective
+Cerritus,"crazy, insane, mad, nuts",5,56,,Adjective
+cervical,pillow,5,57,,Noun
+cervisia,"ale, beer",5,58,,Noun
+chalybaeus,"steal, of steal",5,59,,Adjective
+chaos,"chaos, tangle",5,60,,Noun
+character,"branding iron, brand",5,51,,Noun
+cicaro,darling,5,52,,Noun
+cicatrix,scar,5,53,,Noun
+cicur,tame,5,54,,Adjective
+cicurare,to tame,5,55,1,Verb
+cimex,"bug, bedbug, arsehole, bastard, son-of-a-bitch",5,56,,Noun
+cinis,"ash, cinder, gammer, old woman, barrow, burial mound, grave-mound, tumulus",5,57,,Adjective
+Circe,Circe,5,58,,Noun
+circulus,"hoop, ring, circle",5,59,,Noun
+circus,circle,5,60,,Noun
+claudus,lame,5,51,,Adjective
+clavis,"key, wrench",5,52,,Noun
+clavus,nail,5,53,,Noun
+clepere,"to abstract, steal",5,54,2,Verb
+codex,"stem, trunk, tree-trunk, block, pad, book, list",5,55,,Noun
+cohabitare,to huddle,5,56,1,Verb
+colorare,"to colour, paint",5,57,1,Verb
+Colosseus - Colossicus,"colossal, huge",5,58,,Adjective
+cometes,comet,5,59,,Noun
+comis,"affable, friendly, good-natured, kind",5,60,,Adjective
+commentarius,diary,5,51,,Noun
+compactus,compact,5,52,,Adjective
+comparere,"to appear, emerge, perform",5,53,2,Verb
+conciliare,"to achieve, acquire, attain, get, obtain",5,54,1,Verb
+concitare,"to abet, agitate, incite, stir up",5,55,1,Verb
+continuus,"coherent, connected, consistent",5,56,,Noun
+contus,"pole, rod",5,57,,Noun
+copa,"hostess, landlady, host, innkeeper, landlord",5,58,,Noun
+cophinus,basket,5,59,,Noun
+corax,raven,5,60,,Noun
+cornix,crow,5,51,,Noun
+cornus - cornum,cornel,5,52,,Noun
+cortex,"bark, cork",5,53,,Noun
+corvus,raven,5,54,,Noun
+crabro,hornet,5,55,,Noun
+crambe,cabbage,5,56,,Noun
+crepusculum,"dusk, twilight",5,57,,Noun
+creta,chalk,5,58,,Noun
+cribellare,to sift,5,59,1,Verb
+cribrare,to sift,5,60,1,Verb
+crudelis,cruel,5,51,,Adjective
+crudus,"crude, raw, rough, unrefined, unwrought",5,52,,Adjective
+crystallus,crystal,5,53,,Noun
+cubus,"die, cube",5,54,,Noun
+cucurbita,"gourd, pumpkin, squash",5,55,,Noun
+cupa,barrel,5,56,,Noun
+cura,"thoughtfulness, care, concern",5,57,,Noun
+curculio,penis,5,58,,Noun
+curis,javelin,5,59,,Noun
+curtare,"to abbreviate, abridge, curtail, shorten",5,60,1,Verb
+curvus,"bent, curved",5,51,,Adjective
+cuspis,"sting, prickle, javelin",5,52,,Noun
+cybium,"tuna, tuna-fish, tunny",5,53,,Noun
+cylindrus,"cylinder, roller",5,54,,Noun
+cymbalum,cymbal,5,55,,Noun
+Cytherea,"Venus, Evening Star",5,56,,Noun
+dare,"to accord, give",5,57,1,Verb
+demens,"crazy, insane, mad, nuts, foolish",5,58,,Adjective
+dementia,"craziness, insanity, lunacy, madness",5,59,,Noun
+experiri,to prove,5,60,4,Verb
+fama,"fame, hearsay, renown, repute, rumor, rumour",5,51,,Noun
+famosus,famous,5,52,,Adjective
+fascia,"bandage, hair ribbon, fillet, bra, swathe",5,53,,Noun
+fascinum,penis,5,54,,Noun
+fascis,"bunch, bundle, cluster, sheaf",5,55,,Noun
+fauces,"abyss, chasm, gulf, precipice, throat, strait",5,56,,Noun
+faustus,"advantageous, favourable",5,57,,Adjective
+favea,favourite,5,58,,Noun
+fax,"comet, atmospheric phenomenon, torch",5,59,,Noun
+fendere,"to fight, struggle, strive",5,60,2,Verb
+fenum,hay,5,51,,Noun
+feriae,vacation,5,52,,Noun
+ferocia,"audacity, boldness, daring",5,53,,Noun
+fiscus,"cashier's stand, fund, money box, money-box, till",5,54,,Noun
+fistula,"barrel, channel, pipe, tube",5,55,,Noun
+flagrare,"to glow, glow with heat, burn",5,56,1,Verb
+fligere,"to beat, hit, strike",5,57,2,Verb
+fluere,to flow,5,58,2,Verb
+focus,hearth,5,59,,Noun
+fodere,"to dig, grub, spade",5,60,2,Verb
+formica,"ant, emmet",5,51,,Noun
+formosus,"beautiful, fine, handsome, lovely, fair",5,52,,Adjective
+fortasse,"maybe, mayhap, perchance, perhaps, possibly",5,53,,Adverb
+framea,"lance, spear",5,54,,Noun
+fuga,"flight, run",5,55,,Noun
+fulgere,to lighten,5,56,2,Verb
+fulmen,lightning,5,57,,Noun
+fumus,smoke,5,58,,Noun
+fungus,"fungus, mushroom",5,59,,Noun
+funis,"cord, rope, string",5,60,,Noun
+Gallia,Gaul,5,51,,Noun
+gallina,"chicken, fowl",5,52,,Noun
+gallus,"cock, rooster",5,53,,Noun
+gelu,"freezing cold, frost",5,54,,Noun
+gibba,"bump, hump",5,55,,Noun
+gradus,"pace, step, stride",5,56,,Noun
+gramen,"grass, herb",5,57,,Noun
+grammatica,grammar,5,58,,Noun
+griphus,"enigma, puzzle, riddle",5,59,,Noun
+Hafnia,Copenhagen,5,60,,Noun
+halare,to breathe,5,51,1,Verb
+harena,sand,5,52,,Noun
+harmonia,harmony,5,53,,Noun
+harpa,harp,5,54,,Noun
+harpagare,"to plunder, rob",5,55,1,Verb
+hasta,"pole, rod",5,56,,Noun
+hei - hem - heu,"ah, oh, ow, woe",5,57,,Adverb
+hibrida,bastard,5,58,,Noun
+hinnus,mule,5,59,,Noun
+hircus,he-goat,5,60,,Noun
+Hispania,Spain,5,51,,Noun
+Hister,Danube,5,52,,Noun
+hordeum,barley,5,53,,Noun
+horror,horror,5,54,,Noun
+hystericus,hysterical,5,55,,Adjective
+ianitor,porter,5,56,,Noun
+ianitrix,doorwoman,5,57,,Noun
+illudere,"to jeer at, make fun of, mock",5,58,2,Verb
+imber,rain,5,59,,Noun
+incaste,lewdly,5,60,,Adverb
+incestum,incest,5,51,,Noun
+indivisibilis,indivisible,5,52,,Adjective
+inexplanabilis,inexplicable,5,53,,Adjective
+inobsequens,"disobedient, insubordinate",5,54,,Adjective
+intellegere,"to understand, realize",5,55,2,Verb
+iocare,"to jest, joke",5,56,1,Verb
+iocatio - iocus,"gag, joke",5,57,,Noun
+ioculatio,"gag, joke",5,58,,Noun
+iudicare,to judge,5,59,1,Verb
+iurare,to swear,5,60,1,Verb
+iuvare,"to abet, aid, assist, help, accomodate",5,51,1,Verb
+lama,"marsh, swamp",5,52,,Noun
+lamentari,"to lament, wail",5,53,4,Verb
+lente,"leisurely, slowly",5,54,,Adverb
+lepidus,"affable, friendly, good-natured, kind",5,55,,Adjective
+levare,"to lever, lift, raise",5,56,1,Verb
+ligare,"to bind, connect, join, tie, tie up",5,57,1,Verb
+lima,file,5,58,,Noun
+limen,"sill, threshold",5,59,,Noun
+linum,"thread, flax",5,60,,Noun
+lira,lyre,5,51,,Noun
+litus,"coast, seaside, shore",5,52,,Noun
+luere,to wash,5,53,2,Verb
+mactare,"to butcher, slaughter",5,54,1,Verb
+mala,"jaw, jawbone",5,55,,Noun
+malacus,soft,5,56,,Adjective
+malle,to prefer,5,57,4,Verb
+matara,javelin,5,58,,Noun
+mel,honey,5,59,,Noun
+Melita,Malta,5,60,,Noun
+mentula,penis,5,51,,Noun
+meritorium,"brothel, house to let, hired house, rented house, bawdy, house of ill fame, whorehouse",5,52,,Noun
+metiri,to measure,5,53,4,Verb
+mitis,soft,5,54,,Adjective
+mollis,soft,5,55,,Adjective
+mucus,"mucus, phlegm",5,56,,Noun
+mullus,barbel,5,57,,Noun
+nare,"to float, swim",5,58,1,Verb
+natare,"to float, swim",5,59,1,Verb
+nix,snow,5,60,,Noun
+nutrire,"to feed, nourish",5,51,4,Verb
+obesus,"bold, corpulent, fat, thick",5,52,,Adjective
+orarius,"coast, coast-, coastal, of the coast",5,53,,Adjective
+orphanus,orphan,5,54,,Noun
+oryza,rice,5,55,,Noun
+ostes,earthquake,5,56,,Noun
+otacustes,spy,5,57,,Noun
+ovile,"fold, pen",5,58,,Noun
+ovum,egg,5,59,,Noun
+padus,thread,5,60,,Noun
+paeninsula,peninsula,5,51,,Noun
+paenula,raincoat,5,52,,Noun
+palus,"pole, post, stanchion, stake, marsh, swamp, penis",5,53,,Noun
+par,"equal, even, level",5,54,,Adjective
+parazonium,dagger,5,55,,Noun
+pedes,pedestrian,5,56,,Noun
+pendere,"to droop, hang",5,57,2,Verb
+penetrare,to penetrate,5,58,1,Verb
+penis,"penis, tail",5,59,,Noun
+pervetere,to bribe,5,60,2,Verb
+phalarica,"lance, spear",5,51,,Noun
+phallus,phallus,5,52,,Noun
+phasma,"ghost, phantom",5,53,,Noun
+physicus,"physical, physicist",5,54,,Adjective
+pinguis,"fat, fatty, greasy",5,55,,Adjective
+piper,pepper,5,56,,Noun
+pix,pitch,5,57,,Noun
+planus,"even, flat, level, smooth",5,58,,Adjective
+platanus,"plane, plane-tree, sycamore",5,59,,Noun
+plectere,"to braid, plait, twine, wreathe, punish",5,60,2,Verb
+plenus,"complete, full, integral",5,51,,Adjective
+plus,more,5,52,,Adjective
+poema,poem,5,53,,Noun
+poena,punishment,5,54,,Noun
+polus,pole,5,55,,Noun
+polypus,polyp,5,56,,Noun
+possibilis,possible,5,57,,Adjective
+praegnans,"pregnant, with young",5,58,,Adjective
+probare,to prove,5,59,1,Verb
+profundus,"deep, profound",5,60,,Adjective
+publicus,public,5,51,,Adjective
+pugil,boxer,5,52,,Noun
+pugio,dagger,5,53,,Noun
+pulcher,"beautiful, fine, handsome, lovely, fair",5,54,,Adjective
+pulmo,lung,5,55,,Noun
+pulvis,dust,5,56,,Noun
+pupa,"doll, puppet",5,57,,Noun
+purpura,purple,5,58,,Adjective
+radix,"root, radish",5,59,,Noun
+ren,kidney,5,60,,Noun
+repentinus,"abrupt, sudden",5,51,,Adjective
+Rhodanus,Rhone,5,52,,Noun
+risus,laughter,5,53,,Noun
+robustus,"strong, vigorous",5,54,,Adjective
+rosa,rose,5,55,,Noun
+Ruthenia,Russia,5,56,,Noun
+saevus,"savage, wild, ferocious",5,57,,Adjective
+salsus,salty,5,58,,Adjective
+sententia,wisdom,5,30,,Noun
+sentire,"to feel, sense",5,31,4,Verb
+sepia,sepia,5,32,,Adjective
+serpere,"to crawl, creep",5,33,2,Verb
+silex,"flint, gravel",5,34,,Noun
+simia,"ape, monkey",5,35,,Noun
+sisurna,mattress,5,36,,Noun
+stulte,stupidly,5,37,,Adverb
+tetragonum,quadrangle,5,38,,Noun
+texere,to weave,5,39,2,Verb
+tibia,"shin-bone, tibia",5,40,,Noun
+tormentum,cannon,5,41,,Noun
+tornare,"to turn, turn around, turn round",5,42,1,Verb
+tragula,javelin,5,43,,Noun
+triangulum,triangle,5,44,,Noun
+tribacca,"ear-drop, earring",5,45,,Noun
+tribunal,"rostrum, speaker's platform",5,46,,Noun
+trigarium,team of three horses,5,47,,Noun
+trigonicus,triangular,5,48,,Adjective
+trigonus,triangular,5,49,,Adjective
+triquetrus,triangular,5,50,,Adjective
+trochus,hoop,5,51,,Noun
+trudis,"pole, rod",5,52,,Noun
+turricula,turret,5,53,,Noun
+tus,incense,5,54,,Noun
+tussis,cough,5,55,,Noun
+typhon,whirlwind,5,56,,Noun
+unda,wave,5,57,,Noun
+upupa,hoopoe,5,58,,Noun
+vacerra,"pole, post, stanchion, stake",5,59,,Noun
+vaframentum,"ruse, stratagem, trick",5,60,,Noun
+vapor,"steam, vapor, vapour",5,51,,Noun
+vapos,"steam, vapor, vapour",5,52,,Noun
+velum,sail,5,53,,Noun
+ventus,wind,5,54,,Noun
+Venus,"Venus, Evening Star",5,55,,Noun
+vermis,worm,5,56,,Noun
+verpa,penis,5,57,,Noun
+versutia,"cunning, subtlety, slyness",5,58,,Noun
+veru,javelin,5,59,,Noun
+verutum,javelin,5,60,,Noun
+vesica,"bladder, bubble",5,51,,Noun
+vesper,"west, West, evening",5,52,,Noun
+victima,victim,5,53,,Noun
+victor,victor,5,54,,Noun
+vicus,"estate, farm, property, ranch, district, neighbourhood, quarter, street, village",5,55,,Noun
+villa,"estate, farm, property, ranch",5,56,,Noun
+viola,violet,5,57,,Noun
+virga,"broom, twig, bough, branch",5,58,,Noun
+virus,"mucus, phlegm",5,59,,Noun
+vis,"force, strength, vigour",5,60,,Noun
+vitellus,calf,5,51,,Noun
+vitrum,glass,5,52,,Noun
+vix,with effort,5,53,,Adverb
+vocabulum,"appellation, name, word",5,54,,Noun
+volucris,bird,5,55,,Noun
+voluntas,"will, willingness, wish",5,56,,Noun
+volva,"uterus, womb",5,57,,Noun
+vulpes,fox,5,58,,Noun
+abnegatio,abnegation,5,61,,Noun
+abortio,abortion,5,62,,Noun
+abortus,"abortion, failure, miscarriage",5,63,,Noun
+accipiter,"hawk, money-grubber",5,64,,Noun
+acere,"to be acid, be sour",5,61,2,Verb
+acernus,"maple, maple-, of a maple",5,62,,Noun
+acescere,"to acidify, sour, grow sour",5,63,2,Verb
+acetabulum,vinager-bottle,5,64,,Noun
+Acheron,Acheron,5,61,,Noun
+acia,thread,5,62,,Noun
+ador,spelt,5,63,,Noun
+agaso,"donkey-driver, groom, stableman",5,64,,Noun
+agnomen,"byname, nickname, sobriquet",5,61,,Noun
+ala,"armpit, wing, belt, zone, girdle",5,62,,Noun
+alcedo,"halcyon, kingfisher",5,63,,Noun
+alces,"elk, moose",5,64,,Noun
+alcyon,"halcyon, kingfisher",5,61,,Noun
+alga,"alga, seaweed",5,62,,Noun
+aloe,"aloe, acerbity, bitterness",5,63,,Noun
+alumen,alum,5,64,,Noun
+alvus,"beehive, stomach, abdomen, belly, tummy",5,61,,Noun
+amanuensis,clerk,5,62,,Noun
+amarities - amaritudo,"acerbity, bitterness",5,63,,Noun
+ampulla,bulb,5,64,,Noun
+amygdalum,almond,5,61,,Noun
+anas,duck,5,62,,Noun
+anatina,"duck, duck meat",5,63,,Noun
+anatomia,anatomy,5,64,,Noun
+anatomicus,anatomist,5,61,,Noun
+ancon,elbow,5,62,,Noun
+antenna,yard,5,63,,Noun
+antepassio,presentiment,5,64,,Noun
+antepes,"foreleg, front paw",5,61,,Noun
+antidotum,antidote,5,62,,Noun
+aranea,"spiderweb, spider",5,63,,Noun
+araneum,spiderweb,5,64,,Noun
+arbiter,"arbiter, arbitrator, referee, umpire",5,61,,Noun
+arbitratus,"arbiter, arbitrator",5,62,,Noun
+archimagirus,chef,5,63,,Noun
+archipirata,pirate-chief,5,64,,Noun
+arthritis,arthritis,5,61,,Noun
+asella,"jenny-ass, she-ass",5,62,,Noun
+asellus,haddock,5,63,,Noun
+asilus,"gadfly, horse-fly",5,64,,Noun
+aspis,"adder, viper",5,61,,Noun
+asser,"pole, rod",5,62,,Noun
+assula,splinter,5,63,,Noun
+asylum,"asylum, sanctuary",5,64,,Noun
+atomus,atom,5,61,,Noun
+aucella,little bird,5,62,,Noun
+aura,breeze,5,63,,Noun
+auricilla,"earlobe, lobe of the ear, ear",5,64,,Noun
+auricula,"earlobe, lobe of the ear, ear",5,61,,Noun
+automatum,automoton,5,62,,Noun
+avena,oats,5,63,,Noun
+aviarium,aviary,5,64,,Noun
+avicula,little bird,5,61,,Noun
+axicia,scissors,5,62,,Noun
+axilla,armpit,5,63,,Noun
+baca,"berry, pearl",5,64,,Noun
+bacillum,"stick, little stick",5,61,,Noun
+baculus - baculum,"baton, cane, stick",5,62,,Noun
+balaena,whale,5,63,,Noun
+balare,to bleat,5,64,1,Verb
+barathrum,ravine,5,61,,Noun
+barbitos,lute,5,62,,Noun
+barrus,elephant,5,63,,Noun
+beccus,"beak, bill",5,64,,Noun
+Bellona,Bellona,5,61,,Noun
+bitumen,asphalt,5,62,,Noun
+blatta,moth,5,63,,Noun
+boiae,collar,5,64,,Noun
+bombyx,silkworm,5,61,,Noun
+borrire,to bubble,5,62,4,Verb
+botrus,grape,5,63,,Noun
+bovile,"byre, cowhouse, cowshed",5,64,,Noun
+bracchium,"lower-arm, arm, thigh, collateral branch, side-branch, arm of the sea, estuary, firth, scissors",5,61,,Noun
+bubile,"byre, cowhouse, cowshed",5,62,,Noun
+bulla,button,5,63,,Noun
+caepa,onion,5,64,,Noun
+caespes,"sod, sod of grass, turf",5,61,,Noun
+calamus,"fishing rod, cane, reed, blade, stalk, pen, arrow, stem",5,62,,Noun
+calautica,"kerchief, veil",5,63,,Noun
+calcanium,heel,5,64,,Noun
+calceolarius,shoemaker,5,61,,Noun
+caliandrum,"hairpiece, wig",5,62,,Noun
+caliendrum,"hairpiece, wig",5,63,,Noun
+callis,"forest path, mountain path",5,64,,Noun
+callum,corn,5,61,,Noun
+caltha,marigold,5,62,,Noun
+calvescere,to be balding,5,63,2,Verb
+calvities,baldness,5,64,,Noun
+calx,"hoof, heel, lime",5,61,,Noun
+camelus,"dromedary, camel",5,62,,Noun
+cancer,crayfish,5,63,,Noun
+canistrum,small basket,5,64,,Noun
+cannabis,hemp,5,61,,Noun
+cannetum,cane-field,5,62,,Noun
+canterius,gelding,5,63,,Noun
+caper,he-goat,5,64,,Noun
+capillamentum,"hairpiece, wig",5,61,,Noun
+capra,"she-goat, chamois",5,62,,Noun
+capreolus,"wild goat, chamois",5,63,,Noun
+Capricornus,Capricorn,5,64,,Noun
+captus - captura,"catch, prey, capture",5,61,,Noun
+cardimona,stomach ache,5,62,,Noun
+casia,"cinnamon, lavender",5,63,,Noun
+casses,"spiderweb, snare, trap",5,64,,Noun
+cassita,tufted lark,5,61,,Noun
+catachresis,abuse,5,62,,Noun
+catalogus,enumeration,5,63,,Noun
+cataracta,"waterfall, lock, sluice",5,64,,Noun
+catasta,scaffold,5,61,,Noun
+catharticum,laxative,5,62,,Noun
+caulis,"stalk of cabbage, penis, stalk, stem",5,63,,Noun
+cedrus,cedar,5,64,,Noun
+cercops,"ape, monkey",5,61,,Noun
+cervus,deer,5,62,,Noun
+cetus,sea-monster,5,63,,Noun
+chalybs,steel,5,64,,Noun
+chersus,land tortoise,5,61,,Noun
+chirurgia,surgery,5,62,,Noun
+chorda,"cord, string",5,63,,Noun
+cloaca,sewer,5,64,,Noun
+clura,"ape, monkey",5,61,,Noun
+coaxare,to croak,5,62,1,Verb
+cognomen,"surname, byname, nickname, sobriquet",5,63,,Noun
+cognomentum,"byname, nickname, sobriquet",5,64,,Noun
+corylus,"hazel, hazel-tree",5,61,,Noun
+coxa - coxendix,hip,5,62,,Noun
+cuniculus,rabbit,5,63,,Noun
+delphin,dolphin,5,64,,Noun
+elephantus,elephant,5,61,,Noun
+exhalare,to exhale,5,62,1,Verb
+faba,bean,5,63,,Noun
+falx,"sickle, scythe",5,64,,Noun
+femur,"thigh, hip",5,61,,Noun
+feniculum,fennel,5,62,,Noun
+flos,"bloom, flower",5,63,,Noun
+fluctus,wave,5,64,,Noun
+fricare,to rub,5,61,1,Verb
+gavia,seagull,5,62,,Noun
+genista,greenweed,5,63,,Noun
+germinare,to germinate,5,64,1,Verb
+hara,sty,5,61,,Noun
+helica,"snail-shell, spiral",5,62,,Noun
+hinnire,to neigh,5,63,4,Verb
+hypotheca,mortgage,5,64,,Noun
+incubare,"to incubate, sit",5,61,1,Verb
+lamia,vampire,5,62,,Noun
+lamina,"ghost, phantom",5,63,,Noun
+lapathum,"dock, sorrel",5,64,,Noun
+larva,"ghost, phantom",5,61,,Noun
+latrina,"brothel, toilet, bawdy, house of ill fame, whorehouse",5,62,,Noun
+ligo,pick-axe,5,63,,Noun
+limare,to file,5,64,1,Verb
+locusta,"grasshopper, lobster",5,61,,Noun
+maena,"anchovy, arsehole, bastard, son-of-a-bitch",5,62,,Noun
+masturbari,to masturbate,5,63,4,Verb
+morari,"to act crazy, rave",5,64,4,Verb
+nodare,to knot,5,61,1,Verb
+oblectare,to amuse,5,62,1,Verb
+obses,hostage,5,63,,Noun
+onagus,donkey-driver,5,64,,Noun
+oncare,to bray,5,61,1,Verb
+orthografia,orthography,5,62,,Noun
+oscitare,to yawn,5,63,1,Verb
+palpitare,"to pulsate, throb",5,64,1,Verb
+repere,"to crawl, creep",5,61,2,Verb
+rodere,to gnaw,5,62,2,Verb
+scabere,to scratch,5,63,2,Verb
+"stertō, stertere, stertuī, ------- ",to snore,5,64,,Verb
+stigmare,to brand,5,61,1,Verb
+vadare,to wade,5,62,1,Verb
+venenare,to poison,5,63,1,Verb
+abactor,"cattle-lifter, cattle-stealer, abductor",5,70,,Noun
+abacus,"abacus, ball-frame, counting-frame, buffet",5,71,,Noun
+Abnoba,Black Forest,5,72,,Noun
+absinthiatum,vermouth,5,73,,Noun
+absinthium,absinth,5,74,,Noun
+acalanthis,goldfinch,5,75,,Noun
+acanthus,"acacia, acanthus",5,71,,Unfiled
+acipenser,sturgeon,5,72,,Noun
+aconitum,"aconite, monkshood, poison",5,73,,Noun
+aedon,nightingale,5,74,,Noun
+aegoceros,ibex,5,75,,Noun
+alauda,lark,5,71,,Noun
+alneus,"alder, alder-, of an alder",5,72,,Adjective
+alnus,alder,5,73,,Noun
+alvarium,beehive,5,74,,Noun
+alveus,"beehive, bath, basin, reservoir, boat, jug, box, container, vessel",5,75,,Noun
+amaranthus,sweet william,5,71,,Noun
+amethystus,amethyst,5,72,,Noun
+anethum,dill,5,73,,Noun
+anguilla,eel,5,74,,Noun
+anser,goose,5,75,,Noun
+aper,wild boar,5,71,,Noun
+apium,celery,5,72,,Noun
+aprugnus,of a wild boar,5,73,,Adjective
+apyrenus,pomegranate,5,74,,Noun
+arbutum,arbutus fruit,5,75,,Noun
+arbutus,"arbutus, strawberry tree",5,71,,Noun
+asparagus,asparagus,5,72,,Noun
+auraria,gold-mine,5,73,,Noun
+beryllus,beryl,5,74,,Noun
+beta,beet,5,75,,Noun
+betaceus,"beet, beet-, of a beet",5,71,,Adjective
+boletus,mushroom,5,72,,Noun
+brassica,cabbage,5,73,,Noun
+bubalus,"buffalo, gazelle",5,74,,Noun
+bubo,little owl,5,75,,Noun
+bufo,toad,5,71,,Noun
+bulbus,"bulb, onion",5,72,,Noun
+burdo,hinny,5,73,,Noun
+buxus,box-tree,5,74,,Noun
+cachetcta,consumptive,5,75,,Adjective
+cachexia,"consumption, tuberculosis",5,71,,Noun
+cactus,artichoke,5,72,,Noun
+caementarius,"stone-cutter, stonemason",5,73,,Noun
+caprea,roe,5,74,,Noun
+carduelis,goldfinch,5,75,,Noun
+carduetum,thisle-field,5,71,,Noun
+carduus,thisle,5,72,,Noun
+castanea,chestnut-tree,5,73,,Noun
+castor,beaver,5,74,,Noun
+catadupa,waterfall,5,75,,Noun
+cataegis,hurricane,5,71,,Noun
+cedrinus,"cedar, of a cedar",5,72,,Adjective
+cerastes,"cerastes, horned viper",5,73,,Noun
+cerasus,"cherry-tree, cherry",5,74,,Noun
+Cerberus,Cerberus,5,75,,Noun
+Ceres,Ceres,5,71,,Noun
+cerium,honeycomb,5,72,,Noun
+cerva,"doe, hind",5,73,,Noun
+cervinus,"deer, deer-, of a deer",5,74,,Adjective
+Charon,Charon,5,75,,Noun
+Charybdis,Charybdis,5,71,,Noun
+chelys,"lyre, tortoise",5,72,,Noun
+Chimaera,Chimera,5,73,,Noun
+chrysanthes,marigold,5,74,,Noun
+cichorium,"chicory, endive",5,75,,Noun
+cicirrus,"fighting cock, gamecock, ruff",5,71,,Noun
+ciconia,stork,5,72,,Noun
+cicuta,hemlock,5,73,,Noun
+cinnamomum,cinnamon,5,74,,Noun
+cinnamum,cinnamon,5,75,,Noun
+cithara,zither,5,71,,Noun
+citrus,lemon-tree,5,72,,Noun
+cochlea,snail,5,73,,Noun
+columbus,cock-pigeon,5,74,,Noun
+coriandrum,coriander,5,75,,Noun
+cribrum,sieve,5,71,,Noun
+crocodilus,crocodile,5,72,,Noun
+cuculus,cuckoo,5,73,,Noun
+cucumis,cucumber,5,74,,Noun
+cupressus,cypress,5,75,,Noun
+Cybele,Cybele,5,71,,Noun
+cycnus,swan,5,72,,Noun
+cyparissus,cypress,5,73,,Adjective
+Etruria,Etruria,5,74,,Noun
+Europa,"Europa, Europe",5,75,,Noun
+fagus,beech,5,71,,Noun
+farferis,coltsfoot,5,72,,Noun
+farferus,coltsfoot,5,73,,Noun
+favus,honeycomb,5,74,,Noun
+feles,cat,5,75,,Noun
+fragum,strawberry,5,71,,Noun
+fraxinus,ash,5,72,,Noun
+glans,acorn,5,73,,Noun
+globus,bullet,5,74,,Noun
+haliaeetus,white-tailed eagle,5,75,,Noun
+Harpyia,harpy,5,71,,Noun
+hedera,ivy,5,72,,Noun
+Hesperus,Hesperus,5,73,,Noun
+Hiberus,Ebro,5,74,,Noun
+hippopotamus,"hippo, hippopotamus",5,75,,Noun
+hirudo,leech,5,71,,Noun
+hirundo,swallow,5,72,,Noun
+Holmia,Stockholm,5,73,,Noun
+hyaena,hyaena,5,74,,Noun
+hystrix,porcupine,5,75,,Noun
+Iacchus,Bacchus,5,71,,Noun
+ibis,ibis (bird),5,72,,Noun
+ictis,"marter, weasel",5,73,,Noun
+ilex,holly,5,74,,Noun
+lamium,deadnettle,5,75,,Noun
+lappa,burr,5,71,,Noun
+larix,larch,5,72,,Noun
+larus,seagull,5,73,,Noun
+lilium,lily,5,74,,Noun
+limax,slug,5,75,,Noun
+lolium,corn cockle,5,71,,Noun
+lucinia,nightingale,5,72,,Noun
+lucinius,nightingale,5,73,,Noun
+lumbricus,earthworm,5,74,,Noun
+malogranatum,pomegranate,5,75,,Noun
+martes,"marter, weasel, marten",5,71,,Noun
+menta,mint,5,72,,Noun
+miluus,kite,5,73,,Noun
+mus,mouse,5,74,,Noun
+musca,"fly, housefly",5,75,,Noun
+muscus,moss,5,71,,Noun
+mustela,"marter, weasel",5,72,,Noun
+mustum,must,5,73,,Noun
+narcissus,"daffodil, narcissus",5,74,,Noun
+olor,swan,5,75,,Noun
+onyx,onyx,5,71,,Noun
+ornithon,aviary,5,72,,Noun
+ortigometra,quail,5,73,,Noun
+ostrea,oyster,5,74,,Noun
+pancratium,chicory,5,75,,Noun
+panthera,"panther, giraffe",5,71,,Noun
+papaver,poppy,5,72,,Noun
+papilio,butterfly,5,73,,Noun
+pardalis,female panther,5,74,,Noun
+pardus,panther,5,75,,Noun
+parus,titmouse,5,71,,Noun
+passer,"canary, sparrow, ostrich",5,72,,Noun
+pavo,peacock,5,73,,Noun
+pedis,louse,5,74,,Noun
+pelicanus,pelican,5,75,,Noun
+perca,bass,5,71,,Noun
+pessulus,bolt,5,72,,Noun
+petro,ibex,5,73,,Noun
+petroselinum,parsley,5,74,,Noun
+phaselus,haricot,5,75,,Noun
+phasianus,pheasant,5,71,,Noun
+phoca,"seal, sea-dog",5,72,,Noun
+phoenicopterus,flamingo,5,73,,Noun
+phthisis,"consumption, tuberculosis",5,74,,Noun
+pica,magpie,5,75,,Noun
+picea,"pine, pine-tree",5,71,,Noun
+picus,woodpecker,5,72,,Noun
+pinus,"pine, pine-tree",5,73,,Noun
+pirus,pear-tree,5,74,,Noun
+podagra,gout,5,75,,Noun
+porcula,piglet,5,71,,Noun
+porculus,young of a wild boar,5,72,,Noun
+psittaca,parrot,5,73,,Noun
+puppis,"poop, poopdeck, stern",5,74,,Noun
+quercus,oak,5,75,,Noun
+rana,"toad, frog",5,71,,Noun
+raphanum,radish,5,72,,Noun
+raphanus,"cabbage, black radish, radish",5,73,,Noun
+rapulum,radish,5,74,,Noun
+rapum,turnip,5,75,,Noun
+raucus,hoarse,5,71,,Adjective
+remex,rower,5,72,,Noun
+remigare,to row,5,73,,Verb
+remus,oar,5,74,,Noun
+rhinoceros,"rhino, rhinoceros",5,75,,Noun
+robur,"oak, oak-wood",5,71,,Noun
+rubus,"blackberry, blackberry bush, bramble",5,72,,Noun
+rumex,"dock, sorrel",5,73,,Noun
+salamandra,salamander,5,74,,Noun
+saliva,saliva,5,75,,Noun
+salix,willow,5,71,,Noun
+salmo,salmon,5,72,,Noun
+Scandia,Scandinavia,5,73,,Noun
+scarabaeus,beetle,5,74,,Noun
+sciurus,squirrel,5,75,,Noun
+scolopendra,centipede,5,71,,Noun
+scorpio,scorpion,5,72,,Noun
+sisymbrium,watercress,5,73,,Noun
+sorbum,"mountain-ash berry, rowan berry",5,74,,Noun
+sorbus,"mountain-ash, rowan",5,75,,Noun
+spodium,"ash, cinder",5,71,,Noun
+struthocamelus,ostrich,5,72,,Noun
+taeda,"pine, pine-tree",5,73,,Noun
+talpa,mole,5,74,,Noun
+tamarix,tamarisk,5,75,,Noun
+taxus,"yew-tree, javelin",5,71,,Noun
+thridax,lettuce,5,72,,Noun
+thynnus,"tuna, tuna-fish, tunny",5,73,,Noun
+tigris,tiger,5,74,,Noun
+tilia,"lime-tree, linden-tree",5,75,,Noun
+tiliaceus,"lime, lime-, of a lime-tree",5,71,,Adjective
+tiliagineus,"lime, lime-, of a lime-tree",5,72,,Adjective
+tiliaris,"lime, lime-, of a lime-tree",5,73,,Adjective
+tinca,tench,5,74,,Noun
+tinea,"cockroach, moth",5,75,,Noun
+tribulus,thisle,5,71,,Noun
+trifolium,"clover, shamrock, trefoil",5,72,,Noun
+tructa,trout,5,73,,Noun
+turda,thrush,5,74,,Noun
+turdus,thrush,5,75,,Noun
+turtur,turtle-dove,5,71,,Noun
+tympanum,"tambourine, timbrel",5,72,,Noun
+urtica,nettle,5,73,,Noun
+vaccinium,larkspur,5,74,,Noun
+varia,panther,5,75,,Noun
+verres,boar,5,71,,Noun
+verruca,wart,5,72,,Noun
+vespa,wasp,5,73,,Noun
+vespertilio,bat,5,74,,Noun
+viburnum,"guelder rose, snowball",5,75,,Noun
+vitulina,veal,5,71,,Noun
+vultur,vulture,5,72,,Noun
