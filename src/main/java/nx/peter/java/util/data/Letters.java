@@ -1286,6 +1286,10 @@ public abstract class Letters<L extends Letters> extends Data<L> {
         return data != null ? data.lastIndexOf(letters.toString()) : -1;
     }
 
+    @Override
+    public <A extends IData> A castTo(Class<A> clazz) {
+        return DataCreator.createData(clazz, data, charSet);
+    }
 
     public interface OnWordsExtractedListener {
         void onExtracted(Words words, long durationInMillis);

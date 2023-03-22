@@ -71,7 +71,12 @@ public class Letter<L extends Letter> extends Data<L> {
 		setCharSet(CharSet.English);
 		return (L) this;
 	}
-	
+
+	@Override
+	public <A extends IData> A castTo(Class<A> clazz) {
+		return DataCreator.createData(clazz, data, charSet);
+	}
+
 	public L set(char data) {
 		return super.set(data);
 	}

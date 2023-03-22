@@ -111,6 +111,8 @@ public interface IData<D extends IData> extends CharSequence, Comparable<D>, Ser
 
     boolean contains(CharSequence data);
 
+    <A extends IData> A castTo(Class<A> clazz);
+
     <O> int comparesTo(O data);
 
     int comparesTo(IData<?> data);

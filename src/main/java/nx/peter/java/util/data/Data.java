@@ -354,6 +354,11 @@ public abstract class Data<D extends Data> implements IData<D> {
     }
 
     @Override
+    public <A extends IData> A castTo(Class<A> clazz) {
+        return DataCreator.createData(clazz, data, CharSet.English);
+    }
+
+    @Override
     public int comparesTo(IData<?> data) {
         return comparesTo(data != null ? data.get() : "");
     }
