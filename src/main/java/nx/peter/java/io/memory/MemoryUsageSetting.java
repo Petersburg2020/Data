@@ -1,6 +1,6 @@
-package nx.peter.java.io;
+package nx.peter.java.io.memory;
 
-import nx.peter.java.io.memory.Settings;
+import nx.peter.java.io.File;
 import nx.peter.java.util.data.Texts;
 
 import java.util.LinkedHashMap;

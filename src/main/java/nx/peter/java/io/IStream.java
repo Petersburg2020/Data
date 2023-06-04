@@ -1,5 +1,6 @@
 package nx.peter.java.io;
 
+import nx.peter.java.io.memory.MemoryUsageSetting;
 import nx.peter.java.io.memory.Settings;
 import nx.peter.java.io.stream.Input;
 import nx.peter.java.io.stream.Output;

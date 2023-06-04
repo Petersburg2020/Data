@@ -25,7 +25,7 @@ public class FractionData extends Data<FractionData> {
 	@Override
 	public FractionData set(CharSequence data) {
 		if (DataManager.isFraction(data))
-			data = data.toString();
+			this.data = data.toString();
 		return this;
 	}
 
@@ -33,60 +33,71 @@ public class FractionData extends Data<FractionData> {
 		if (data == null)
 			return new FractionData();
 		switch ((int) data.getNumerator()) {
-			case 1:
+			case 1 -> {
 				switch ((int) data.getDenominator()) {
-					case 2:
+					case 2 -> {
 						return new FractionData("½");
-					case 3:
+					}
+					case 3 -> {
 						return new FractionData("⅓");
-					case 4:
+					}
+					case 4 -> {
 						return new FractionData("¼");
-					case 5:
+					}
+					case 5 -> {
 						return new FractionData("⅕");
-					case 6:
+					}
+					case 6 -> {
 						return new FractionData("⅙");
-					case 7:
+					}
+					case 7 -> {
 						return new FractionData("⅐");
-					case 8:
+					}
+					case 8 -> {
 						return new FractionData("⅛");
-					case 9:
+					}
+					case 9 -> {
 						return new FractionData("⅑");
-					case 10:
+					}
+					case 10 -> {
 						return new FractionData("⅒");
+					}
 				}
-				break;
-			case 2:
+			}
+			case 2 -> {
 				switch ((int) data.getDenominator()) {
-					case 3:
+					case 3 -> {
 						return new FractionData("⅔");
-					case 5:
+					}
+					case 5 -> {
 						return new FractionData("⅖");
+					}
 				}
-				break;
-			case 3:
+			}
+			case 3 -> {
 				switch ((int) data.getDenominator()) {
 					case 4:
 						return new FractionData("¾");
 					case 5:
 						return new FractionData("⅗");
 				}
-				break;
-			case 4:
+			}
+			case 4 -> {
 				if (data.getDenominator() == 5)
 					return new FractionData("⅘");
-				break;
-			case 5:
+			}
+			case 5 -> {
 				switch ((int) data.getDenominator()) {
 					case 6:
 						return new FractionData("⅚");
 					case 8:
 						return new FractionData("⅝");
 				}
-				break;
-			case 7:
+			}
+			case 7 -> {
 				if (data.getDenominator() == 8)
-						return new FractionData("⅞");
-				break;
+					return new FractionData("⅞");
+			}
 		}
 		return new FractionData();
 	}

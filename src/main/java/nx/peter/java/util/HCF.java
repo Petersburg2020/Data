@@ -63,11 +63,6 @@ public class HCF {
 				if (temp) hcf = factor;
 			}
 		}
-		/*Factor factor1 = new Factor(value1);
-		 Factor factor2 = new Factor(value2);
-		 for (int factor : factor2.getFactors())
-		 if (factor1.isFactor(factor) && factor > 1)
-		 hcf = factor;*/
 		return hcf;
 	}
 

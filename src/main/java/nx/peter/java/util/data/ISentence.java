@@ -1,6 +1,7 @@
 package nx.peter.java.util.data;
 
 import nx.peter.java.dictionary.WordDictionary;
+import nx.peter.java.re.Regex;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -86,18 +87,7 @@ public abstract class ISentence<S extends ISentence> extends Letters<S> {
     }
 
     public int wordCount(CharSequence word) {
-        int noOfOccurrence = 0;
-        String strWord = word.toString();
-        int index = data.indexOf(strWord);
-        if (contains(word))
-            while (index > -1) {
-                index = data.indexOf(strWord, index);
-                if (index <= -1)
-                    break;
-                index += strWord.length();
-                noOfOccurrence++;
-            }
-        return noOfOccurrence;
+        return (startsWith(word) ? 1 : 0) + Regex.getInstance(data).countExact(word);
     }
 
     public int wordCount(Word word) {

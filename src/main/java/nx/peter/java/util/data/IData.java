@@ -14,17 +14,7 @@ public interface IData<D extends IData> extends CharSequence, Comparable<D>, Ser
     D set(int index, char... data);
 
     D set(int index, CharSequence data);
-
-    int count(char data);
-
-    int count(long data);
-
-    int count(int data);
-
-    int count(boolean data);
-
-    int count(double data);
-
+    <O> int count(O data);
     int count(IData<?> data);
 
     int count(CharSequence data);

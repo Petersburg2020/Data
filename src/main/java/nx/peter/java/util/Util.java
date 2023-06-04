@@ -558,11 +558,11 @@ public class Util {
     }
 
     public static boolean isNumber(char value) {
-        return NUMBERS.contains(value + "");
+        return NUMBERS.contains(String.valueOf(value));
     }
 
     public static boolean isZero(char number) {
-        return (number + "").equals("0");
+        return String.valueOf(number).contentEquals("0");
     }
 
     public static boolean isDigit(char number) {
@@ -587,13 +587,13 @@ public class Util {
 
     public static int getIndexOfFirstDigit(long value) {
         for (int n = 0; n < digitCount(value); n++)
-            if (isDigit((value + "").charAt(n)))
+            if (isDigit(String.valueOf(value).charAt(n)))
                 return n;
         return -1;
     }
 
     public static long getWholePortion(double number) {
-        return Long.parseLong((number + "").substring(0, (number + "").indexOf(".")));
+        return Long.parseLong(String.valueOf(number).substring(0, (String.valueOf(number)).indexOf(".")));
     }
 
     public static long getDecimalPortion(double number) {
@@ -602,15 +602,15 @@ public class Util {
         if (num.contains("-") && num.contains("E")) {
             power = Integer.parseInt(num.substring(num.indexOf("-") + 1));
             // System.out.println(power);
-            num = repeat("0", power) + num.substring(num.indexOf(".") + 1, num.indexOf("-")).replace("E", "");
+            num = "0".repeat(power) + num.substring(num.indexOf(".") + 1, num.indexOf("-")).replace("E", "");
         } else
-            num = num.substring((number + "").indexOf(".") + 1);
+            num = num.substring((String.valueOf(number)).indexOf(".") + 1);
         // System.out.println("Num: " + num);
         return Long.parseLong(num);
     }
 
     public static int digitCount(long number) {
-        return (number + "").length();
+        return (String.valueOf(number)).length();
     }
 
     public static boolean containsDigit(long number) {
@@ -618,7 +618,7 @@ public class Util {
     }
 
     public static boolean containsDigit(double number) {
-        for (char c : (number + "").toCharArray())
+        for (char c : (String.valueOf(number)).toCharArray())
             if (isDigit(c))
                 return true;
         return false;
@@ -629,7 +629,7 @@ public class Util {
     }
 
     public static String format(long number) {
-        String val = number + "";
+        String val = String.valueOf(number);
         String value = "";
         int len = val.length() - 1;
         int last;

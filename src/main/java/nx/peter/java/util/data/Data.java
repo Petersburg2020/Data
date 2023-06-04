@@ -1,5 +1,7 @@
 package nx.peter.java.util.data;
 
+import nx.peter.java.re.Regex;
+
 import java.nio.charset.StandardCharsets;
 
 public abstract class Data<D extends Data> implements IData<D> {
@@ -83,27 +85,7 @@ public abstract class Data<D extends Data> implements IData<D> {
     }
 
     @Override
-    public int count(int data) {
-        return count(data + "");
-    }
-
-    @Override
-    public int count(long data) {
-        return count(data + "");
-    }
-
-    @Override
-    public int count(char data) {
-        return count(data + "");
-    }
-
-    @Override
-    public int count(boolean data) {
-        return count(data + "");
-    }
-
-    @Override
-    public int count(double data) {
+    public <O> int count(O data) {
         return count(data + "");
     }
 
@@ -114,18 +96,7 @@ public abstract class Data<D extends Data> implements IData<D> {
 
     @Override
     public int count(CharSequence data) {
-        if (data == null)
-            return 0;
-        int count = 0, index;
-        String temp = this.data;
-        while (true) {
-            index = temp.indexOf(toUtf8(data).toString());
-            if (index == -1)
-                break;
-            count++;
-            temp = temp.substring(index + data.length());
-        }
-        return count;
+        return Regex.getInstance(this.data).count(data);
     }
 
     protected CharSequence toUtf8(CharSequence data) {
