@@ -9,11 +9,13 @@ You can add Data to your Java Project by following the steps below:
 Add the JitPack repository to your build file.
 
 Add it in your root build.gradle at the end of repositories:
+
 ![add jitpack to build](https://user-images.githubusercontent.com/61753269/209490940-9d9a9925-3137-4212-b9d2-d49c5c15a55e.png)
 
 # Step 2. 
 Add the dependency:
 
+[![](https://jitpack.io/v/Petersburg2020/Data.svg)](https://jitpack.io/#Petersburg2020/Data)
 ![add dependency](https://user-images.githubusercontent.com/61753269/209490937-8177808f-c521-4633-ba92-7295cd560cc0.png)
 
 Change Tag to the latest version of this Project (Jitpack)
